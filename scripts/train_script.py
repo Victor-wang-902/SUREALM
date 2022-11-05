@@ -275,9 +275,10 @@ if __name__ == "__main__":
 
     logging.info("loading tokenizer")
     args.tokenizer = AutoTokenizer.from_pretrained(args.model_path)
-    if args.tokenizer.pad_token is None:
-        logging.info("pad token is not set, defaulting to eos")
-        args.tokenizer.pad_token = args.tokenizer.eos_token
+    if args.tokenizer.pad_token is None:  # add pad token for gpt2
+        logging.info("pad token is not set, adding [PAD] to tokenizer and embedding")
+        args.tokenizer.add_tokens(['[PAD]'], special_tokens=True)
+        args.tokenizer.pad_token = tok.add_special_tokens({"pad_token": "[PAD]"})
     is_baseline = not args.from_checkpoint and args.not_retrieval
     if model_type == "bert":  # Currently supporting three architectures
         model_class = RetrievalGenerationModel
@@ -301,6 +302,7 @@ if __name__ == "__main__":
     if not is_baseline:
         logging.info("running SUREALM post post initialization")
         args.model.post_post_init(args)
+    args.model.resize_token_embeddings(len(args.tokenizer))  # extend embedding
     if torch.cuda.device_count() > 1 and not args.no_gpu:
         args.model = DataParallel(args.model, device_ids=list(range(torch.cuda.device_count())))
     

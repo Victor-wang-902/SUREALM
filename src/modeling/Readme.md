@@ -1,0 +1,3 @@
+# Models
+
+This folder contains modification of official [BERT](https://github.com/huggingface/transformers/blob/main/src/transformers/models/bert/modeling_bert.py), [RoBERTa](https://github.com/huggingface/transformers/blob/main/src/transformers/models/roberta/modeling_roberta.py) and [GPT-2](https://github.com/huggingface/transformers/blob/main/src/transformers/models/gpt2/modeling_gpt2.py) from Huggingface implementations.

@@ -48,17 +48,17 @@ def inference_init(args=None, model_path=None, sbert_path=None, knowledge_path=N
 
 def main():
     parser = argparse.ArgumentParser(description="inference")
-    parser.add_argument("--model_path", type=str, required=True)
-    parser.add_argument("--sbert_path", type=str, default="multi-qa-MiniLM-L6-cos-v1")
-    parser.add_argument("--knowledge_path", type=str, required=True)
-    parser.add_argument("--max_length", type=int, default=None)
-    parser.add_argument("--max_context_length_per_k", type=int, default=None)
-    parser.add_argument("--interactive", action="store_true", default=False)
-    parser.add_argument("--prompt_file", type=str, default=None)
-    parser.add_argument("--stride", type=int, default=None)
-    parser.add_argument("--topk", type=int, default=None)
-    parser.add_argument("--do_sample", action="store_true", default=True)
-    parser.add_argument("--num_beams", type=int, default=10)
+    parser.add_argument("--model_path", type=str, required=True, help="path to the model we'd like to run generation on")
+    parser.add_argument("--sbert_path", type=str, default="multi-qa-MiniLM-L6-cos-v1", help="pretrained sentence transformer to use for retrieval")
+    parser.add_argument("--knowledge_path", type=str, required=True, help="path to knowledge base consisting of prefix_index.index, prefix_embeddings.pt and suffix_embeddings.pt")
+    parser.add_argument("--max_length", type=int, default=None, help="maximum generation length")
+    parser.add_argument("--max_context_length_per_k", type=int, default=None, help="maximum embedding pair length per k")
+    parser.add_argument("--interactive", action="store_true", default=False, help="enable interactive generation mode")
+    parser.add_argument("--prompt_file", type=str, default=None, help="file of text prompts for generation")
+    parser.add_argument("--stride", type=int, default=None, help="online retrieval frequency")
+    parser.add_argument("--topk", type=int, default=None, help="how many embedding pairs to retrieval each timestep")
+    parser.add_argument("--do_sample", action="store_true", default=True, help="generation specific argument. whether to dp sampling")
+    parser.add_argument("--num_beams", type=int, default=10, help="generation specific argument, number of beams for beam search")
     args = parser.parse_args()
     if torch.cuda.is_available():
         args.device = torch.device("cuda")
@@ -67,7 +67,6 @@ def main():
     model, tok = inference_init(args)
     tok.bos_token_id = tok.bos_token_id if tok.bos_token_id is not None else tok.cls_token_id
     tok.eos_token_id = tok.eos_token_id if tok.eos_token_id is not None else tok.sep_token_id
-    tok.pad_token_id = tok.pad_token_id if tok.pad_token_id is not None else tok.eos_token_id
     assert not (args.interactive and args.prompt_file), f"cannot specify prompt file while interactive mode is enabled."
     assert args.interactive or args.prompt_file, f"specify prompt file or enable interactive mode."
     if args.interactive:
