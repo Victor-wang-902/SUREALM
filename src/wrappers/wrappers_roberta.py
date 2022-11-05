@@ -61,7 +61,7 @@ from transformers.pytorch_utils import torch_int_div
 from transformers.utils import ModelOutput, logging
 from transformers import AutoModel
 
-import ..modeling as models_roberta
+from ..modeling import RetrievalModelRoberta
 from ..utils import AttentionMaskGenerator, encode
 
 
@@ -73,7 +73,7 @@ Adapted from LM models on Huggingface. We also modified the GenerationMixin to s
 class RetrievalGenerationModelRoberta(RobertaForCausalLM):
     def __init__(self, config, args=None, tokenizer=None):
         super().__init__(config)
-        self.roberta = models_roberta.RetrievalModelRoberta(config)
+        self.roberta = RetrievalModelRoberta(config)
 
         # add_cross_attention predefines model architecture which cannot be changed later on. 
         # a model with cross attention layer choose not to perform cross attention by changing this attribute but not the reversed case.
@@ -232,7 +232,7 @@ class RetrievalGenerationModelRoberta(RobertaForCausalLM):
         to_return["num_tokens"] = torch.tensor(num_tokens, dtype=torch.int32).to(self.device)
         return to_return
 
-    def save_pretrained(self, output_path, save_head=False):
+    def save_pretrained(self, output_path):
         self.tokenizer.save_pretrained(output_path)
         if save_head:            
             super().save_pretrained(output_path)
@@ -247,12 +247,12 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
     def __init__(self, config, args=None, tokenizer=None):
         super().__init__(config, args=args, tokenizer=tokenizer)
 
-    def load_components(self, knowledge_path=None, sbert_path=None):  # load knowledge base and sentence transformer
+    def load_components(self, knowledge_path=None, sbert_path=None, load_tok=None):  # load knowledge base and sentence transformer
         self.encoder_cache = None
         if knowledge_path is not None:
             self.load_knowledge(knowledge_path)
         if sbert_path is not None:
-            self.load_encoder(sbert_path)
+            self.load_encoder(sbert_path, load_tok)
 
     def load_knowledge(self, knowledge_path):
         self.index = faiss.read_index(os.path.join(knowledge_path, "prefix_index.index"))
@@ -261,7 +261,7 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
             self.index = faiss.index_cpu_to_gpu(res, 0, self.index)
         self.knowledge_post = torch.load(os.path.join(knowledge_path, "suffix_embeddings.pt"))
         self.knowledge_pre = torch.load(os.path.join(knowledge_path, "prefix_embeddings.pt"))
-        _, stride, topk = os.path.basename(knowledge_path).split("_")
+        _, stride, topk, _ = os.path.basename(knowledge_path).split("_")
         stride = int(stride[0])
         topk = int(topk[-1])
         self.knowledge_stride = stride
@@ -272,10 +272,16 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
     def set_stride(self, n):
         self.retrieval_stride = n
 
-    def load_encoder(self, sbert_path):
+    def load_encoder(self, sbert_path, load_tok):
         self.sbert = AutoModel.from_pretrained(sbert_path)
         self.sbert.to(self.device)
         self.sbert.eval()
+        if load_tok:
+            self.target_tokenizer = AutoTokenizer.from_pretrained(sbert_path)
+            self.target_tokenizer.bos_token = self.target_tokenizer.bos_token if self.target_tokenizer.bos_token is not None else self.target_tokenizer.cls_token
+            self.target_tokenizer.eos_token = self.target_tokenizer.eos_token if self.target_tokenizer.eos_token is not None else self.target_tokenizer.sep_token
+        else:
+            self.target_tokenizer = None
 
     def prepare_inputs_for_generation(self, input_ids, **kwargs):
         '''
@@ -294,7 +300,13 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
                 input_ids_list = input_ids[:, :cur_num_real_tokens]
                 attention_msk = attention_mask[:, :cur_num_real_tokens]
                 to_update = (attention_msk[:,-1] == 1)
-                pre_embs = encode({"input_ids": input_ids_list.to(self.device), "attention_mask": attention_msk.to(self.device)}, model=self.sbert).cpu().numpy()
+                if self.target_tokenizer is None:
+                    pre_embs = encode({"input_ids": input_ids_list.to(self.device), "attention_mask": attention_msk.to(self.device)}, model=self.sbert).cpu().numpy()
+                else:
+                    new_tokenized = self.target_tokenizer(self.tokenizer.batch_decode(input_ids[:,1:cur_num_real_tokens], skip_special_tokens=True), add_special_tokens=False, return_tensors="pt")
+                    input_ids_list = torch.cat((torch.tensor([self.target_tokenizer.bos_token_id for _ in range(input_ids.shape[0])]).reshape(-1,1), new_tokenized["input_ids"].int()), dim=1)
+                    attention_msk = torch.cat((torch.tensor([1 for _ in range(input_ids.shape[0])]).reshape(-1,1), new_tokenized["attention_mask"].int()), dim=1)
+                    pre_embs = encode({"input_ids": input_ids_list.to(self.device), "attention_mask": attention_msk.to(self.device)}, model=self.sbert).cpu().numpy()
                 _, top_indices = self.index.search(pre_embs, self.retrieval_topk)
                 new_pre_embs = self.knowledge_pre(torch.tensor(top_indices).to(self.device))
                 new_post_embs = self.knowledge_post(torch.tensor(top_indices).to(self.device))
@@ -307,8 +319,13 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
 
         else:
             to_update = torch.logical_and(((num_real_tokens - 1) % self.retrieval_stride) == 0, num_real_tokens > 1)
-
-            pre_embs = encode({"input_ids": input_ids, "attention_mask": attention_mask.to(self.device)}, model=self.sbert).cpu().numpy()
+            if self.target_tokenizer is None:
+                pre_embs = encode({"input_ids": input_ids.to(self.device), "attention_mask": attention_mask.to(self.device)}, model=self.sbert).cpu().numpy()
+            else:
+                new_tokenized = self.target_tokenizer(self.tokenizer.batch_decode(input_ids[:,1:], skip_special_tokens=True), add_special_tokens=False, return_tensors="pt")
+                input_ids_list = torch.cat((torch.tensor([self.target_tokenizer.bos_token_id for _ in range(input_ids.shape[0])]).reshape(-1,1), new_tokenized["input_ids"].int()), dim=1)
+                attention_msk = torch.cat((torch.tensor([1 for _ in range(input_ids.shape[0])]).reshape(-1,1), new_tokenized["attention_mask"].int()), dim=1)
+                pre_embs = encode({"input_ids": input_ids_list.to(self.device), "attention_mask": attention_msk.to(self.device)}, model=self.sbert).cpu().numpy()            
             _, top_indices = self.index.search(pre_embs, self.retrieval_topk)
             new_pre_embs = self.knowledge_pre(torch.tensor(top_indices).to(self.device))
             new_post_embs = self.knowledge_post(torch.tensor(top_indices).to(self.device))
@@ -894,7 +911,6 @@ class RetrievalGeneratorRoberta(RetrievalGenerationModelRoberta):
 
             next_token_logits = outputs.logits[:, -1, :]            # pre-process distribution
             next_tokens_scores = logits_processor(input_ids, next_token_logits)
-            #print(next_tokens_scores)
             # Store scores, attentions and hidden_states when required
             if return_dict_in_generate:
                 if output_scores:

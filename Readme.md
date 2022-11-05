@@ -28,7 +28,15 @@ Suppose one did indexing by running `./encode.sh`, they can then train a [bert-b
 Training other model architectures is as trivial as changing the `model_path` argument, as long as the tokenizer during indexing and training is compatible.
 
 # Inference (Generation)
-After obtaining a desired model checkpoint, one can run SUREALM generation with retrieval by:
+After obtaining a desired model checkpoint, one can run SUREALM generation interactively with retrieval by:
 ```
 ./inference.sh
+```
+Alternatively, one can delete the `--interactive` argument and provide `--prompt_file`:
+```
+./inference_prompt.sh
+```
+If SUREALM has a different tokenizer than the desired sentence transformer, one needs to provide `--tokenizer_difference` argument:
+```
+./inference_gpt2.sh
 ```

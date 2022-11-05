@@ -1,6 +1,7 @@
 import os
 import pickle
 import argparse
+from typing import Dict
 import torch
 from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
@@ -12,7 +13,7 @@ from ..utils import AttentionMaskGenerator
 class FastRetrievalDataset(Dataset):
     def __init__(
         self, 
-        data: dict[str, str], 
+        data: Dict[str, str], 
         args: argparse.Namespace, 
         val: bool=False, 
         ):
@@ -60,7 +61,7 @@ class FastRetrievalDataset(Dataset):
 class FastCollator:
     def __init__(
         self, 
-        data: dict[str, str], 
+        data: Dict[str, str], 
         args: argparse.Namespace=None, 
         max_length: int=None, 
         max_context_length_per_k: int=None,
@@ -98,7 +99,7 @@ class FastCollator:
             post_list.append(emb[1])
             text_list.append(sent)
         if self.tokenizer.name_or_path == "gpt2":  # fixing the issue where GPT2Tokenizer does not add special tokens
-            inputs = self.tokenizer([tok.bos_token + x + tok_eos_token for x in text_list], return_tensors="pt", max_length=self.max_length, truncation=True, padding=True, add_special_tokens=False)
+            inputs = self.tokenizer([self.tokenizer.bos_token + x + self.tokenizer.eos_token for x in text_list], return_tensors="pt", max_length=self.max_length, truncation=True, padding=True, add_special_tokens=False)
         else:
             inputs = self.tokenizer(text_list, return_tensors="pt", max_length=self.max_length, truncation=True, padding=True)
         inputs["ngram"] = self.ngram
