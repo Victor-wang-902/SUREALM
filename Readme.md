@@ -36,7 +36,7 @@ Alternatively, one can delete the `--interactive` argument and provide `--prompt
 ```
 ./inference_prompt.sh
 ```
-If SUREALM has a different tokenizer than the desired sentence transformer, one needs to provide `--tokenizer_difference` argument:
+If SUREALM has a different tokenizer than the desired sentence transformer, one needs to provide `--tokenizer_difference` argument. For example, if one wants to train [GPT-2](https://huggingface.co/gpt2?text=My+name+is+Mariama%2C+my+favorite) with [`multi-qa-distilbert-cos-v1`](https://huggingface.co/sentence-transformers/multi-qa-distilbert-cos-v1):
 ```
 ./inference_gpt2.sh
 ```
