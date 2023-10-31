@@ -1,6 +1,6 @@
 #!/bin/bash
 
-model_checkpoint="model2/1"
+model_checkpoint="model_gpt2/final"
 model_type="gpt2"
 knowledge="fast_processed_data/dstc_1gram_top8_win10"
 sbert="sentence-transformers/multi-qa-distilbert-cos-v1"

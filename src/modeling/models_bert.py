@@ -547,8 +547,12 @@ class RetrievalModel(BertModel):
             if self.config.add_cross_attention:
                 hidden_keys = None
                 hidden_values = None
-                encoder_hidden_keys = torch.concat((embedding_output, ctx_key_embedding_output), dim=1)
-                encoder_hidden_values = torch.concat((embedding_output, ctx_value_embedding_output), dim=1)
+                if self.config.concat_self:
+                    encoder_hidden_keys = torch.concat((embedding_output, ctx_key_embedding_output), dim=1)
+                    encoder_hidden_values = torch.concat((embedding_output, ctx_value_embedding_output), dim=1)
+                else:
+                    encoder_hidden_keys = ctx_key_embedding_output
+                    encoder_hidden_values = ctx_value_embedding_output
             else:
                 hidden_keys = torch.concat((embedding_output, ctx_key_embedding_output), dim=1)
                 hidden_values = torch.concat((embedding_output, ctx_value_embedding_output), dim=1)

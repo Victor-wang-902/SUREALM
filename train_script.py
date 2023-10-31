@@ -162,7 +162,7 @@ def update_config_retrieval(args):
     args.config.add_cross_attention = not args.not_cross_attention
     args.config.is_retrieval = not args.not_retrieval
     args.config.is_decoder = True
-
+    args.config.concat_self = not args.not_concat_self
     
 def update_config_regular(args):
     '''
@@ -183,6 +183,7 @@ if __name__ == "__main__":
     parser.add_argument('--from_checkpoint', action="store_true", default=False, help="whether model_path is a checkpoint or not")
     parser.add_argument('--no_eval', action="store_true", default=False, help="skip evaluation")
     parser.add_argument('--eval_only', action="store_true", default=False, help="only do evaluation on the test data specified")
+    parser.add_argument('--not_concat_self', action="store_true", default=False)
     parser.add_argument('--freeze_backbone', action="store_true", default=False, help="whether to freeze backbone weights and only train LM head")
     parser.add_argument('--not_retrieval', action="store_true", default=False, help="disable retrieval. set to True if training a baseline")
     parser.add_argument('--not_cross_attention', action="store_true", default=False, help="disable cross attention block. set to True if training a baseline")

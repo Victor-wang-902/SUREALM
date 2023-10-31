@@ -7,7 +7,7 @@ from torch.utils.data import Dataset
 from torch.nn.utils.rnn import pad_sequence
 import transformers
 
-from ..utils import AttentionMaskGenerator
+from ..utils import AttentionMaskGenerator, NaiveAttentionMaskGenerator
 
 
 class FastRetrievalDataset(Dataset):
@@ -83,13 +83,18 @@ class FastCollator:
             max_length = args.max_length
             max_context_length_per_k = args.max_context_length_per_k
             tokenizer = args.tokenizer
+            concat_self = not args.not_concat_self
         self.topk = data["topk"]
         self.ngram = data["ngram"]
         self.max_length = max_length
         self.max_ctx_tok_len = max_context_length_per_k * self.topk
         self.tokenizer = tokenizer
-        self.mask_gen = AttentionMaskGenerator(self.topk)
-
+        self.concat_self = concat_self
+        if self.concat_self:
+            self.mask_gen = AttentionMaskGenerator(self.topk)
+        else:
+            self.mask_gen = NaiveAttentionMaskGenerator(self.topk)
+            
     def __call__(self, batch):
         text_list = []
         pre_list = []

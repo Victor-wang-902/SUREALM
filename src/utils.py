@@ -54,6 +54,61 @@ class AttentionMaskGenerator:
         mask = mask[:h,:w]
         return mask
 
+class NaiveAttentionMaskGenerator:
+    def __init__(self, topk=1, padding="right"):
+        
+        self.topk = topk
+
+    def attention_mask(self, inputs):
+        seq_len = inputs["input_ids"].shape[1]
+        ctx_len = inputs["encoder_indices"].shape[1] if "encoder_indices" in inputs.keys() else inputs["encoder_hidden_keys"].shape[1]
+        ngram = inputs["ngram"]
+        
+        lower = self.triu_with_stride(ctx_len, seq_len, ngram, self.topk, False)
+        mask = lower[None,:,:]
+        return mask
+
+    def __call__(self, inputs):
+        padding_mask = self.pad_mask(inputs).type(torch.int32)
+        #print("padding",padding_mask)
+        attn_mask = self.attention_mask(inputs).type(torch.int32).to(padding_mask.device)
+        mask_t = padding_mask & attn_mask
+        mask = mask_t.transpose(-1,-2)
+        return mask
+
+
+    @staticmethod
+    def pad_mask(inputs):
+        def convert_pad_mask(original, text_len):
+            return original.unsqueeze(-1).repeat(1, 1, text_len)
+        if "encoder_indices" in inputs.keys():
+            indices = inputs["encoder_indices"].detach().clone()
+            indices[indices != 0] = 1
+        elif "encoder_hidden_keys" in inputs.keys() and "encoder_hidden_values" in inputs.keys():
+            indices = inputs["encoder_hidden_keys"].detach().clone()
+            indices = indices[:,:,0]
+            indices[indices != 0] = 1
+            indices = indices.type(torch.int32)
+        else:
+            raise Exception("something bad happened")
+        text_len = inputs["attention_mask"].shape[1]
+        lower = convert_pad_mask(indices, text_len)
+        return lower
+
+
+        
+
+
+    @staticmethod
+    def triu_with_stride(h, w, ngram=1, topk=1, is_upper=True):
+        diagonal = 1 if not is_upper else 0
+        mask = torch.ones(w,w)
+        mask = torch.triu(mask, diagonal=diagonal)
+        mask = torch.repeat_interleave(mask, topk,dim=0)
+        mask = torch.repeat_interleave(mask, ngram, dim=1)
+        mask = mask[:h,:w]
+        return mask    
+
 
 def mean_pooling_norm(embeddings, attention_mask):  
     '''
