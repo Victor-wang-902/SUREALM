@@ -1,0 +1,3085 @@
+INFO:root:Output: multiqal6_minilml6_not_concat
+INFO:root:Steps per epochs:1983
+INFO:root:Total steps:99150
+/scratch/zw2374/public/faiss_db/models.py:436: UserWarning: Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.
+  warnings.warn("Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.")
+Some weights of RetrievalGenerationModel were not initialized from the model checkpoint at nreimers/MiniLM-L6-H384-uncased and are newly initialized: ['encoder.layer.5.crossattention.output.LayerNorm.bias', 'encoder.layer.5.crossattention.output.LayerNorm.weight', 'encoder.layer.2.crossattention.self.query.weight', 'encoder.layer.0.crossattention.output.dense.weight', 'encoder.layer.4.crossattention.self.key.weight', 'encoder.layer.0.crossattention.output.LayerNorm.bias', 'encoder.layer.5.crossattention.self.key.weight', 'encoder.layer.1.crossattention.output.dense.bias', 'encoder.layer.0.crossattention.self.query.bias', 'encoder.layer.2.crossattention.self.key.weight', 'encoder.layer.1.crossattention.self.key.weight', 'encoder.layer.5.crossattention.output.dense.weight', 'encoder.layer.0.crossattention.self.value.bias', 'encoder.layer.1.crossattention.output.LayerNorm.bias', 'encoder.layer.0.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.self.query.weight', 'encoder.layer.1.crossattention.self.query.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.bias', 'encoder.layer.3.crossattention.self.value.bias', 'encoder.layer.4.crossattention.self.query.bias', 'cls.predictions.decoder.weight', 'encoder.layer.4.crossattention.self.value.bias', 'encoder.layer.4.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.self.key.bias', 'encoder.layer.0.crossattention.self.key.weight', 'encoder.layer.3.crossattention.self.query.weight', 'encoder.layer.2.crossattention.output.LayerNorm.weight', 'encoder.layer.2.crossattention.output.dense.bias', 'cls.predictions.transform.LayerNorm.weight', 'encoder.layer.4.crossattention.output.LayerNorm.weight', 'encoder.layer.0.crossattention.self.value.weight', 'encoder.layer.1.crossattention.self.value.weight', 'encoder.layer.2.crossattention.self.query.bias', 'encoder.layer.5.crossattention.self.value.bias', 'encoder.layer.0.crossattention.self.query.weight', 'encoder.layer.3.crossattention.self.value.weight', 'encoder.layer.5.crossattention.self.query.weight', 'encoder.layer.3.crossattention.output.LayerNorm.weight', 'encoder.layer.3.crossattention.output.dense.bias', 'encoder.layer.2.crossattention.self.value.bias', 'encoder.layer.5.crossattention.self.query.bias', 'encoder.layer.5.crossattention.self.key.bias', 'encoder.layer.4.crossattention.output.LayerNorm.bias', 'encoder.layer.0.crossattention.self.key.bias', 'encoder.layer.2.crossattention.output.LayerNorm.bias', 'encoder.layer.4.crossattention.self.value.weight', 'encoder.layer.5.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.output.LayerNorm.weight', 'encoder.layer.1.crossattention.self.value.bias', 'encoder.layer.3.crossattention.output.LayerNorm.bias', 'encoder.layer.4.crossattention.self.query.weight', 'encoder.layer.4.crossattention.self.key.bias', 'encoder.layer.2.crossattention.output.dense.weight', 'encoder.layer.4.crossattention.output.dense.weight', 'encoder.layer.0.crossattention.output.LayerNorm.weight', 'encoder.layer.5.crossattention.self.value.weight', 'cls.predictions.transform.dense.weight', 'encoder.layer.3.crossattention.self.key.weight', 'encoder.layer.1.crossattention.output.dense.weight', 'encoder.layer.3.crossattention.self.key.bias', 'cls.predictions.transform.dense.bias', 'encoder.layer.3.crossattention.output.dense.weight', 'encoder.layer.2.crossattention.self.value.weight', 'encoder.layer.3.crossattention.self.query.bias', 'encoder.layer.2.crossattention.self.key.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/scratch/zw2374/public/faiss_db/models.py:450: UserWarning: Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.
+  warnings.warn("Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.")
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:started training
+  0%|          | 0/50 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 11894.42297979798
+INFO:root:current train perplexity12709.3623046875
+INFO:root:current mean train loss 10128.577069919913
+INFO:root:current train perplexity2962.3232421875
+INFO:root:current mean train loss 8841.611479998432
+INFO:root:current train perplexity1065.3319091796875
+INFO:root:current mean train loss 7962.877530740915
+INFO:root:current train perplexity532.2122802734375
+INFO:root:current mean train loss 7322.198531829284
+INFO:root:current train perplexity321.7378234863281
+INFO:root:current mean train loss 6833.362801120357
+INFO:root:current train perplexity218.7735595703125
+INFO:root:current mean train loss 6452.12674565786
+INFO:root:current train perplexity161.46372985839844
+INFO:root:current mean train loss 6147.44553708493
+INFO:root:current train perplexity126.57350158691406
+INFO:root:current mean train loss 5886.615133622862
+INFO:root:current train perplexity103.54798889160156
+INFO:root:current mean train loss 5675.989462851523
+INFO:root:current train perplexity87.25383758544922
+INFO:root:current mean train loss 5487.290354956921
+INFO:root:current train perplexity75.36168670654297
+INFO:root:current mean train loss 5326.437127985887
+INFO:root:current train perplexity66.42278289794922
+INFO:root:current mean train loss 5187.68425907549
+INFO:root:current train perplexity59.37760543823242
+INFO:root:current mean train loss 5058.333231709871
+INFO:root:current train perplexity53.75552749633789
+INFO:root:current mean train loss 4944.898350039349
+INFO:root:current train perplexity49.22502517700195
+INFO:root:current mean train loss 4842.835075755355
+INFO:root:current train perplexity45.44324493408203
+INFO:root:current mean train loss 4751.230135661142
+INFO:root:current train perplexity42.246829986572266
+INFO:root:current mean train loss 4666.212303140416
+INFO:root:current train perplexity39.55219268798828
+INFO:root:current mean train loss 4586.907618036014
+INFO:root:current train perplexity37.211219787597656
+
+100%|██████████| 1/1 [05:37<00:00, 337.96s/it][A100%|██████████| 1/1 [05:38<00:00, 338.12s/it]
+INFO:root:final mean train loss: 4524.988466910142
+INFO:root:final train perplexity: 35.46967697143555
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.31s/it][A100%|██████████| 1/1 [00:25<00:00, 25.31s/it]
+INFO:root:eval mean loss: 2936.0669828374334
+INFO:root:eval perplexity: 10.74583911895752
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.26s/it][A100%|██████████| 1/1 [00:25<00:00, 25.26s/it]
+INFO:root:eval mean loss: 3219.7890417220747
+INFO:root:eval perplexity: 13.918681144714355
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/1
+  2%|▏         | 1/50 [06:29<5:18:17, 389.74s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 3124.7604370117188
+INFO:root:current train perplexity11.841751098632812
+INFO:root:current mean train loss 3139.236166066137
+INFO:root:current train perplexity11.572742462158203
+INFO:root:current mean train loss 3121.8180067274307
+INFO:root:current train perplexity11.481012344360352
+INFO:root:current mean train loss 3092.309107526948
+INFO:root:current train perplexity11.384428024291992
+INFO:root:current mean train loss 3081.116274320162
+INFO:root:current train perplexity11.2704439163208
+INFO:root:current mean train loss 3060.286593178446
+INFO:root:current train perplexity11.138818740844727
+INFO:root:current mean train loss 3045.130140032087
+INFO:root:current train perplexity11.020145416259766
+INFO:root:current mean train loss 3031.8914440304206
+INFO:root:current train perplexity10.925220489501953
+INFO:root:current mean train loss 3018.175907509
+INFO:root:current train perplexity10.823052406311035
+INFO:root:current mean train loss 3007.8476938305985
+INFO:root:current train perplexity10.714794158935547
+INFO:root:current mean train loss 2997.467839278574
+INFO:root:current train perplexity10.61699104309082
+INFO:root:current mean train loss 2986.3929539615538
+INFO:root:current train perplexity10.517070770263672
+INFO:root:current mean train loss 2975.0220073900723
+INFO:root:current train perplexity10.428960800170898
+INFO:root:current mean train loss 2966.46784282093
+INFO:root:current train perplexity10.35152530670166
+INFO:root:current mean train loss 2957.925511764268
+INFO:root:current train perplexity10.282995223999023
+INFO:root:current mean train loss 2949.4894285176865
+INFO:root:current train perplexity10.214380264282227
+INFO:root:current mean train loss 2938.4385078354635
+INFO:root:current train perplexity10.139992713928223
+INFO:root:current mean train loss 2929.749626675408
+INFO:root:current train perplexity10.071030616760254
+INFO:root:current mean train loss 2919.7535690778154
+INFO:root:current train perplexity10.001946449279785
+INFO:root:current mean train loss 2913.426898104164
+INFO:root:current train perplexity9.945584297180176
+
+100%|██████████| 1/1 [05:42<00:00, 342.48s/it][A100%|██████████| 1/1 [05:42<00:00, 342.48s/it]
+INFO:root:final mean train loss: 2907.5721389993655
+INFO:root:final train perplexity: 9.905464172363281
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.01s/it][A100%|██████████| 1/1 [00:27<00:00, 27.01s/it]
+INFO:root:eval mean loss: 2576.6634469539563
+INFO:root:eval perplexity: 8.035377502441406
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.53s/it][A100%|██████████| 1/1 [00:25<00:00, 25.53s/it]
+INFO:root:eval mean loss: 2904.527232501524
+INFO:root:eval perplexity: 10.755340576171875
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/2
+  4%|▍         | 2/50 [13:08<5:16:01, 395.03s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2755.419714725379
+INFO:root:current train perplexity8.815653800964355
+INFO:root:current mean train loss 2712.6780354205825
+INFO:root:current train perplexity8.577003479003906
+INFO:root:current mean train loss 2697.1136259807536
+INFO:root:current train perplexity8.51884937286377
+INFO:root:current mean train loss 2700.167618301896
+INFO:root:current train perplexity8.505946159362793
+INFO:root:current mean train loss 2700.3372957789043
+INFO:root:current train perplexity8.466791152954102
+INFO:root:current mean train loss 2696.4428165858058
+INFO:root:current train perplexity8.435279846191406
+INFO:root:current mean train loss 2694.6067191511156
+INFO:root:current train perplexity8.411567687988281
+INFO:root:current mean train loss 2693.494915013749
+INFO:root:current train perplexity8.383658409118652
+INFO:root:current mean train loss 2688.5854418916006
+INFO:root:current train perplexity8.350793838500977
+INFO:root:current mean train loss 2686.682819983839
+INFO:root:current train perplexity8.324882507324219
+INFO:root:current mean train loss 2684.9283030123124
+INFO:root:current train perplexity8.30240249633789
+INFO:root:current mean train loss 2679.0433167527444
+INFO:root:current train perplexity8.265264511108398
+INFO:root:current mean train loss 2672.8657883940336
+INFO:root:current train perplexity8.22835922241211
+INFO:root:current mean train loss 2668.480372961893
+INFO:root:current train perplexity8.196610450744629
+INFO:root:current mean train loss 2661.526700261416
+INFO:root:current train perplexity8.16482162475586
+INFO:root:current mean train loss 2659.4317551306162
+INFO:root:current train perplexity8.147530555725098
+INFO:root:current mean train loss 2656.3025883092373
+INFO:root:current train perplexity8.121603965759277
+INFO:root:current mean train loss 2653.0549464327573
+INFO:root:current train perplexity8.095671653747559
+INFO:root:current mean train loss 2647.8249690195803
+INFO:root:current train perplexity8.062202453613281
+INFO:root:current mean train loss 2644.027170906521
+INFO:root:current train perplexity8.04023551940918
+
+100%|██████████| 1/1 [05:30<00:00, 330.43s/it][A100%|██████████| 1/1 [05:30<00:00, 330.43s/it]
+INFO:root:final mean train loss: 2640.3529647388546
+INFO:root:final train perplexity: 8.02323055267334
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.65s/it][A100%|██████████| 1/1 [00:27<00:00, 27.66s/it]
+INFO:root:eval mean loss: 2410.3860261524824
+INFO:root:eval perplexity: 7.024322032928467
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.98s/it][A100%|██████████| 1/1 [00:25<00:00, 25.98s/it]
+INFO:root:eval mean loss: 2764.268259467808
+INFO:root:eval perplexity: 9.589747428894043
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/3
+  6%|▌         | 3/50 [19:33<5:05:58, 390.60s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2584.5705810546874
+INFO:root:current train perplexity7.488320350646973
+INFO:root:current mean train loss 2547.383914388021
+INFO:root:current train perplexity7.414186954498291
+INFO:root:current mean train loss 2544.5577421875
+INFO:root:current train perplexity7.427948951721191
+INFO:root:current mean train loss 2541.5063483537947
+INFO:root:current train perplexity7.4102373123168945
+INFO:root:current mean train loss 2539.89635687934
+INFO:root:current train perplexity7.410912036895752
+INFO:root:current mean train loss 2533.592157759233
+INFO:root:current train perplexity7.3778076171875
+INFO:root:current mean train loss 2531.7168194110577
+INFO:root:current train perplexity7.357668876647949
+INFO:root:current mean train loss 2528.463755533854
+INFO:root:current train perplexity7.333874702453613
+INFO:root:current mean train loss 2527.6867885454963
+INFO:root:current train perplexity7.317208290100098
+INFO:root:current mean train loss 2523.3285437654195
+INFO:root:current train perplexity7.290771484375
+INFO:root:current mean train loss 2519.263880324591
+INFO:root:current train perplexity7.276264190673828
+INFO:root:current mean train loss 2518.079533797554
+INFO:root:current train perplexity7.2645769119262695
+INFO:root:current mean train loss 2514.575992578125
+INFO:root:current train perplexity7.245218276977539
+INFO:root:current mean train loss 2511.0844363064234
+INFO:root:current train perplexity7.2289910316467285
+INFO:root:current mean train loss 2508.819340146821
+INFO:root:current train perplexity7.217996120452881
+INFO:root:current mean train loss 2505.630423544607
+INFO:root:current train perplexity7.208704471588135
+INFO:root:current mean train loss 2501.047888627486
+INFO:root:current train perplexity7.190980434417725
+INFO:root:current mean train loss 2498.0105174386163
+INFO:root:current train perplexity7.170546531677246
+INFO:root:current mean train loss 2495.387735496727
+INFO:root:current train perplexity7.154381275177002
+INFO:root:current mean train loss 2492.4828131260015
+INFO:root:current train perplexity7.135992050170898
+
+100%|██████████| 1/1 [05:24<00:00, 324.40s/it][A100%|██████████| 1/1 [05:24<00:00, 324.40s/it]
+INFO:root:final mean train loss: 2490.9449981212374
+INFO:root:final train perplexity: 7.131411075592041
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.12s/it][A100%|██████████| 1/1 [00:27<00:00, 27.12s/it]
+INFO:root:eval mean loss: 2308.8813809875055
+INFO:root:eval perplexity: 6.4707207679748535
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.04s/it][A100%|██████████| 1/1 [00:26<00:00, 26.04s/it]
+INFO:root:eval mean loss: 2679.0672161562225
+INFO:root:eval perplexity: 8.944284439086914
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/4
+  8%|▊         | 4/50 [25:52<4:55:52, 385.92s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2402.9511263263757
+INFO:root:current train perplexity6.721261978149414
+INFO:root:current mean train loss 2426.0524047120603
+INFO:root:current train perplexity6.7539896965026855
+INFO:root:current mean train loss 2411.0414065243153
+INFO:root:current train perplexity6.7187066078186035
+INFO:root:current mean train loss 2410.591200493337
+INFO:root:current train perplexity6.726212501525879
+INFO:root:current mean train loss 2411.427814099722
+INFO:root:current train perplexity6.720856666564941
+INFO:root:current mean train loss 2412.5577276320682
+INFO:root:current train perplexity6.718362808227539
+INFO:root:current mean train loss 2412.3996746743815
+INFO:root:current train perplexity6.7086262702941895
+INFO:root:current mean train loss 2413.2249308639584
+INFO:root:current train perplexity6.7079386711120605
+INFO:root:current mean train loss 2413.717033131037
+INFO:root:current train perplexity6.701724529266357
+INFO:root:current mean train loss 2408.335349618464
+INFO:root:current train perplexity6.679807186126709
+INFO:root:current mean train loss 2405.439913834605
+INFO:root:current train perplexity6.670045375823975
+INFO:root:current mean train loss 2404.557935700012
+INFO:root:current train perplexity6.664989471435547
+INFO:root:current mean train loss 2403.1496767015465
+INFO:root:current train perplexity6.658240795135498
+INFO:root:current mean train loss 2404.6555186497008
+INFO:root:current train perplexity6.6569504737854
+INFO:root:current mean train loss 2403.408264701027
+INFO:root:current train perplexity6.650810718536377
+INFO:root:current mean train loss 2399.899239720854
+INFO:root:current train perplexity6.635971546173096
+INFO:root:current mean train loss 2397.962195475944
+INFO:root:current train perplexity6.62661075592041
+INFO:root:current mean train loss 2395.778475819163
+INFO:root:current train perplexity6.614968299865723
+INFO:root:current mean train loss 2395.137924349621
+INFO:root:current train perplexity6.613023281097412
+INFO:root:current mean train loss 2394.810947094342
+INFO:root:current train perplexity6.608396053314209
+
+100%|██████████| 1/1 [05:26<00:00, 326.04s/it][A100%|██████████| 1/1 [05:26<00:00, 326.05s/it]
+INFO:root:final mean train loss: 2394.704610835165
+INFO:root:final train perplexity: 6.610162258148193
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.46s/it][A100%|██████████| 1/1 [00:27<00:00, 27.46s/it]
+INFO:root:eval mean loss: 2232.668234101424
+INFO:root:eval perplexity: 6.083931922912598
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.32s/it][A100%|██████████| 1/1 [00:26<00:00, 26.32s/it]
+INFO:root:eval mean loss: 2611.3417973078735
+INFO:root:eval perplexity: 8.462352752685547
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/5
+ 10%|█         | 5/50 [32:13<4:48:07, 384.16s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2384.840584891183
+INFO:root:current train perplexity6.4907355308532715
+INFO:root:current mean train loss 2363.9033667522926
+INFO:root:current train perplexity6.411270618438721
+INFO:root:current mean train loss 2356.3560674962864
+INFO:root:current train perplexity6.401885986328125
+INFO:root:current mean train loss 2360.891276995341
+INFO:root:current train perplexity6.411157608032227
+INFO:root:current mean train loss 2358.4354396851595
+INFO:root:current train perplexity6.396607398986816
+INFO:root:current mean train loss 2355.627110520454
+INFO:root:current train perplexity6.39803409576416
+INFO:root:current mean train loss 2353.8730738232707
+INFO:root:current train perplexity6.392614841461182
+INFO:root:current mean train loss 2353.0456754723373
+INFO:root:current train perplexity6.393842697143555
+INFO:root:current mean train loss 2352.9842828949113
+INFO:root:current train perplexity6.396274089813232
+INFO:root:current mean train loss 2353.8118421352974
+INFO:root:current train perplexity6.392856121063232
+INFO:root:current mean train loss 2352.5593932880247
+INFO:root:current train perplexity6.386942386627197
+INFO:root:current mean train loss 2351.8723318770126
+INFO:root:current train perplexity6.389014720916748
+INFO:root:current mean train loss 2349.869882648979
+INFO:root:current train perplexity6.379995822906494
+INFO:root:current mean train loss 2348.3368891897917
+INFO:root:current train perplexity6.372354507446289
+INFO:root:current mean train loss 2347.4551571745756
+INFO:root:current train perplexity6.3706583976745605
+INFO:root:current mean train loss 2345.8041759452435
+INFO:root:current train perplexity6.3631815910339355
+INFO:root:current mean train loss 2345.7764031417014
+INFO:root:current train perplexity6.362308979034424
+INFO:root:current mean train loss 2345.4043397090895
+INFO:root:current train perplexity6.358224868774414
+INFO:root:current mean train loss 2342.5543358675236
+INFO:root:current train perplexity6.345965385437012
+
+100%|██████████| 1/1 [05:25<00:00, 325.86s/it][A100%|██████████| 1/1 [05:25<00:00, 325.86s/it]
+INFO:root:final mean train loss: 2343.3622101337933
+INFO:root:final train perplexity: 6.3478522300720215
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.41s/it][A100%|██████████| 1/1 [00:27<00:00, 27.41s/it]
+INFO:root:eval mean loss: 2184.819736778313
+INFO:root:eval perplexity: 5.852997779846191
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.43s/it][A100%|██████████| 1/1 [00:26<00:00, 26.43s/it]
+INFO:root:eval mean loss: 2572.7269932090812
+INFO:root:eval perplexity: 8.199283599853516
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/6
+ 12%|█▏        | 6/50 [38:34<4:40:54, 383.06s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2368.033935546875
+INFO:root:current train perplexity6.648738861083984
+INFO:root:current mean train loss 2321.1397934715346
+INFO:root:current train perplexity6.181423664093018
+INFO:root:current mean train loss 2307.2800475163244
+INFO:root:current train perplexity6.14705753326416
+INFO:root:current mean train loss 2295.1030188272166
+INFO:root:current train perplexity6.122842311859131
+INFO:root:current mean train loss 2302.8682453412366
+INFO:root:current train perplexity6.157088756561279
+INFO:root:current mean train loss 2298.741770365519
+INFO:root:current train perplexity6.138367176055908
+INFO:root:current mean train loss 2302.2376280418052
+INFO:root:current train perplexity6.141452789306641
+INFO:root:current mean train loss 2304.2028707594063
+INFO:root:current train perplexity6.139196872711182
+INFO:root:current mean train loss 2304.4356732124397
+INFO:root:current train perplexity6.140275001525879
+INFO:root:current mean train loss 2305.9602884002584
+INFO:root:current train perplexity6.1470794677734375
+INFO:root:current mean train loss 2302.5473801101243
+INFO:root:current train perplexity6.1355414390563965
+INFO:root:current mean train loss 2300.4214560138867
+INFO:root:current train perplexity6.128047943115234
+INFO:root:current mean train loss 2299.299425669852
+INFO:root:current train perplexity6.122039318084717
+INFO:root:current mean train loss 2296.277660138235
+INFO:root:current train perplexity6.120938301086426
+INFO:root:current mean train loss 2296.2979038410062
+INFO:root:current train perplexity6.116744041442871
+INFO:root:current mean train loss 2296.0823888403825
+INFO:root:current train perplexity6.111128330230713
+INFO:root:current mean train loss 2295.2036759557013
+INFO:root:current train perplexity6.110226154327393
+INFO:root:current mean train loss 2294.5281452087006
+INFO:root:current train perplexity6.10410213470459
+INFO:root:current mean train loss 2291.7177684218404
+INFO:root:current train perplexity6.093393802642822
+INFO:root:current mean train loss 2291.0984091560567
+INFO:root:current train perplexity6.089619159698486
+
+100%|██████████| 1/1 [05:32<00:00, 332.69s/it][A100%|██████████| 1/1 [05:32<00:00, 332.69s/it]
+INFO:root:final mean train loss: 2290.9021125366394
+INFO:root:final train perplexity: 6.090579509735107
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.60s/it][A100%|██████████| 1/1 [00:26<00:00, 26.60s/it]
+INFO:root:eval mean loss: 2145.2832087523548
+INFO:root:eval perplexity: 5.668809413909912
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.76s/it][A100%|██████████| 1/1 [00:25<00:00, 25.76s/it]
+INFO:root:eval mean loss: 2538.89876388658
+INFO:root:eval perplexity: 7.975554943084717
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/7
+ 14%|█▍        | 7/50 [45:00<4:35:16, 384.11s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2275.613233778212
+INFO:root:current train perplexity5.9463348388671875
+INFO:root:current mean train loss 2250.3891973980403
+INFO:root:current train perplexity5.890103816986084
+INFO:root:current mean train loss 2250.263523486776
+INFO:root:current train perplexity5.917173385620117
+INFO:root:current mean train loss 2248.885543727275
+INFO:root:current train perplexity5.914012432098389
+INFO:root:current mean train loss 2250.0876330508
+INFO:root:current train perplexity5.919077396392822
+INFO:root:current mean train loss 2247.649546501719
+INFO:root:current train perplexity5.908592700958252
+INFO:root:current mean train loss 2246.4749058596913
+INFO:root:current train perplexity5.908473014831543
+INFO:root:current mean train loss 2247.9478885576254
+INFO:root:current train perplexity5.910190105438232
+INFO:root:current mean train loss 2249.6757902038125
+INFO:root:current train perplexity5.915860652923584
+INFO:root:current mean train loss 2247.122834515208
+INFO:root:current train perplexity5.899398326873779
+INFO:root:current mean train loss 2247.5457918358225
+INFO:root:current train perplexity5.896303176879883
+INFO:root:current mean train loss 2245.6330387340677
+INFO:root:current train perplexity5.892195701599121
+INFO:root:current mean train loss 2246.5490891029094
+INFO:root:current train perplexity5.888612270355225
+INFO:root:current mean train loss 2244.5850414224024
+INFO:root:current train perplexity5.886617660522461
+INFO:root:current mean train loss 2245.028680669572
+INFO:root:current train perplexity5.8810343742370605
+INFO:root:current mean train loss 2244.2143342391305
+INFO:root:current train perplexity5.8787641525268555
+INFO:root:current mean train loss 2245.89460601618
+INFO:root:current train perplexity5.880201816558838
+INFO:root:current mean train loss 2245.6364649460675
+INFO:root:current train perplexity5.878629684448242
+INFO:root:current mean train loss 2244.466503516807
+INFO:root:current train perplexity5.8727126121521
+INFO:root:current mean train loss 2243.874938010175
+INFO:root:current train perplexity5.868705749511719
+
+100%|██████████| 1/1 [05:36<00:00, 336.54s/it][A100%|██████████| 1/1 [05:36<00:00, 336.54s/it]
+INFO:root:final mean train loss: 2243.933524589135
+INFO:root:final train perplexity: 5.869097709655762
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.51s/it][A100%|██████████| 1/1 [00:27<00:00, 27.51s/it]
+INFO:root:eval mean loss: 2116.2750322057846
+INFO:root:eval perplexity: 5.5373663902282715
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.74s/it][A100%|██████████| 1/1 [00:26<00:00, 26.74s/it]
+INFO:root:eval mean loss: 2512.687983086769
+INFO:root:eval perplexity: 7.806410312652588
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/8
+ 16%|█▌        | 8/50 [51:32<4:30:37, 386.62s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2197.6775111607144
+INFO:root:current train perplexity5.665059566497803
+INFO:root:current mean train loss 2203.282947229456
+INFO:root:current train perplexity5.666633605957031
+INFO:root:current mean train loss 2210.795541576629
+INFO:root:current train perplexity5.693841934204102
+INFO:root:current mean train loss 2216.35326966243
+INFO:root:current train perplexity5.708954334259033
+INFO:root:current mean train loss 2216.476030161189
+INFO:root:current train perplexity5.716897964477539
+INFO:root:current mean train loss 2217.097886244159
+INFO:root:current train perplexity5.7145867347717285
+INFO:root:current mean train loss 2218.796919022207
+INFO:root:current train perplexity5.730040073394775
+INFO:root:current mean train loss 2217.8564630832802
+INFO:root:current train perplexity5.724862098693848
+INFO:root:current mean train loss 2218.469741035507
+INFO:root:current train perplexity5.727576732635498
+INFO:root:current mean train loss 2216.2380905069767
+INFO:root:current train perplexity5.716949462890625
+INFO:root:current mean train loss 2211.8717852458863
+INFO:root:current train perplexity5.7043256759643555
+INFO:root:current mean train loss 2211.3728822145167
+INFO:root:current train perplexity5.7085418701171875
+INFO:root:current mean train loss 2210.107115661374
+INFO:root:current train perplexity5.707525253295898
+INFO:root:current mean train loss 2210.547040046378
+INFO:root:current train perplexity5.7112579345703125
+INFO:root:current mean train loss 2208.8573843607087
+INFO:root:current train perplexity5.70462703704834
+INFO:root:current mean train loss 2209.093090740788
+INFO:root:current train perplexity5.706283092498779
+INFO:root:current mean train loss 2208.85904477554
+INFO:root:current train perplexity5.704315185546875
+INFO:root:current mean train loss 2207.322900390625
+INFO:root:current train perplexity5.701201915740967
+INFO:root:current mean train loss 2206.168733701784
+INFO:root:current train perplexity5.697562217712402
+INFO:root:current mean train loss 2206.5041552482035
+INFO:root:current train perplexity5.696497917175293
+
+100%|██████████| 1/1 [05:23<00:00, 323.86s/it][A100%|██████████| 1/1 [05:23<00:00, 323.86s/it]
+INFO:root:final mean train loss: 2205.844066440969
+INFO:root:final train perplexity: 5.695415019989014
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.96s/it][A100%|██████████| 1/1 [00:26<00:00, 26.96s/it]
+INFO:root:eval mean loss: 2089.46513247659
+INFO:root:eval perplexity: 5.418595314025879
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.87s/it][A100%|██████████| 1/1 [00:25<00:00, 25.87s/it]
+INFO:root:eval mean loss: 2491.845825628186
+INFO:root:eval perplexity: 7.67447566986084
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/9
+ 18%|█▊        | 9/50 [57:50<4:22:18, 383.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2159.3637084960938
+INFO:root:current train perplexity5.545553207397461
+INFO:root:current mean train loss 2183.639030054996
+INFO:root:current train perplexity5.58735466003418
+INFO:root:current mean train loss 2180.385049971323
+INFO:root:current train perplexity5.584761619567871
+INFO:root:current mean train loss 2177.847743988037
+INFO:root:current train perplexity5.576460361480713
+INFO:root:current mean train loss 2174.687252078436
+INFO:root:current train perplexity5.580204486846924
+INFO:root:current mean train loss 2176.93425938703
+INFO:root:current train perplexity5.585724353790283
+INFO:root:current mean train loss 2174.530587787277
+INFO:root:current train perplexity5.5799970626831055
+INFO:root:current mean train loss 2173.4422367177112
+INFO:root:current train perplexity5.572720527648926
+INFO:root:current mean train loss 2175.2102967741343
+INFO:root:current train perplexity5.570099830627441
+INFO:root:current mean train loss 2177.005274924911
+INFO:root:current train perplexity5.5709967613220215
+INFO:root:current mean train loss 2175.933386741029
+INFO:root:current train perplexity5.568515777587891
+INFO:root:current mean train loss 2172.004393259684
+INFO:root:current train perplexity5.562089443206787
+INFO:root:current mean train loss 2172.8100785813012
+INFO:root:current train perplexity5.56345272064209
+INFO:root:current mean train loss 2171.9605986465363
+INFO:root:current train perplexity5.562227249145508
+INFO:root:current mean train loss 2172.3929422341757
+INFO:root:current train perplexity5.558631896972656
+INFO:root:current mean train loss 2172.3483172544497
+INFO:root:current train perplexity5.551499366760254
+INFO:root:current mean train loss 2172.9513155957975
+INFO:root:current train perplexity5.553424835205078
+INFO:root:current mean train loss 2172.8352927290684
+INFO:root:current train perplexity5.554890155792236
+INFO:root:current mean train loss 2173.4202020698694
+INFO:root:current train perplexity5.555731773376465
+INFO:root:current mean train loss 2174.643889380283
+INFO:root:current train perplexity5.555874824523926
+
+100%|██████████| 1/1 [05:29<00:00, 329.83s/it][A100%|██████████| 1/1 [05:29<00:00, 329.83s/it]
+INFO:root:final mean train loss: 2174.7773910268534
+INFO:root:final train perplexity: 5.557566165924072
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.50s/it][A100%|██████████| 1/1 [00:26<00:00, 26.50s/it]
+INFO:root:eval mean loss: 2076.751087810976
+INFO:root:eval perplexity: 5.363165378570557
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.28s/it][A100%|██████████| 1/1 [00:26<00:00, 26.28s/it]
+INFO:root:eval mean loss: 2481.6823163404533
+INFO:root:eval perplexity: 7.610949993133545
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/10
+ 20%|██        | 10/50 [1:04:14<4:15:54, 383.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2167.8136941661005
+INFO:root:current train perplexity5.460628986358643
+INFO:root:current mean train loss 2152.6340967663646
+INFO:root:current train perplexity5.428961753845215
+INFO:root:current mean train loss 2149.343199095318
+INFO:root:current train perplexity5.415585517883301
+INFO:root:current mean train loss 2150.9528537326387
+INFO:root:current train perplexity5.437348365783691
+INFO:root:current mean train loss 2150.4794888038878
+INFO:root:current train perplexity5.440005302429199
+INFO:root:current mean train loss 2148.408961720123
+INFO:root:current train perplexity5.442696571350098
+INFO:root:current mean train loss 2149.4623277148144
+INFO:root:current train perplexity5.439711093902588
+INFO:root:current mean train loss 2149.071033492665
+INFO:root:current train perplexity5.435038089752197
+INFO:root:current mean train loss 2150.753079992718
+INFO:root:current train perplexity5.4413628578186035
+INFO:root:current mean train loss 2150.008220660797
+INFO:root:current train perplexity5.440589904785156
+INFO:root:current mean train loss 2148.999074709315
+INFO:root:current train perplexity5.439303398132324
+INFO:root:current mean train loss 2149.757841633975
+INFO:root:current train perplexity5.438498497009277
+INFO:root:current mean train loss 2149.328130098287
+INFO:root:current train perplexity5.439335823059082
+INFO:root:current mean train loss 2149.4981448700864
+INFO:root:current train perplexity5.441505432128906
+INFO:root:current mean train loss 2149.9542911080293
+INFO:root:current train perplexity5.4416890144348145
+INFO:root:current mean train loss 2148.7006783032584
+INFO:root:current train perplexity5.44009256362915
+INFO:root:current mean train loss 2148.541399608907
+INFO:root:current train perplexity5.438096523284912
+INFO:root:current mean train loss 2148.169803530972
+INFO:root:current train perplexity5.439434051513672
+INFO:root:current mean train loss 2147.5857368579454
+INFO:root:current train perplexity5.437221050262451
+INFO:root:current mean train loss 2147.5976812964227
+INFO:root:current train perplexity5.4362874031066895
+
+100%|██████████| 1/1 [05:36<00:00, 336.66s/it][A100%|██████████| 1/1 [05:36<00:00, 336.66s/it]
+INFO:root:final mean train loss: 2147.0509527517097
+INFO:root:final train perplexity: 5.437359809875488
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.53s/it][A100%|██████████| 1/1 [00:27<00:00, 27.53s/it]
+INFO:root:eval mean loss: 2047.7014523769947
+INFO:root:eval perplexity: 5.238635063171387
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.69s/it][A100%|██████████| 1/1 [00:25<00:00, 25.69s/it]
+INFO:root:eval mean loss: 2453.909880942487
+INFO:root:eval perplexity: 7.440031051635742
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/11
+ 22%|██▏       | 11/50 [1:10:45<4:10:56, 386.07s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2126.857576592024
+INFO:root:current train perplexity5.379660129547119
+INFO:root:current mean train loss 2128.1886721375167
+INFO:root:current train perplexity5.384484767913818
+INFO:root:current mean train loss 2128.580510492925
+INFO:root:current train perplexity5.362137317657471
+INFO:root:current mean train loss 2126.891022202882
+INFO:root:current train perplexity5.366414546966553
+INFO:root:current mean train loss 2129.228715056745
+INFO:root:current train perplexity5.373066425323486
+INFO:root:current mean train loss 2125.8268859654972
+INFO:root:current train perplexity5.358754634857178
+INFO:root:current mean train loss 2123.060328892299
+INFO:root:current train perplexity5.3484206199646
+INFO:root:current mean train loss 2121.6857524998013
+INFO:root:current train perplexity5.345666408538818
+INFO:root:current mean train loss 2124.0150919412654
+INFO:root:current train perplexity5.344419479370117
+INFO:root:current mean train loss 2121.959236934267
+INFO:root:current train perplexity5.339995861053467
+INFO:root:current mean train loss 2123.769116031092
+INFO:root:current train perplexity5.338029861450195
+INFO:root:current mean train loss 2123.8352307067153
+INFO:root:current train perplexity5.33750057220459
+INFO:root:current mean train loss 2123.0243541664136
+INFO:root:current train perplexity5.336676597595215
+INFO:root:current mean train loss 2124.3063461061506
+INFO:root:current train perplexity5.3416619300842285
+INFO:root:current mean train loss 2125.4531186746876
+INFO:root:current train perplexity5.343727111816406
+INFO:root:current mean train loss 2125.614227564308
+INFO:root:current train perplexity5.34638786315918
+INFO:root:current mean train loss 2124.666382415156
+INFO:root:current train perplexity5.34314489364624
+INFO:root:current mean train loss 2124.1492366299517
+INFO:root:current train perplexity5.338774681091309
+INFO:root:current mean train loss 2123.6796282771284
+INFO:root:current train perplexity5.337498188018799
+
+100%|██████████| 1/1 [05:34<00:00, 334.09s/it][A100%|██████████| 1/1 [05:34<00:00, 334.09s/it]
+INFO:root:final mean train loss: 2122.8181682361596
+INFO:root:final train perplexity: 5.3344292640686035
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.07s/it][A100%|██████████| 1/1 [00:27<00:00, 27.07s/it]
+INFO:root:eval mean loss: 2041.5127208520335
+INFO:root:eval perplexity: 5.212479114532471
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.16s/it][A100%|██████████| 1/1 [00:26<00:00, 26.16s/it]
+INFO:root:eval mean loss: 2453.7794323643893
+INFO:root:eval perplexity: 7.439234733581543
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/12
+ 24%|██▍       | 12/50 [1:17:14<4:04:58, 386.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2127.529296875
+INFO:root:current train perplexity5.3282575607299805
+INFO:root:current mean train loss 2112.725268317658
+INFO:root:current train perplexity5.338027000427246
+INFO:root:current mean train loss 2098.4627330761236
+INFO:root:current train perplexity5.262689590454102
+INFO:root:current mean train loss 2102.1941429616595
+INFO:root:current train perplexity5.281248569488525
+INFO:root:current mean train loss 2097.5023620454017
+INFO:root:current train perplexity5.2531633377075195
+INFO:root:current mean train loss 2098.6062548051536
+INFO:root:current train perplexity5.2513203620910645
+INFO:root:current mean train loss 2099.9204785804054
+INFO:root:current train perplexity5.250656604766846
+INFO:root:current mean train loss 2097.185853005812
+INFO:root:current train perplexity5.243093013763428
+INFO:root:current mean train loss 2102.8956429563455
+INFO:root:current train perplexity5.253619194030762
+INFO:root:current mean train loss 2099.653573645574
+INFO:root:current train perplexity5.242636680603027
+INFO:root:current mean train loss 2099.4634457224033
+INFO:root:current train perplexity5.242435455322266
+INFO:root:current mean train loss 2100.786121856053
+INFO:root:current train perplexity5.240749835968018
+INFO:root:current mean train loss 2101.9464413713436
+INFO:root:current train perplexity5.244166374206543
+INFO:root:current mean train loss 2098.727127040064
+INFO:root:current train perplexity5.239469051361084
+INFO:root:current mean train loss 2099.5452442345922
+INFO:root:current train perplexity5.24228048324585
+INFO:root:current mean train loss 2099.684063107509
+INFO:root:current train perplexity5.242335796356201
+INFO:root:current mean train loss 2099.0158251252533
+INFO:root:current train perplexity5.239041805267334
+INFO:root:current mean train loss 2099.8361756912204
+INFO:root:current train perplexity5.240540981292725
+INFO:root:current mean train loss 2099.867929738955
+INFO:root:current train perplexity5.241315841674805
+INFO:root:current mean train loss 2100.3892760043764
+INFO:root:current train perplexity5.242631912231445
+
+100%|██████████| 1/1 [05:24<00:00, 324.06s/it][A100%|██████████| 1/1 [05:24<00:00, 324.06s/it]
+INFO:root:final mean train loss: 2101.5274870579615
+INFO:root:final train perplexity: 5.245606899261475
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.45s/it][A100%|██████████| 1/1 [00:27<00:00, 27.45s/it]
+INFO:root:eval mean loss: 2030.660893433483
+INFO:root:eval perplexity: 5.166933059692383
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.90s/it][A100%|██████████| 1/1 [00:25<00:00, 25.90s/it]
+INFO:root:eval mean loss: 2443.5807915004434
+INFO:root:eval perplexity: 7.377445220947266
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/13
+ 26%|██▌       | 13/50 [1:23:32<3:57:00, 384.34s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2127.922479248047
+INFO:root:current train perplexity5.266684532165527
+INFO:root:current mean train loss 2089.223360188802
+INFO:root:current train perplexity5.201473712921143
+INFO:root:current mean train loss 2095.5790765935726
+INFO:root:current train perplexity5.190969944000244
+INFO:root:current mean train loss 2090.080686187744
+INFO:root:current train perplexity5.171534061431885
+INFO:root:current mean train loss 2084.6262166341144
+INFO:root:current train perplexity5.166467189788818
+INFO:root:current mean train loss 2082.8499467116135
+INFO:root:current train perplexity5.172024250030518
+INFO:root:current mean train loss 2079.68343781502
+INFO:root:current train perplexity5.161477088928223
+INFO:root:current mean train loss 2079.5653074476454
+INFO:root:current train perplexity5.159942150115967
+INFO:root:current mean train loss 2083.129213658775
+INFO:root:current train perplexity5.1687774658203125
+INFO:root:current mean train loss 2084.1619752303413
+INFO:root:current train perplexity5.173989295959473
+INFO:root:current mean train loss 2084.8218168370863
+INFO:root:current train perplexity5.178771495819092
+INFO:root:current mean train loss 2084.5221249171664
+INFO:root:current train perplexity5.179204940795898
+INFO:root:current mean train loss 2083.583420550237
+INFO:root:current train perplexity5.175527095794678
+INFO:root:current mean train loss 2082.4166035045278
+INFO:root:current train perplexity5.174830913543701
+INFO:root:current mean train loss 2082.1009868783012
+INFO:root:current train perplexity5.1728692054748535
+INFO:root:current mean train loss 2081.4258018092105
+INFO:root:current train perplexity5.17218017578125
+INFO:root:current mean train loss 2082.28712263696
+INFO:root:current train perplexity5.16925573348999
+INFO:root:current mean train loss 2081.722079325831
+INFO:root:current train perplexity5.1657395362854
+INFO:root:current mean train loss 2082.0508128407237
+INFO:root:current train perplexity5.164628028869629
+INFO:root:current mean train loss 2081.848538080851
+INFO:root:current train perplexity5.161717414855957
+
+100%|██████████| 1/1 [05:24<00:00, 324.67s/it][A100%|██████████| 1/1 [05:24<00:00, 324.67s/it]
+INFO:root:final mean train loss: 2081.309116011488
+INFO:root:final train perplexity: 5.16262674331665
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.49s/it][A100%|██████████| 1/1 [00:27<00:00, 27.50s/it]
+INFO:root:eval mean loss: 2010.3801702404699
+INFO:root:eval perplexity: 5.082876682281494
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.77s/it][A100%|██████████| 1/1 [00:25<00:00, 25.77s/it]
+INFO:root:eval mean loss: 2426.521039381095
+INFO:root:eval perplexity: 7.275229454040527
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/14
+ 28%|██▊       | 14/50 [1:29:51<3:49:39, 382.76s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2076.3990841427367
+INFO:root:current train perplexity5.087690830230713
+INFO:root:current mean train loss 2070.4196608049156
+INFO:root:current train perplexity5.100524425506592
+INFO:root:current mean train loss 2065.920148503428
+INFO:root:current train perplexity5.1021928787231445
+INFO:root:current mean train loss 2061.5984393835774
+INFO:root:current train perplexity5.091286659240723
+INFO:root:current mean train loss 2069.793409264606
+INFO:root:current train perplexity5.113983631134033
+INFO:root:current mean train loss 2067.2530488026655
+INFO:root:current train perplexity5.106698989868164
+INFO:root:current mean train loss 2068.9355399762067
+INFO:root:current train perplexity5.108890533447266
+INFO:root:current mean train loss 2064.9512073201113
+INFO:root:current train perplexity5.10391902923584
+INFO:root:current mean train loss 2061.0379381988782
+INFO:root:current train perplexity5.089148998260498
+INFO:root:current mean train loss 2062.7204966346635
+INFO:root:current train perplexity5.0913496017456055
+INFO:root:current mean train loss 2063.9470047688646
+INFO:root:current train perplexity5.092375755310059
+INFO:root:current mean train loss 2064.662461092101
+INFO:root:current train perplexity5.092442512512207
+INFO:root:current mean train loss 2063.9876470172608
+INFO:root:current train perplexity5.093146800994873
+INFO:root:current mean train loss 2064.248960804565
+INFO:root:current train perplexity5.090709686279297
+INFO:root:current mean train loss 2065.7363000072037
+INFO:root:current train perplexity5.095648765563965
+INFO:root:current mean train loss 2067.321421219299
+INFO:root:current train perplexity5.09842586517334
+INFO:root:current mean train loss 2065.6282625658596
+INFO:root:current train perplexity5.094562530517578
+INFO:root:current mean train loss 2067.416781639051
+INFO:root:current train perplexity5.102925777435303
+INFO:root:current mean train loss 2067.253785442255
+INFO:root:current train perplexity5.101666450500488
+INFO:root:current mean train loss 2066.988047759805
+INFO:root:current train perplexity5.102219581604004
+
+100%|██████████| 1/1 [05:30<00:00, 330.98s/it][A100%|██████████| 1/1 [05:30<00:00, 330.98s/it]
+INFO:root:final mean train loss: 2065.7063971676735
+INFO:root:final train perplexity: 5.099488735198975
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.40s/it][A100%|██████████| 1/1 [00:27<00:00, 27.40s/it]
+INFO:root:eval mean loss: 1995.832190547429
+INFO:root:eval perplexity: 5.0234246253967285
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.29s/it][A100%|██████████| 1/1 [00:25<00:00, 25.29s/it]
+INFO:root:eval mean loss: 2414.0415580154313
+INFO:root:eval perplexity: 7.201357841491699
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/15
+ 30%|███       | 15/50 [1:36:16<3:43:39, 383.42s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2040.5324028862847
+INFO:root:current train perplexity4.993910312652588
+INFO:root:current mean train loss 2060.9798473011365
+INFO:root:current train perplexity5.018441200256348
+INFO:root:current mean train loss 2059.7370523768145
+INFO:root:current train perplexity5.028570652008057
+INFO:root:current mean train loss 2061.0505260747705
+INFO:root:current train perplexity5.044522762298584
+INFO:root:current mean train loss 2058.0710145387357
+INFO:root:current train perplexity5.042499542236328
+INFO:root:current mean train loss 2056.24840449254
+INFO:root:current train perplexity5.0391082763671875
+INFO:root:current mean train loss 2054.686551435278
+INFO:root:current train perplexity5.046670913696289
+INFO:root:current mean train loss 2056.3590719288795
+INFO:root:current train perplexity5.049787521362305
+INFO:root:current mean train loss 2055.4674342421235
+INFO:root:current train perplexity5.047432899475098
+INFO:root:current mean train loss 2054.3913313187895
+INFO:root:current train perplexity5.043625831604004
+INFO:root:current mean train loss 2052.1106701729645
+INFO:root:current train perplexity5.039322376251221
+INFO:root:current mean train loss 2053.1687357619894
+INFO:root:current train perplexity5.040391445159912
+INFO:root:current mean train loss 2052.461175507906
+INFO:root:current train perplexity5.0395026206970215
+INFO:root:current mean train loss 2053.5723352249124
+INFO:root:current train perplexity5.04181432723999
+INFO:root:current mean train loss 2054.60438548092
+INFO:root:current train perplexity5.047273635864258
+INFO:root:current mean train loss 2055.385710059599
+INFO:root:current train perplexity5.050425052642822
+INFO:root:current mean train loss 2053.502791897129
+INFO:root:current train perplexity5.046882629394531
+INFO:root:current mean train loss 2053.604186524551
+INFO:root:current train perplexity5.047410011291504
+INFO:root:current mean train loss 2053.59360488513
+INFO:root:current train perplexity5.046144485473633
+INFO:root:current mean train loss 2052.241948607024
+INFO:root:current train perplexity5.043100833892822
+
+100%|██████████| 1/1 [05:29<00:00, 329.19s/it][A100%|██████████| 1/1 [05:29<00:00, 329.19s/it]
+INFO:root:final mean train loss: 2051.2664867252997
+INFO:root:final train perplexity: 5.041744232177734
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.87s/it][A100%|██████████| 1/1 [00:26<00:00, 26.87s/it]
+INFO:root:eval mean loss: 1992.3207215654088
+INFO:root:eval perplexity: 5.009178638458252
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.71s/it][A100%|██████████| 1/1 [00:25<00:00, 25.71s/it]
+INFO:root:eval mean loss: 2412.1929866709606
+INFO:root:eval perplexity: 7.19047737121582
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/16
+ 32%|███▏      | 16/50 [1:42:39<3:37:12, 383.31s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2028.5434742242517
+INFO:root:current train perplexity4.913044452667236
+INFO:root:current mean train loss 2050.8908370168588
+INFO:root:current train perplexity5.002202987670898
+INFO:root:current mean train loss 2039.8299371360413
+INFO:root:current train perplexity4.965572834014893
+INFO:root:current mean train loss 2048.6227287025145
+INFO:root:current train perplexity5.002690315246582
+INFO:root:current mean train loss 2047.0701989823845
+INFO:root:current train perplexity4.9952569007873535
+INFO:root:current mean train loss 2041.1184208163447
+INFO:root:current train perplexity4.984029769897461
+INFO:root:current mean train loss 2038.363715863974
+INFO:root:current train perplexity4.979348182678223
+INFO:root:current mean train loss 2037.0321087670234
+INFO:root:current train perplexity4.977507591247559
+INFO:root:current mean train loss 2033.6463007790076
+INFO:root:current train perplexity4.9774274826049805
+INFO:root:current mean train loss 2032.98953866222
+INFO:root:current train perplexity4.971787929534912
+INFO:root:current mean train loss 2032.0399906218997
+INFO:root:current train perplexity4.971655368804932
+INFO:root:current mean train loss 2032.587927736043
+INFO:root:current train perplexity4.97135591506958
+INFO:root:current mean train loss 2032.0489660423632
+INFO:root:current train perplexity4.970460891723633
+INFO:root:current mean train loss 2032.2763471540788
+INFO:root:current train perplexity4.971627712249756
+INFO:root:current mean train loss 2030.7474460666638
+INFO:root:current train perplexity4.968846797943115
+INFO:root:current mean train loss 2031.6457614328056
+INFO:root:current train perplexity4.972759246826172
+INFO:root:current mean train loss 2034.557224385543
+INFO:root:current train perplexity4.978547096252441
+INFO:root:current mean train loss 2035.3106890720946
+INFO:root:current train perplexity4.979800701141357
+INFO:root:current mean train loss 2035.8714837095179
+INFO:root:current train perplexity4.980991363525391
+INFO:root:current mean train loss 2037.478128109046
+INFO:root:current train perplexity4.985530853271484
+
+100%|██████████| 1/1 [05:31<00:00, 331.94s/it][A100%|██████████| 1/1 [05:31<00:00, 331.94s/it]
+INFO:root:final mean train loss: 2037.2208443399757
+INFO:root:final train perplexity: 4.986204147338867
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.87s/it][A100%|██████████| 1/1 [00:26<00:00, 26.87s/it]
+INFO:root:eval mean loss: 1979.5130481043607
+INFO:root:eval perplexity: 4.9575605392456055
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.13s/it][A100%|██████████| 1/1 [00:25<00:00, 25.13s/it]
+INFO:root:eval mean loss: 2398.8225716665283
+INFO:root:eval perplexity: 7.112281799316406
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/17
+ 34%|███▍      | 17/50 [1:49:04<3:31:07, 383.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2025.4031732732599
+INFO:root:current train perplexity4.975640296936035
+INFO:root:current mean train loss 2015.1435683230136
+INFO:root:current train perplexity4.91206169128418
+INFO:root:current mean train loss 2019.9810341729058
+INFO:root:current train perplexity4.90983772277832
+INFO:root:current mean train loss 2022.1218997915996
+INFO:root:current train perplexity4.912642002105713
+INFO:root:current mean train loss 2026.2258313288455
+INFO:root:current train perplexity4.929117679595947
+INFO:root:current mean train loss 2023.7179426335963
+INFO:root:current train perplexity4.926019668579102
+INFO:root:current mean train loss 2024.4053085682003
+INFO:root:current train perplexity4.928708076477051
+INFO:root:current mean train loss 2028.2075120954948
+INFO:root:current train perplexity4.938625812530518
+INFO:root:current mean train loss 2028.3868732624226
+INFO:root:current train perplexity4.9455037117004395
+INFO:root:current mean train loss 2025.6274074291894
+INFO:root:current train perplexity4.940845012664795
+INFO:root:current mean train loss 2027.3321855208453
+INFO:root:current train perplexity4.95027494430542
+INFO:root:current mean train loss 2027.7582128248632
+INFO:root:current train perplexity4.946523666381836
+INFO:root:current mean train loss 2030.5114953651191
+INFO:root:current train perplexity4.948981285095215
+INFO:root:current mean train loss 2029.0500723099503
+INFO:root:current train perplexity4.948791027069092
+INFO:root:current mean train loss 2028.3083726616317
+INFO:root:current train perplexity4.947090148925781
+INFO:root:current mean train loss 2026.539582913108
+INFO:root:current train perplexity4.942912578582764
+INFO:root:current mean train loss 2027.8962397281593
+INFO:root:current train perplexity4.945985317230225
+INFO:root:current mean train loss 2027.100966144195
+INFO:root:current train perplexity4.945465087890625
+INFO:root:current mean train loss 2025.65712582863
+INFO:root:current train perplexity4.9404120445251465
+
+100%|██████████| 1/1 [05:24<00:00, 324.64s/it][A100%|██████████| 1/1 [05:24<00:00, 324.64s/it]
+INFO:root:final mean train loss: 2026.0265936608635
+INFO:root:final train perplexity: 4.94237756729126
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.20s/it][A100%|██████████| 1/1 [00:27<00:00, 27.20s/it]
+INFO:root:eval mean loss: 1973.7893676757812
+INFO:root:eval perplexity: 4.934665203094482
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.70s/it][A100%|██████████| 1/1 [00:25<00:00, 25.70s/it]
+INFO:root:eval mean loss: 2398.5825662815823
+INFO:root:eval perplexity: 7.1108856201171875
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/18
+ 36%|███▌      | 18/50 [1:55:23<3:23:54, 382.33s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1970.45673828125
+INFO:root:current train perplexity4.933400630950928
+INFO:root:current mean train loss 1986.9435198102678
+INFO:root:current train perplexity4.827292442321777
+INFO:root:current mean train loss 1996.2777909441693
+INFO:root:current train perplexity4.852373123168945
+INFO:root:current mean train loss 2006.4081526959528
+INFO:root:current train perplexity4.882400989532471
+INFO:root:current mean train loss 2005.7356324749228
+INFO:root:current train perplexity4.877822399139404
+INFO:root:current mean train loss 2005.15460410543
+INFO:root:current train perplexity4.87191104888916
+INFO:root:current mean train loss 2006.3847958903668
+INFO:root:current train perplexity4.877939224243164
+INFO:root:current mean train loss 2010.7859162026264
+INFO:root:current train perplexity4.892391204833984
+INFO:root:current mean train loss 2008.9940860345496
+INFO:root:current train perplexity4.8865251541137695
+INFO:root:current mean train loss 2009.1804758988692
+INFO:root:current train perplexity4.8849992752075195
+INFO:root:current mean train loss 2009.4339622687344
+INFO:root:current train perplexity4.887822151184082
+INFO:root:current mean train loss 2010.0935391111072
+INFO:root:current train perplexity4.886603355407715
+INFO:root:current mean train loss 2013.3588009149703
+INFO:root:current train perplexity4.897225379943848
+INFO:root:current mean train loss 2013.682391193726
+INFO:root:current train perplexity4.897796630859375
+INFO:root:current mean train loss 2013.5244873046875
+INFO:root:current train perplexity4.896847248077393
+INFO:root:current mean train loss 2014.3437460256177
+INFO:root:current train perplexity4.896813869476318
+INFO:root:current mean train loss 2016.0454870491385
+INFO:root:current train perplexity4.898826599121094
+INFO:root:current mean train loss 2015.2618895052465
+INFO:root:current train perplexity4.8992462158203125
+INFO:root:current mean train loss 2015.502280381644
+INFO:root:current train perplexity4.899744033813477
+INFO:root:current mean train loss 2014.8849504926386
+INFO:root:current train perplexity4.898559093475342
+
+100%|██████████| 1/1 [05:29<00:00, 329.61s/it][A100%|██████████| 1/1 [05:29<00:00, 329.61s/it]
+INFO:root:final mean train loss: 2013.9976823876978
+INFO:root:final train perplexity: 4.895711898803711
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.26s/it][A100%|██████████| 1/1 [00:27<00:00, 27.26s/it]
+INFO:root:eval mean loss: 1964.422641186004
+INFO:root:eval perplexity: 4.897426128387451
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.04s/it][A100%|██████████| 1/1 [00:26<00:00, 26.04s/it]
+INFO:root:eval mean loss: 2388.0649600198085
+INFO:root:eval perplexity: 7.049982070922852
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/19
+ 38%|███▊      | 19/50 [2:01:47<3:17:48, 382.86s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2051.0968295010653
+INFO:root:current train perplexity5.006669044494629
+INFO:root:current mean train loss 2006.7248435098618
+INFO:root:current train perplexity4.867599010467529
+INFO:root:current mean train loss 2002.857722651851
+INFO:root:current train perplexity4.852972507476807
+INFO:root:current mean train loss 2004.6838993048816
+INFO:root:current train perplexity4.854308605194092
+INFO:root:current mean train loss 2010.1075558052244
+INFO:root:current train perplexity4.86482048034668
+INFO:root:current mean train loss 2009.6253463335877
+INFO:root:current train perplexity4.866302967071533
+INFO:root:current mean train loss 2006.3470488422554
+INFO:root:current train perplexity4.858157634735107
+INFO:root:current mean train loss 2002.9916779156206
+INFO:root:current train perplexity4.848530292510986
+INFO:root:current mean train loss 2002.4215791799727
+INFO:root:current train perplexity4.8446149826049805
+INFO:root:current mean train loss 2003.9994182462547
+INFO:root:current train perplexity4.849534511566162
+INFO:root:current mean train loss 2003.2111295636619
+INFO:root:current train perplexity4.8499650955200195
+INFO:root:current mean train loss 2003.415506998698
+INFO:root:current train perplexity4.854247570037842
+INFO:root:current mean train loss 2002.885654180998
+INFO:root:current train perplexity4.852259635925293
+INFO:root:current mean train loss 2002.295335547466
+INFO:root:current train perplexity4.851704120635986
+INFO:root:current mean train loss 2003.3240310947938
+INFO:root:current train perplexity4.857094764709473
+INFO:root:current mean train loss 2003.9053408087632
+INFO:root:current train perplexity4.860622406005859
+INFO:root:current mean train loss 2005.1847123264824
+INFO:root:current train perplexity4.860610485076904
+INFO:root:current mean train loss 2005.9657864277094
+INFO:root:current train perplexity4.860263824462891
+INFO:root:current mean train loss 2004.4843154387993
+INFO:root:current train perplexity4.858193874359131
+INFO:root:current mean train loss 2003.3086328734717
+INFO:root:current train perplexity4.8549652099609375
+
+100%|██████████| 1/1 [05:23<00:00, 323.18s/it][A100%|██████████| 1/1 [05:23<00:00, 323.18s/it]
+INFO:root:final mean train loss: 2003.8911064482672
+INFO:root:final train perplexity: 4.856845378875732
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.30s/it][A100%|██████████| 1/1 [00:26<00:00, 26.31s/it]
+INFO:root:eval mean loss: 1965.882622468556
+INFO:root:eval perplexity: 4.9032111167907715
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.83s/it][A100%|██████████| 1/1 [00:27<00:00, 27.83s/it]
+INFO:root:eval mean loss: 2393.1796892314937
+INFO:root:eval perplexity: 7.079534530639648
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/20
+ 40%|████      | 20/50 [2:08:06<3:10:46, 381.54s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1972.0695112179487
+INFO:root:current train perplexity4.802141189575195
+INFO:root:current mean train loss 1983.6322969944356
+INFO:root:current train perplexity4.7911906242370605
+INFO:root:current mean train loss 1988.7390713871273
+INFO:root:current train perplexity4.820110321044922
+INFO:root:current mean train loss 1994.6424103233314
+INFO:root:current train perplexity4.820469856262207
+INFO:root:current mean train loss 1998.582358809973
+INFO:root:current train perplexity4.830225467681885
+INFO:root:current mean train loss 1997.4233858182834
+INFO:root:current train perplexity4.821530818939209
+INFO:root:current mean train loss 1992.5345604169722
+INFO:root:current train perplexity4.815611362457275
+INFO:root:current mean train loss 1995.2385192788502
+INFO:root:current train perplexity4.817572593688965
+INFO:root:current mean train loss 1996.3918397378297
+INFO:root:current train perplexity4.82193660736084
+INFO:root:current mean train loss 1997.0711725822018
+INFO:root:current train perplexity4.8233723640441895
+INFO:root:current mean train loss 1997.3829823880383
+INFO:root:current train perplexity4.824737548828125
+INFO:root:current mean train loss 1997.6224862518177
+INFO:root:current train perplexity4.825071334838867
+INFO:root:current mean train loss 1997.437947985239
+INFO:root:current train perplexity4.825343608856201
+INFO:root:current mean train loss 1995.6984026383961
+INFO:root:current train perplexity4.82020902633667
+INFO:root:current mean train loss 1995.2413178232496
+INFO:root:current train perplexity4.821125030517578
+INFO:root:current mean train loss 1993.9107171864848
+INFO:root:current train perplexity4.818135738372803
+INFO:root:current mean train loss 1993.3119245788687
+INFO:root:current train perplexity4.817516326904297
+INFO:root:current mean train loss 1993.798536672477
+INFO:root:current train perplexity4.82088565826416
+INFO:root:current mean train loss 1994.471735910205
+INFO:root:current train perplexity4.820352077484131
+INFO:root:current mean train loss 1995.3217604087763
+INFO:root:current train perplexity4.820504188537598
+
+100%|██████████| 1/1 [05:22<00:00, 322.92s/it][A100%|██████████| 1/1 [05:22<00:00, 322.92s/it]
+INFO:root:final mean train loss: 1994.3583700898555
+INFO:root:final train perplexity: 4.820467948913574
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.80s/it][A100%|██████████| 1/1 [00:26<00:00, 26.80s/it]
+INFO:root:eval mean loss: 1962.8063402108266
+INFO:root:eval perplexity: 4.891027927398682
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.37s/it][A100%|██████████| 1/1 [00:26<00:00, 26.37s/it]
+INFO:root:eval mean loss: 2389.7609006191824
+INFO:root:eval perplexity: 7.059767246246338
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/21
+ 42%|████▏     | 21/50 [2:14:23<3:03:48, 380.28s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2005.4938223702568
+INFO:root:current train perplexity4.830682754516602
+INFO:root:current mean train loss 2004.8687587640225
+INFO:root:current train perplexity4.82196569442749
+INFO:root:current mean train loss 1990.1922206878662
+INFO:root:current train perplexity4.790511131286621
+INFO:root:current mean train loss 1993.4509620237886
+INFO:root:current train perplexity4.806366920471191
+INFO:root:current mean train loss 1992.54872773823
+INFO:root:current train perplexity4.805650234222412
+INFO:root:current mean train loss 1989.2402574278467
+INFO:root:current train perplexity4.796375751495361
+INFO:root:current mean train loss 1988.1147053416182
+INFO:root:current train perplexity4.793063163757324
+INFO:root:current mean train loss 1989.3958808051216
+INFO:root:current train perplexity4.793557643890381
+INFO:root:current mean train loss 1992.6872997818707
+INFO:root:current train perplexity4.800335884094238
+INFO:root:current mean train loss 1990.5691077579513
+INFO:root:current train perplexity4.79444694519043
+INFO:root:current mean train loss 1992.1749964627352
+INFO:root:current train perplexity4.797172546386719
+INFO:root:current mean train loss 1989.0184337787562
+INFO:root:current train perplexity4.791690349578857
+INFO:root:current mean train loss 1987.9791451229412
+INFO:root:current train perplexity4.78945255279541
+INFO:root:current mean train loss 1986.9572583764
+INFO:root:current train perplexity4.791024208068848
+INFO:root:current mean train loss 1986.7242217849898
+INFO:root:current train perplexity4.789544582366943
+INFO:root:current mean train loss 1987.0271212619498
+INFO:root:current train perplexity4.7875075340271
+INFO:root:current mean train loss 1987.748039945888
+INFO:root:current train perplexity4.790742874145508
+INFO:root:current mean train loss 1986.339517371801
+INFO:root:current train perplexity4.786570072174072
+INFO:root:current mean train loss 1986.5940166341848
+INFO:root:current train perplexity4.78843355178833
+INFO:root:current mean train loss 1985.7810526030682
+INFO:root:current train perplexity4.785117149353027
+
+100%|██████████| 1/1 [05:30<00:00, 330.42s/it][A100%|██████████| 1/1 [05:30<00:00, 330.43s/it]
+INFO:root:final mean train loss: 1985.0789906958169
+INFO:root:final train perplexity: 4.7853193283081055
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.21s/it][A100%|██████████| 1/1 [00:27<00:00, 27.21s/it]
+INFO:root:eval mean loss: 1947.4997216623726
+INFO:root:eval perplexity: 4.8308539390563965
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.81s/it][A100%|██████████| 1/1 [00:25<00:00, 25.81s/it]
+INFO:root:eval mean loss: 2375.92250136788
+INFO:root:eval perplexity: 6.980320453643799
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/22
+ 44%|████▍     | 22/50 [2:20:48<2:58:04, 381.59s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1983.6841204917594
+INFO:root:current train perplexity4.750539302825928
+INFO:root:current mean train loss 1980.4452814532153
+INFO:root:current train perplexity4.73931884765625
+INFO:root:current mean train loss 1978.7132317958733
+INFO:root:current train perplexity4.7294182777404785
+INFO:root:current mean train loss 1975.428399707293
+INFO:root:current train perplexity4.722797393798828
+INFO:root:current mean train loss 1980.5958288083873
+INFO:root:current train perplexity4.733190059661865
+INFO:root:current mean train loss 1981.4714792195
+INFO:root:current train perplexity4.751039505004883
+INFO:root:current mean train loss 1975.8249408330819
+INFO:root:current train perplexity4.739741325378418
+INFO:root:current mean train loss 1973.1419646150853
+INFO:root:current train perplexity4.735273838043213
+INFO:root:current mean train loss 1974.2760434844377
+INFO:root:current train perplexity4.737850189208984
+INFO:root:current mean train loss 1977.451873183373
+INFO:root:current train perplexity4.741625785827637
+INFO:root:current mean train loss 1979.2727415968297
+INFO:root:current train perplexity4.746026515960693
+INFO:root:current mean train loss 1979.8463122277612
+INFO:root:current train perplexity4.749233722686768
+INFO:root:current mean train loss 1979.4412525353803
+INFO:root:current train perplexity4.750646591186523
+INFO:root:current mean train loss 1980.2700048614747
+INFO:root:current train perplexity4.755915641784668
+INFO:root:current mean train loss 1979.6833997468761
+INFO:root:current train perplexity4.757609844207764
+INFO:root:current mean train loss 1979.3593781817438
+INFO:root:current train perplexity4.756045341491699
+INFO:root:current mean train loss 1979.520440684773
+INFO:root:current train perplexity4.7572407722473145
+INFO:root:current mean train loss 1978.1713833451204
+INFO:root:current train perplexity4.755112171173096
+INFO:root:current mean train loss 1978.2832808772066
+INFO:root:current train perplexity4.755286693572998
+INFO:root:current mean train loss 1977.676359738303
+INFO:root:current train perplexity4.755510330200195
+
+100%|██████████| 1/1 [05:24<00:00, 324.93s/it][A100%|██████████| 1/1 [05:24<00:00, 324.93s/it]
+INFO:root:final mean train loss: 1977.253211440309
+INFO:root:final train perplexity: 4.755876541137695
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.44s/it][A100%|██████████| 1/1 [00:26<00:00, 26.44s/it]
+INFO:root:eval mean loss: 1944.3105550995956
+INFO:root:eval perplexity: 4.818410873413086
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.93s/it][A100%|██████████| 1/1 [00:24<00:00, 24.93s/it]
+INFO:root:eval mean loss: 2372.393093677277
+INFO:root:eval perplexity: 6.960200786590576
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/23
+ 46%|████▌     | 23/50 [2:27:05<2:51:09, 380.36s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1967.7392754448786
+INFO:root:current train perplexity4.743472576141357
+INFO:root:current mean train loss 1977.8595285516037
+INFO:root:current train perplexity4.749417304992676
+INFO:root:current mean train loss 1972.6843611092404
+INFO:root:current train perplexity4.734389305114746
+INFO:root:current mean train loss 1971.5150850736177
+INFO:root:current train perplexity4.738299369812012
+INFO:root:current mean train loss 1980.787430743782
+INFO:root:current train perplexity4.756072044372559
+INFO:root:current mean train loss 1977.0703797421213
+INFO:root:current train perplexity4.745452880859375
+INFO:root:current mean train loss 1980.7287790491962
+INFO:root:current train perplexity4.7502264976501465
+INFO:root:current mean train loss 1981.0379570683347
+INFO:root:current train perplexity4.753632545471191
+INFO:root:current mean train loss 1978.5251946267117
+INFO:root:current train perplexity4.749378204345703
+INFO:root:current mean train loss 1976.328610815183
+INFO:root:current train perplexity4.742264270782471
+INFO:root:current mean train loss 1974.6816024360307
+INFO:root:current train perplexity4.736783504486084
+INFO:root:current mean train loss 1974.3564880883994
+INFO:root:current train perplexity4.734561920166016
+INFO:root:current mean train loss 1974.3043872448825
+INFO:root:current train perplexity4.733497142791748
+INFO:root:current mean train loss 1974.855272471476
+INFO:root:current train perplexity4.734272003173828
+INFO:root:current mean train loss 1974.0620566144084
+INFO:root:current train perplexity4.733226776123047
+INFO:root:current mean train loss 1973.5160993084219
+INFO:root:current train perplexity4.733897686004639
+INFO:root:current mean train loss 1973.5527134280233
+INFO:root:current train perplexity4.735725402832031
+INFO:root:current mean train loss 1972.5510832887787
+INFO:root:current train perplexity4.735461235046387
+INFO:root:current mean train loss 1972.743589693907
+INFO:root:current train perplexity4.736581802368164
+
+100%|██████████| 1/1 [05:21<00:00, 321.12s/it][A100%|██████████| 1/1 [05:21<00:00, 321.13s/it]
+INFO:root:final mean train loss: 1971.4866461357083
+INFO:root:final train perplexity: 4.73429536819458
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.57s/it][A100%|██████████| 1/1 [00:26<00:00, 26.57s/it]
+INFO:root:eval mean loss: 1937.4337777212156
+INFO:root:eval perplexity: 4.791688442230225
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.05s/it][A100%|██████████| 1/1 [00:26<00:00, 26.05s/it]
+INFO:root:eval mean loss: 2368.223386074634
+INFO:root:eval perplexity: 6.936506271362305
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/24
+ 48%|████▊     | 24/50 [2:33:20<2:44:06, 378.71s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1896.3183768136162
+INFO:root:current train perplexity4.577042102813721
+INFO:root:current mean train loss 1968.4848461685895
+INFO:root:current train perplexity4.66455602645874
+INFO:root:current mean train loss 1978.7419746140927
+INFO:root:current train perplexity4.717775821685791
+INFO:root:current mean train loss 1976.5891363783846
+INFO:root:current train perplexity4.716254234313965
+INFO:root:current mean train loss 1969.6309778461878
+INFO:root:current train perplexity4.71101713180542
+INFO:root:current mean train loss 1963.2633644119053
+INFO:root:current train perplexity4.694879055023193
+INFO:root:current mean train loss 1959.891580446548
+INFO:root:current train perplexity4.699070453643799
+INFO:root:current mean train loss 1959.840572546024
+INFO:root:current train perplexity4.699741363525391
+INFO:root:current mean train loss 1960.0691748409909
+INFO:root:current train perplexity4.7032036781311035
+INFO:root:current mean train loss 1963.858588339607
+INFO:root:current train perplexity4.709354877471924
+INFO:root:current mean train loss 1964.602818114992
+INFO:root:current train perplexity4.710882186889648
+INFO:root:current mean train loss 1964.223977961622
+INFO:root:current train perplexity4.70986795425415
+INFO:root:current mean train loss 1964.7669146774026
+INFO:root:current train perplexity4.709733009338379
+INFO:root:current mean train loss 1965.3190558389024
+INFO:root:current train perplexity4.7074713706970215
+INFO:root:current mean train loss 1964.8379983800307
+INFO:root:current train perplexity4.704814434051514
+INFO:root:current mean train loss 1965.3373726159432
+INFO:root:current train perplexity4.705353736877441
+INFO:root:current mean train loss 1965.6165450926367
+INFO:root:current train perplexity4.703564643859863
+INFO:root:current mean train loss 1965.1768805264169
+INFO:root:current train perplexity4.703543186187744
+INFO:root:current mean train loss 1964.469154446575
+INFO:root:current train perplexity4.703836441040039
+INFO:root:current mean train loss 1964.764556132628
+INFO:root:current train perplexity4.7076735496521
+
+100%|██████████| 1/1 [05:21<00:00, 321.70s/it][A100%|██████████| 1/1 [05:21<00:00, 321.70s/it]
+INFO:root:final mean train loss: 1963.84309754249
+INFO:root:final train perplexity: 4.705842971801758
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.65s/it][A100%|██████████| 1/1 [00:26<00:00, 26.65s/it]
+INFO:root:eval mean loss: 1938.5471970578458
+INFO:root:eval perplexity: 4.796004295349121
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.48s/it][A100%|██████████| 1/1 [00:26<00:00, 26.48s/it]
+INFO:root:eval mean loss: 2371.958354977006
+INFO:root:eval perplexity: 6.957726955413818
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/25
+ 50%|█████     | 25/50 [2:39:36<2:37:28, 377.92s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1963.2434743245442
+INFO:root:current train perplexity4.711376667022705
+INFO:root:current mean train loss 1965.9960573257938
+INFO:root:current train perplexity4.715871334075928
+INFO:root:current mean train loss 1965.6007107325963
+INFO:root:current train perplexity4.69881010055542
+INFO:root:current mean train loss 1961.9109368971835
+INFO:root:current train perplexity4.693752288818359
+INFO:root:current mean train loss 1963.197738647461
+INFO:root:current train perplexity4.694118499755859
+INFO:root:current mean train loss 1968.4035346344226
+INFO:root:current train perplexity4.701949596405029
+INFO:root:current mean train loss 1969.9238267556216
+INFO:root:current train perplexity4.707304954528809
+INFO:root:current mean train loss 2139.2095524066062
+INFO:root:current train perplexity5.380625247955322
+INFO:root:current mean train loss 2156.458502760211
+INFO:root:current train perplexity5.468008995056152
+INFO:root:current mean train loss 2158.7540472121464
+INFO:root:current train perplexity5.483938694000244
+INFO:root:current mean train loss 2156.4417625665665
+INFO:root:current train perplexity5.474421501159668
+INFO:root:current mean train loss 2154.033437491312
+INFO:root:current train perplexity5.461142063140869
+INFO:root:current mean train loss 2151.7056843876057
+INFO:root:current train perplexity5.447371482849121
+INFO:root:current mean train loss 2146.297406522169
+INFO:root:current train perplexity5.429447174072266
+INFO:root:current mean train loss 2142.8685679917926
+INFO:root:current train perplexity5.416563987731934
+INFO:root:current mean train loss 2139.87806945961
+INFO:root:current train perplexity5.4019856452941895
+INFO:root:current mean train loss 2136.4479232562585
+INFO:root:current train perplexity5.386456489562988
+INFO:root:current mean train loss 2132.839497789706
+INFO:root:current train perplexity5.374044418334961
+INFO:root:current mean train loss 2129.69342194942
+INFO:root:current train perplexity5.364272117614746
+INFO:root:current mean train loss 2128.9369540462376
+INFO:root:current train perplexity5.358348846435547
+
+100%|██████████| 1/1 [05:23<00:00, 323.86s/it][A100%|██████████| 1/1 [05:23<00:00, 323.86s/it]
+INFO:root:final mean train loss: 2126.625600009751
+INFO:root:final train perplexity: 5.350471496582031
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.03s/it][A100%|██████████| 1/1 [00:27<00:00, 27.03s/it]
+INFO:root:eval mean loss: 1987.36972933289
+INFO:root:eval perplexity: 4.989161968231201
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.40s/it][A100%|██████████| 1/1 [00:25<00:00, 25.40s/it]
+INFO:root:eval mean loss: 2417.5756926840922
+INFO:root:eval perplexity: 7.222202777862549
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/26
+ 52%|█████▏    | 26/50 [2:45:54<2:31:08, 377.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2052.6432003858613
+INFO:root:current train perplexity5.079656600952148
+INFO:root:current mean train loss 2075.589894829067
+INFO:root:current train perplexity5.112737655639648
+INFO:root:current mean train loss 2067.4790196082404
+INFO:root:current train perplexity5.08867073059082
+INFO:root:current mean train loss 2066.0405796084588
+INFO:root:current train perplexity5.099274158477783
+INFO:root:current mean train loss 2061.61162430467
+INFO:root:current train perplexity5.092825889587402
+INFO:root:current mean train loss 2064.784057842826
+INFO:root:current train perplexity5.093079090118408
+INFO:root:current mean train loss 2064.8477289970506
+INFO:root:current train perplexity5.081703186035156
+INFO:root:current mean train loss 2064.113920101109
+INFO:root:current train perplexity5.0779805183410645
+INFO:root:current mean train loss 2063.900800670937
+INFO:root:current train perplexity5.079609394073486
+INFO:root:current mean train loss 2064.1016114059594
+INFO:root:current train perplexity5.0852484703063965
+INFO:root:current mean train loss 2062.5131479459355
+INFO:root:current train perplexity5.079129219055176
+INFO:root:current mean train loss 2062.914126156298
+INFO:root:current train perplexity5.079507827758789
+INFO:root:current mean train loss 2060.936538782358
+INFO:root:current train perplexity5.077807426452637
+INFO:root:current mean train loss 2062.1277225958065
+INFO:root:current train perplexity5.080564498901367
+INFO:root:current mean train loss 2061.9706858437066
+INFO:root:current train perplexity5.079914093017578
+INFO:root:current mean train loss 2062.331780772175
+INFO:root:current train perplexity5.082309722900391
+INFO:root:current mean train loss 2061.8167641295086
+INFO:root:current train perplexity5.081210613250732
+INFO:root:current mean train loss 2061.177909732755
+INFO:root:current train perplexity5.081539154052734
+INFO:root:current mean train loss 2061.537734579224
+INFO:root:current train perplexity5.084818363189697
+INFO:root:current mean train loss 2061.7075861950993
+INFO:root:current train perplexity5.082858562469482
+
+100%|██████████| 1/1 [05:31<00:00, 331.90s/it][A100%|██████████| 1/1 [05:31<00:00, 331.90s/it]
+INFO:root:final mean train loss: 2061.6294181081184
+INFO:root:final train perplexity: 5.083118438720703
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.41s/it][A100%|██████████| 1/1 [00:27<00:00, 27.41s/it]
+INFO:root:eval mean loss: 1980.82876392121
+INFO:root:eval perplexity: 4.962839603424072
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.75s/it][A100%|██████████| 1/1 [00:25<00:00, 25.76s/it]
+INFO:root:eval mean loss: 2412.4370762168937
+INFO:root:eval perplexity: 7.191914081573486
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/27
+ 54%|█████▍    | 27/50 [2:52:20<2:25:48, 380.37s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2062.354976259429
+INFO:root:current train perplexity5.0764265060424805
+INFO:root:current mean train loss 2035.3013483361353
+INFO:root:current train perplexity5.033860683441162
+INFO:root:current mean train loss 2031.2860949612402
+INFO:root:current train perplexity4.998990058898926
+INFO:root:current mean train loss 2038.5215832587728
+INFO:root:current train perplexity5.011537551879883
+INFO:root:current mean train loss 2040.9148261057758
+INFO:root:current train perplexity5.015223503112793
+INFO:root:current mean train loss 2043.6831487840223
+INFO:root:current train perplexity5.0144243240356445
+INFO:root:current mean train loss 2045.8768139871058
+INFO:root:current train perplexity5.0209174156188965
+INFO:root:current mean train loss 2046.305080766099
+INFO:root:current train perplexity5.023412227630615
+INFO:root:current mean train loss 2042.412586843495
+INFO:root:current train perplexity5.018725872039795
+INFO:root:current mean train loss 2043.326255336435
+INFO:root:current train perplexity5.022757530212402
+INFO:root:current mean train loss 2043.577666947882
+INFO:root:current train perplexity5.023614883422852
+INFO:root:current mean train loss 2044.237052957011
+INFO:root:current train perplexity5.026946067810059
+INFO:root:current mean train loss 2044.2999346176657
+INFO:root:current train perplexity5.0252790451049805
+INFO:root:current mean train loss 2046.0331230332117
+INFO:root:current train perplexity5.027984619140625
+INFO:root:current mean train loss 2047.6099398891622
+INFO:root:current train perplexity5.028961181640625
+INFO:root:current mean train loss 2047.3052017153152
+INFO:root:current train perplexity5.0294928550720215
+INFO:root:current mean train loss 2048.692929625655
+INFO:root:current train perplexity5.029216766357422
+INFO:root:current mean train loss 2048.074924994112
+INFO:root:current train perplexity5.0272088050842285
+INFO:root:current mean train loss 2047.508555105351
+INFO:root:current train perplexity5.025543212890625
+INFO:root:current mean train loss 2047.957551950332
+INFO:root:current train perplexity5.026736736297607
+
+100%|██████████| 1/1 [05:32<00:00, 332.02s/it][A100%|██████████| 1/1 [05:32<00:00, 332.02s/it]
+INFO:root:final mean train loss: 2047.4350761071155
+INFO:root:final train perplexity: 5.026533126831055
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.40s/it][A100%|██████████| 1/1 [00:27<00:00, 27.40s/it]
+INFO:root:eval mean loss: 1972.9482214095744
+INFO:root:eval perplexity: 4.931309700012207
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.09s/it][A100%|██████████| 1/1 [00:26<00:00, 26.09s/it]
+INFO:root:eval mean loss: 2404.477048184009
+INFO:root:eval perplexity: 7.145246982574463
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/28
+ 56%|█████▌    | 28/50 [2:58:47<2:20:10, 382.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2045.3124560546876
+INFO:root:current train perplexity5.005478382110596
+INFO:root:current mean train loss 2031.9458461216518
+INFO:root:current train perplexity4.977958679199219
+INFO:root:current mean train loss 2031.186736505682
+INFO:root:current train perplexity4.979574203491211
+INFO:root:current mean train loss 2032.2655319010416
+INFO:root:current train perplexity4.970609188079834
+INFO:root:current mean train loss 2038.2639974814967
+INFO:root:current train perplexity4.9860005378723145
+INFO:root:current mean train loss 2045.0885788892663
+INFO:root:current train perplexity4.992950439453125
+INFO:root:current mean train loss 2044.7550030743635
+INFO:root:current train perplexity5.000859260559082
+INFO:root:current mean train loss 2045.7931160219255
+INFO:root:current train perplexity5.005430698394775
+INFO:root:current mean train loss 2045.3670546875
+INFO:root:current train perplexity4.999817848205566
+INFO:root:current mean train loss 2043.1302948467549
+INFO:root:current train perplexity4.996410846710205
+INFO:root:current mean train loss 2042.4464392941497
+INFO:root:current train perplexity4.993835926055908
+INFO:root:current mean train loss 2040.7972870262633
+INFO:root:current train perplexity4.993753910064697
+INFO:root:current mean train loss 2041.7653697533701
+INFO:root:current train perplexity4.995574474334717
+INFO:root:current mean train loss 2040.6986009410512
+INFO:root:current train perplexity4.991156578063965
+INFO:root:current mean train loss 2039.319983117055
+INFO:root:current train perplexity4.9870285987854
+INFO:root:current mean train loss 2039.1891089254711
+INFO:root:current train perplexity4.985748291015625
+INFO:root:current mean train loss 2039.4062914674673
+INFO:root:current train perplexity4.9885358810424805
+INFO:root:current mean train loss 2039.1847491197184
+INFO:root:current train perplexity4.9902520179748535
+INFO:root:current mean train loss 2038.7847977864583
+INFO:root:current train perplexity4.9885454177856445
+INFO:root:current mean train loss 2039.560753436511
+INFO:root:current train perplexity4.99235200881958
+
+100%|██████████| 1/1 [05:21<00:00, 321.96s/it][A100%|██████████| 1/1 [05:21<00:00, 321.96s/it]
+INFO:root:final mean train loss: 2038.6883435655711
+INFO:root:final train perplexity: 4.991977691650391
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.89s/it][A100%|██████████| 1/1 [00:25<00:00, 25.89s/it]
+INFO:root:eval mean loss: 1979.5313863551362
+INFO:root:eval perplexity: 4.957634925842285
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 25.00s/it][A100%|██████████| 1/1 [00:24<00:00, 25.00s/it]
+INFO:root:eval mean loss: 2412.7015333243294
+INFO:root:eval perplexity: 7.193470478057861
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/29
+ 58%|█████▊    | 29/50 [3:05:01<2:12:56, 379.84s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2006.1598749575408
+INFO:root:current train perplexity4.927297592163086
+INFO:root:current mean train loss 2025.29976272583
+INFO:root:current train perplexity4.959170341491699
+INFO:root:current mean train loss 2031.2886578285531
+INFO:root:current train perplexity4.970076084136963
+INFO:root:current mean train loss 2028.978755405971
+INFO:root:current train perplexity4.9621357917785645
+INFO:root:current mean train loss 2032.3618409691787
+INFO:root:current train perplexity4.9668498039245605
+INFO:root:current mean train loss 2033.3738164128483
+INFO:root:current train perplexity4.973586559295654
+INFO:root:current mean train loss 2033.433719171954
+INFO:root:current train perplexity4.973110675811768
+INFO:root:current mean train loss 2031.3410868018564
+INFO:root:current train perplexity4.960982799530029
+INFO:root:current mean train loss 2031.0786498202337
+INFO:root:current train perplexity4.961056232452393
+INFO:root:current mean train loss 2033.164455044654
+INFO:root:current train perplexity4.963139533996582
+INFO:root:current mean train loss 2033.4831956576952
+INFO:root:current train perplexity4.961139678955078
+INFO:root:current mean train loss 2033.6745953655884
+INFO:root:current train perplexity4.96049690246582
+INFO:root:current mean train loss 2032.8502737700755
+INFO:root:current train perplexity4.959794998168945
+INFO:root:current mean train loss 2032.7289580421887
+INFO:root:current train perplexity4.961704254150391
+INFO:root:current mean train loss 2031.7293792806427
+INFO:root:current train perplexity4.959246635437012
+INFO:root:current mean train loss 2032.2553518477396
+INFO:root:current train perplexity4.958919048309326
+INFO:root:current mean train loss 2030.0371581454085
+INFO:root:current train perplexity4.957274436950684
+INFO:root:current mean train loss 2031.648573057992
+INFO:root:current train perplexity4.958868026733398
+INFO:root:current mean train loss 2031.123192881933
+INFO:root:current train perplexity4.958874702453613
+
+100%|██████████| 1/1 [05:35<00:00, 335.01s/it][A100%|██████████| 1/1 [05:35<00:00, 335.01s/it]
+INFO:root:final mean train loss: 2030.018645178352
+INFO:root:final train perplexity: 4.957962512969971
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.43s/it][A100%|██████████| 1/1 [00:26<00:00, 26.43s/it]
+INFO:root:eval mean loss: 1969.1510243517287
+INFO:root:eval perplexity: 4.916190147399902
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.88s/it][A100%|██████████| 1/1 [00:24<00:00, 24.88s/it]
+INFO:root:eval mean loss: 2401.603323429189
+INFO:root:eval perplexity: 7.128472805023193
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/30
+ 60%|██████    | 30/50 [3:11:29<2:07:22, 382.14s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2029.307644314236
+INFO:root:current train perplexity5.0284881591796875
+INFO:root:current mean train loss 2036.1867563790138
+INFO:root:current train perplexity4.940342426300049
+INFO:root:current mean train loss 2028.1603595058314
+INFO:root:current train perplexity4.942481994628906
+INFO:root:current mean train loss 2022.9162487042374
+INFO:root:current train perplexity4.933296203613281
+INFO:root:current mean train loss 2024.8895908346385
+INFO:root:current train perplexity4.939059257507324
+INFO:root:current mean train loss 2023.9561861109405
+INFO:root:current train perplexity4.9363932609558105
+INFO:root:current mean train loss 2026.048879438629
+INFO:root:current train perplexity4.934518814086914
+INFO:root:current mean train loss 2025.3296545806154
+INFO:root:current train perplexity4.931120872497559
+INFO:root:current mean train loss 2026.9405691102054
+INFO:root:current train perplexity4.9390034675598145
+INFO:root:current mean train loss 2025.2916051614927
+INFO:root:current train perplexity4.9345269203186035
+INFO:root:current mean train loss 2027.6935332253856
+INFO:root:current train perplexity4.9399094581604
+INFO:root:current mean train loss 2026.8863092806018
+INFO:root:current train perplexity4.935651779174805
+INFO:root:current mean train loss 2026.8449387972369
+INFO:root:current train perplexity4.937257766723633
+INFO:root:current mean train loss 2027.7497572581944
+INFO:root:current train perplexity4.938775062561035
+INFO:root:current mean train loss 2028.5333181777858
+INFO:root:current train perplexity4.942204475402832
+INFO:root:current mean train loss 2028.0676270340198
+INFO:root:current train perplexity4.940280437469482
+INFO:root:current mean train loss 2026.2599650798486
+INFO:root:current train perplexity4.93714714050293
+INFO:root:current mean train loss 2024.1717727152209
+INFO:root:current train perplexity4.930366516113281
+INFO:root:current mean train loss 2023.8386879620991
+INFO:root:current train perplexity4.931879043579102
+INFO:root:current mean train loss 2023.1721609604178
+INFO:root:current train perplexity4.930678844451904
+
+100%|██████████| 1/1 [05:19<00:00, 319.36s/it][A100%|██████████| 1/1 [05:19<00:00, 319.39s/it]
+INFO:root:final mean train loss: 2022.6632988064564
+INFO:root:final train perplexity: 4.929285049438477
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.33s/it][A100%|██████████| 1/1 [00:26<00:00, 26.33s/it]
+INFO:root:eval mean loss: 1973.3241940762134
+INFO:root:eval perplexity: 4.932809829711914
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.74s/it][A100%|██████████| 1/1 [00:25<00:00, 25.74s/it]
+INFO:root:eval mean loss: 2407.913481583832
+INFO:root:eval perplexity: 7.165355682373047
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/31
+ 62%|██████▏   | 31/50 [3:17:41<2:00:06, 379.28s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2032.3448110727163
+INFO:root:current train perplexity5.004891395568848
+INFO:root:current mean train loss 2011.5240110367063
+INFO:root:current train perplexity4.893686294555664
+INFO:root:current mean train loss 2014.8875505565543
+INFO:root:current train perplexity4.912774562835693
+INFO:root:current mean train loss 2016.6477372807228
+INFO:root:current train perplexity4.908660888671875
+INFO:root:current mean train loss 2018.850439223885
+INFO:root:current train perplexity4.917537689208984
+INFO:root:current mean train loss 2017.7567941643892
+INFO:root:current train perplexity4.912461757659912
+INFO:root:current mean train loss 2018.6506599206893
+INFO:root:current train perplexity4.910305500030518
+INFO:root:current mean train loss 2020.790376521339
+INFO:root:current train perplexity4.915293216705322
+INFO:root:current mean train loss 2023.0379078567173
+INFO:root:current train perplexity4.915911674499512
+INFO:root:current mean train loss 2023.883162364589
+INFO:root:current train perplexity4.915975570678711
+INFO:root:current mean train loss 2021.9200002807854
+INFO:root:current train perplexity4.91048002243042
+INFO:root:current mean train loss 2020.5146184077694
+INFO:root:current train perplexity4.911730766296387
+INFO:root:current mean train loss 2020.7795866177482
+INFO:root:current train perplexity4.912352085113525
+INFO:root:current mean train loss 2021.4401686080082
+INFO:root:current train perplexity4.911704063415527
+INFO:root:current mean train loss 2019.4539562936918
+INFO:root:current train perplexity4.9084858894348145
+INFO:root:current mean train loss 2017.8186870289974
+INFO:root:current train perplexity4.904902458190918
+INFO:root:current mean train loss 2016.8920996033692
+INFO:root:current train perplexity4.903512954711914
+INFO:root:current mean train loss 2017.5341990659854
+INFO:root:current train perplexity4.904932022094727
+INFO:root:current mean train loss 2017.2489101246963
+INFO:root:current train perplexity4.905208587646484
+INFO:root:current mean train loss 2018.0905911929883
+INFO:root:current train perplexity4.9074554443359375
+
+100%|██████████| 1/1 [05:21<00:00, 321.45s/it][A100%|██████████| 1/1 [05:21<00:00, 321.45s/it]
+INFO:root:final mean train loss: 2016.8185595937048
+INFO:root:final train perplexity: 4.9066162109375
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.49s/it][A100%|██████████| 1/1 [00:26<00:00, 26.49s/it]
+INFO:root:eval mean loss: 1966.151050757009
+INFO:root:eval perplexity: 4.904276371002197
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.18s/it][A100%|██████████| 1/1 [00:25<00:00, 25.18s/it]
+INFO:root:eval mean loss: 2401.5868963146886
+INFO:root:eval perplexity: 7.1283793449401855
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/32
+ 64%|██████▍   | 32/50 [3:23:56<1:53:20, 377.81s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2007.6902309683867
+INFO:root:current train perplexity4.823277950286865
+INFO:root:current mean train loss 1992.1604601453234
+INFO:root:current train perplexity4.8399529457092285
+INFO:root:current mean train loss 1999.9965624397184
+INFO:root:current train perplexity4.851950168609619
+INFO:root:current mean train loss 2002.266866344752
+INFO:root:current train perplexity4.859307289123535
+INFO:root:current mean train loss 2006.0249362368615
+INFO:root:current train perplexity4.86450719833374
+INFO:root:current mean train loss 2010.0466301849533
+INFO:root:current train perplexity4.8734965324401855
+INFO:root:current mean train loss 2010.4266573845134
+INFO:root:current train perplexity4.878052711486816
+INFO:root:current mean train loss 2011.1472636206154
+INFO:root:current train perplexity4.879716873168945
+INFO:root:current mean train loss 2009.748502864815
+INFO:root:current train perplexity4.877492427825928
+INFO:root:current mean train loss 2007.1148021451236
+INFO:root:current train perplexity4.864655017852783
+INFO:root:current mean train loss 2007.3564251820171
+INFO:root:current train perplexity4.870516300201416
+INFO:root:current mean train loss 2008.9721014334878
+INFO:root:current train perplexity4.8757195472717285
+INFO:root:current mean train loss 2010.5647889902202
+INFO:root:current train perplexity4.877170562744141
+INFO:root:current mean train loss 2011.363294156913
+INFO:root:current train perplexity4.880415439605713
+INFO:root:current mean train loss 2009.862005475653
+INFO:root:current train perplexity4.8768439292907715
+INFO:root:current mean train loss 2011.4534890749048
+INFO:root:current train perplexity4.882683277130127
+INFO:root:current mean train loss 2011.6614731680093
+INFO:root:current train perplexity4.88226842880249
+INFO:root:current mean train loss 2010.4721823958782
+INFO:root:current train perplexity4.879971027374268
+INFO:root:current mean train loss 2011.4344565877434
+INFO:root:current train perplexity4.881973743438721
+INFO:root:current mean train loss 2010.6431083109842
+INFO:root:current train perplexity4.882306098937988
+
+100%|██████████| 1/1 [05:29<00:00, 329.84s/it][A100%|██████████| 1/1 [05:29<00:00, 329.84s/it]
+INFO:root:final mean train loss: 2011.0719751308977
+INFO:root:final train perplexity: 4.88442850112915
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.04s/it][A100%|██████████| 1/1 [00:27<00:00, 27.04s/it]
+INFO:root:eval mean loss: 1965.8887285814217
+INFO:root:eval perplexity: 4.903235912322998
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.10s/it][A100%|██████████| 1/1 [00:25<00:00, 25.10s/it]
+INFO:root:eval mean loss: 2401.2888179265015
+INFO:root:eval perplexity: 7.126640796661377
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/33
+ 66%|██████▌   | 33/50 [3:30:19<1:47:30, 379.42s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1980.461073811849
+INFO:root:current train perplexity4.820394039154053
+INFO:root:current mean train loss 1984.7499160766602
+INFO:root:current train perplexity4.820967674255371
+INFO:root:current mean train loss 1995.9671912560095
+INFO:root:current train perplexity4.825368404388428
+INFO:root:current mean train loss 2001.8920674641927
+INFO:root:current train perplexity4.854221820831299
+INFO:root:current mean train loss 2004.4630936332371
+INFO:root:current train perplexity4.857466220855713
+INFO:root:current mean train loss 2006.1125074114118
+INFO:root:current train perplexity4.863215923309326
+INFO:root:current mean train loss 2004.1342599579782
+INFO:root:current train perplexity4.85664176940918
+INFO:root:current mean train loss 2004.9870849609374
+INFO:root:current train perplexity4.851214408874512
+INFO:root:current mean train loss 2007.4415399595748
+INFO:root:current train perplexity4.860270023345947
+INFO:root:current mean train loss 2007.8626019795736
+INFO:root:current train perplexity4.857756614685059
+INFO:root:current mean train loss 2007.2300892955852
+INFO:root:current train perplexity4.862184047698975
+INFO:root:current mean train loss 2008.5368862809805
+INFO:root:current train perplexity4.865306854248047
+INFO:root:current mean train loss 2007.5753868466331
+INFO:root:current train perplexity4.8659515380859375
+INFO:root:current mean train loss 2006.021465884938
+INFO:root:current train perplexity4.861714839935303
+INFO:root:current mean train loss 2006.1312965706604
+INFO:root:current train perplexity4.863090515136719
+INFO:root:current mean train loss 2008.0996754964192
+INFO:root:current train perplexity4.871425628662109
+INFO:root:current mean train loss 2006.9473374699971
+INFO:root:current train perplexity4.870037078857422
+INFO:root:current mean train loss 2006.8026732011274
+INFO:root:current train perplexity4.866626262664795
+INFO:root:current mean train loss 2006.9039084157637
+INFO:root:current train perplexity4.867789268493652
+INFO:root:current mean train loss 2008.0508681939573
+INFO:root:current train perplexity4.870742321014404
+
+100%|██████████| 1/1 [05:22<00:00, 322.69s/it][A100%|██████████| 1/1 [05:22<00:00, 322.69s/it]
+INFO:root:final mean train loss: 2007.3714667323618
+INFO:root:final train perplexity: 4.870195388793945
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.03s/it][A100%|██████████| 1/1 [00:27<00:00, 27.03s/it]
+INFO:root:eval mean loss: 1962.6138063254932
+INFO:root:eval perplexity: 4.8902668952941895
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.08s/it][A100%|██████████| 1/1 [00:25<00:00, 25.08s/it]
+INFO:root:eval mean loss: 2400.9838910474846
+INFO:root:eval perplexity: 7.12486457824707
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/34
+ 68%|██████▊   | 34/50 [3:36:35<1:40:54, 378.39s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1980.8251984831575
+INFO:root:current train perplexity4.799107074737549
+INFO:root:current mean train loss 1983.973150738215
+INFO:root:current train perplexity4.822185516357422
+INFO:root:current mean train loss 1987.1183888128949
+INFO:root:current train perplexity4.825337886810303
+INFO:root:current mean train loss 1994.210224181967
+INFO:root:current train perplexity4.827369213104248
+INFO:root:current mean train loss 1999.8417252194706
+INFO:root:current train perplexity4.837716102600098
+INFO:root:current mean train loss 2001.4499998307517
+INFO:root:current train perplexity4.8414835929870605
+INFO:root:current mean train loss 2005.7999992426953
+INFO:root:current train perplexity4.85228157043457
+INFO:root:current mean train loss 2003.7360498926662
+INFO:root:current train perplexity4.851778507232666
+INFO:root:current mean train loss 2005.4157994617215
+INFO:root:current train perplexity4.854788780212402
+INFO:root:current mean train loss 2006.650868910728
+INFO:root:current train perplexity4.860641002655029
+INFO:root:current mean train loss 2004.9609248055942
+INFO:root:current train perplexity4.862477779388428
+INFO:root:current mean train loss 2004.099056376779
+INFO:root:current train perplexity4.8550896644592285
+INFO:root:current mean train loss 2005.3413865008015
+INFO:root:current train perplexity4.860537052154541
+INFO:root:current mean train loss 2003.6857065326853
+INFO:root:current train perplexity4.859516620635986
+INFO:root:current mean train loss 2004.5917924946841
+INFO:root:current train perplexity4.857202529907227
+INFO:root:current mean train loss 2004.0959629017716
+INFO:root:current train perplexity4.858377456665039
+INFO:root:current mean train loss 2004.265240227387
+INFO:root:current train perplexity4.859927177429199
+INFO:root:current mean train loss 2005.0684082855585
+INFO:root:current train perplexity4.860263347625732
+INFO:root:current mean train loss 2005.3695131443128
+INFO:root:current train perplexity4.85736608505249
+INFO:root:current mean train loss 2005.285392240255
+INFO:root:current train perplexity4.859772682189941
+
+100%|██████████| 1/1 [05:32<00:00, 332.34s/it][A100%|██████████| 1/1 [05:32<00:00, 332.34s/it]
+INFO:root:final mean train loss: 2004.5791705694694
+INFO:root:final train perplexity: 4.859480857849121
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.77s/it][A100%|██████████| 1/1 [00:26<00:00, 26.77s/it]
+INFO:root:eval mean loss: 1968.3691150854665
+INFO:root:eval perplexity: 4.913081169128418
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.58s/it][A100%|██████████| 1/1 [00:25<00:00, 25.58s/it]
+INFO:root:eval mean loss: 2404.4466725883753
+INFO:root:eval perplexity: 7.145068645477295
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/35
+ 70%|███████   | 35/50 [3:43:01<1:35:09, 380.65s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2022.5634869514627
+INFO:root:current train perplexity4.941564559936523
+INFO:root:current mean train loss 2010.217248661002
+INFO:root:current train perplexity4.901072978973389
+INFO:root:current mean train loss 2005.8004868695525
+INFO:root:current train perplexity4.881929874420166
+INFO:root:current mean train loss 2009.3828289206258
+INFO:root:current train perplexity4.879420280456543
+INFO:root:current mean train loss 2006.9071072103523
+INFO:root:current train perplexity4.880894184112549
+INFO:root:current mean train loss 2007.2159672489872
+INFO:root:current train perplexity4.876919746398926
+INFO:root:current mean train loss 2007.2274884050792
+INFO:root:current train perplexity4.878379821777344
+INFO:root:current mean train loss 2006.2764503613528
+INFO:root:current train perplexity4.87062931060791
+INFO:root:current mean train loss 2007.5334127199997
+INFO:root:current train perplexity4.867044448852539
+INFO:root:current mean train loss 2006.1419077207386
+INFO:root:current train perplexity4.8633036613464355
+INFO:root:current mean train loss 2004.241488441035
+INFO:root:current train perplexity4.8595709800720215
+INFO:root:current mean train loss 2003.5826877101981
+INFO:root:current train perplexity4.853957176208496
+INFO:root:current mean train loss 2003.8711319559325
+INFO:root:current train perplexity4.855909824371338
+INFO:root:current mean train loss 2002.5154154488825
+INFO:root:current train perplexity4.852141380310059
+INFO:root:current mean train loss 2003.40005701517
+INFO:root:current train perplexity4.8503499031066895
+INFO:root:current mean train loss 2003.9538205863541
+INFO:root:current train perplexity4.851621150970459
+INFO:root:current mean train loss 2004.3466794713188
+INFO:root:current train perplexity4.855134963989258
+INFO:root:current mean train loss 2004.2997427677763
+INFO:root:current train perplexity4.855711936950684
+INFO:root:current mean train loss 2005.2044773766459
+INFO:root:current train perplexity4.858606815338135
+
+100%|██████████| 1/1 [05:23<00:00, 323.32s/it][A100%|██████████| 1/1 [05:23<00:00, 323.32s/it]
+INFO:root:final mean train loss: 2003.26150409585
+INFO:root:final train perplexity: 4.854434013366699
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.27s/it][A100%|██████████| 1/1 [00:26<00:00, 26.27s/it]
+INFO:root:eval mean loss: 1960.8562964040336
+INFO:root:eval perplexity: 4.883321285247803
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.94s/it][A100%|██████████| 1/1 [00:24<00:00, 24.94s/it]
+INFO:root:eval mean loss: 2399.784320804244
+INFO:root:eval perplexity: 7.117877006530762
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/36
+ 72%|███████▏  | 36/50 [3:49:16<1:28:28, 379.18s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1931.6633411754262
+INFO:root:current train perplexity4.62213659286499
+INFO:root:current mean train loss 2002.1450184315174
+INFO:root:current train perplexity4.8587236404418945
+INFO:root:current mean train loss 2008.4279819868186
+INFO:root:current train perplexity4.838292598724365
+INFO:root:current mean train loss 2005.9854206440916
+INFO:root:current train perplexity4.83250093460083
+INFO:root:current mean train loss 2008.974704120571
+INFO:root:current train perplexity4.846045970916748
+INFO:root:current mean train loss 2003.6969283191659
+INFO:root:current train perplexity4.828827857971191
+INFO:root:current mean train loss 1998.465688452588
+INFO:root:current train perplexity4.823265552520752
+INFO:root:current mean train loss 1999.6323983880538
+INFO:root:current train perplexity4.831038951873779
+INFO:root:current mean train loss 1999.129611879624
+INFO:root:current train perplexity4.835877895355225
+INFO:root:current mean train loss 1997.6216919079309
+INFO:root:current train perplexity4.835433483123779
+INFO:root:current mean train loss 2000.2892964982846
+INFO:root:current train perplexity4.842126846313477
+INFO:root:current mean train loss 2000.8980802987526
+INFO:root:current train perplexity4.83691930770874
+INFO:root:current mean train loss 2001.0539298778128
+INFO:root:current train perplexity4.833637714385986
+INFO:root:current mean train loss 2001.8113330227104
+INFO:root:current train perplexity4.837531089782715
+INFO:root:current mean train loss 2001.6916047115853
+INFO:root:current train perplexity4.841594219207764
+INFO:root:current mean train loss 2000.1426506724126
+INFO:root:current train perplexity4.841501712799072
+INFO:root:current mean train loss 2001.437755582349
+INFO:root:current train perplexity4.8441033363342285
+INFO:root:current mean train loss 2001.5132759847813
+INFO:root:current train perplexity4.8468122482299805
+INFO:root:current mean train loss 2002.3511784267585
+INFO:root:current train perplexity4.847772121429443
+INFO:root:current mean train loss 2002.829757458873
+INFO:root:current train perplexity4.852193832397461
+
+100%|██████████| 1/1 [05:21<00:00, 321.13s/it][A100%|██████████| 1/1 [05:21<00:00, 321.13s/it]
+INFO:root:final mean train loss: 2003.2135745080745
+INFO:root:final train perplexity: 4.854249954223633
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.48s/it][A100%|██████████| 1/1 [00:26<00:00, 26.48s/it]
+INFO:root:eval mean loss: 1960.3290729928524
+INFO:root:eval perplexity: 4.881237983703613
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.36s/it][A100%|██████████| 1/1 [00:25<00:00, 25.36s/it]
+INFO:root:eval mean loss: 2398.675611563608
+INFO:root:eval perplexity: 7.111425399780273
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/37
+ 74%|███████▍  | 37/50 [3:55:31<1:21:49, 377.68s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2041.9025094168526
+INFO:root:current train perplexity4.937847137451172
+INFO:root:current mean train loss 1985.436770439148
+INFO:root:current train perplexity4.81561803817749
+INFO:root:current mean train loss 1999.3321875856634
+INFO:root:current train perplexity4.841550350189209
+INFO:root:current mean train loss 2001.4435525289396
+INFO:root:current train perplexity4.83133602142334
+INFO:root:current mean train loss 2004.0313806266429
+INFO:root:current train perplexity4.844809532165527
+INFO:root:current mean train loss 2004.4606036561909
+INFO:root:current train perplexity4.85014009475708
+INFO:root:current mean train loss 2004.2137565855767
+INFO:root:current train perplexity4.85343074798584
+INFO:root:current mean train loss 2003.8761283119957
+INFO:root:current train perplexity4.856152057647705
+INFO:root:current mean train loss 2002.4830898708767
+INFO:root:current train perplexity4.850432395935059
+INFO:root:current mean train loss 2003.6839307587722
+INFO:root:current train perplexity4.848845958709717
+INFO:root:current mean train loss 2002.252571669998
+INFO:root:current train perplexity4.843846797943115
+INFO:root:current mean train loss 2003.1413883723267
+INFO:root:current train perplexity4.84529447555542
+INFO:root:current mean train loss 2002.6045028239198
+INFO:root:current train perplexity4.845454216003418
+INFO:root:current mean train loss 2003.77887266228
+INFO:root:current train perplexity4.846654891967773
+INFO:root:current mean train loss 2002.3807891076353
+INFO:root:current train perplexity4.841361999511719
+INFO:root:current mean train loss 2001.5684264817162
+INFO:root:current train perplexity4.842970371246338
+INFO:root:current mean train loss 2002.6114371484855
+INFO:root:current train perplexity4.848780155181885
+INFO:root:current mean train loss 2002.2733783015499
+INFO:root:current train perplexity4.851193904876709
+INFO:root:current mean train loss 2003.038212214831
+INFO:root:current train perplexity4.851486682891846
+INFO:root:current mean train loss 2003.8761404203676
+INFO:root:current train perplexity4.854279041290283
+
+100%|██████████| 1/1 [05:21<00:00, 321.66s/it][A100%|██████████| 1/1 [05:21<00:00, 321.66s/it]
+INFO:root:final mean train loss: 2003.1753369830078
+INFO:root:final train perplexity: 4.854104042053223
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.45s/it][A100%|██████████| 1/1 [00:26<00:00, 26.45s/it]
+INFO:root:eval mean loss: 1959.7402395694814
+INFO:root:eval perplexity: 4.878915309906006
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.20s/it][A100%|██████████| 1/1 [00:25<00:00, 25.21s/it]
+INFO:root:eval mean loss: 2399.054061997867
+INFO:root:eval perplexity: 7.1136274337768555
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/38
+ 76%|███████▌  | 38/50 [4:01:45<1:15:20, 376.73s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2015.0817355685763
+INFO:root:current train perplexity4.862797737121582
+INFO:root:current mean train loss 2015.8443763469827
+INFO:root:current train perplexity4.869616985321045
+INFO:root:current mean train loss 2005.971777841996
+INFO:root:current train perplexity4.850830554962158
+INFO:root:current mean train loss 2001.0381743942482
+INFO:root:current train perplexity4.845069885253906
+INFO:root:current mean train loss 1998.6593344013343
+INFO:root:current train perplexity4.837645053863525
+INFO:root:current mean train loss 2000.555597315797
+INFO:root:current train perplexity4.844356060028076
+INFO:root:current mean train loss 2002.50306159914
+INFO:root:current train perplexity4.845345973968506
+INFO:root:current mean train loss 2003.7265243223048
+INFO:root:current train perplexity4.852367877960205
+INFO:root:current mean train loss 2005.4157105214497
+INFO:root:current train perplexity4.860503196716309
+INFO:root:current mean train loss 2005.6124655102926
+INFO:root:current train perplexity4.8540120124816895
+INFO:root:current mean train loss 2005.8844049043062
+INFO:root:current train perplexity4.85544490814209
+INFO:root:current mean train loss 2008.3304843152976
+INFO:root:current train perplexity4.862706661224365
+INFO:root:current mean train loss 2007.938077799479
+INFO:root:current train perplexity4.859617233276367
+INFO:root:current mean train loss 2007.1997487802046
+INFO:root:current train perplexity4.858561992645264
+INFO:root:current mean train loss 2006.3159932384028
+INFO:root:current train perplexity4.855785369873047
+INFO:root:current mean train loss 2004.953944411787
+INFO:root:current train perplexity4.853404521942139
+INFO:root:current mean train loss 2004.8272112907248
+INFO:root:current train perplexity4.853553295135498
+INFO:root:current mean train loss 2003.6592883265805
+INFO:root:current train perplexity4.852725028991699
+INFO:root:current mean train loss 2004.4696224222985
+INFO:root:current train perplexity4.854953765869141
+INFO:root:current mean train loss 2003.6322311440592
+INFO:root:current train perplexity4.854227066040039
+
+100%|██████████| 1/1 [05:19<00:00, 319.38s/it][A100%|██████████| 1/1 [05:19<00:00, 319.38s/it]
+INFO:root:final mean train loss: 2003.1415899279618
+INFO:root:final train perplexity: 4.853974342346191
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.01s/it][A100%|██████████| 1/1 [00:26<00:00, 26.01s/it]
+INFO:root:eval mean loss: 1961.1260289401873
+INFO:root:eval perplexity: 4.884385585784912
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.33s/it][A100%|██████████| 1/1 [00:24<00:00, 24.34s/it]
+INFO:root:eval mean loss: 2399.3164287594195
+INFO:root:eval perplexity: 7.11515474319458
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/39
+ 78%|███████▊  | 39/50 [4:07:56<1:08:44, 374.99s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1999.5560086158014
+INFO:root:current train perplexity4.841855049133301
+INFO:root:current mean train loss 2001.8261575581114
+INFO:root:current train perplexity4.854526996612549
+INFO:root:current mean train loss 1992.175881422203
+INFO:root:current train perplexity4.835243225097656
+INFO:root:current mean train loss 1994.1635216138638
+INFO:root:current train perplexity4.840526580810547
+INFO:root:current mean train loss 1996.5064174107142
+INFO:root:current train perplexity4.834862232208252
+INFO:root:current mean train loss 1995.0222776148244
+INFO:root:current train perplexity4.8405070304870605
+INFO:root:current mean train loss 1996.6266536655023
+INFO:root:current train perplexity4.842952251434326
+INFO:root:current mean train loss 1999.1625044214443
+INFO:root:current train perplexity4.846150875091553
+INFO:root:current mean train loss 2001.0845518178564
+INFO:root:current train perplexity4.846618175506592
+INFO:root:current mean train loss 2000.8964964297606
+INFO:root:current train perplexity4.847541332244873
+INFO:root:current mean train loss 2000.0774505097988
+INFO:root:current train perplexity4.8443284034729
+INFO:root:current mean train loss 2000.502706137048
+INFO:root:current train perplexity4.850465297698975
+INFO:root:current mean train loss 1998.8892501129778
+INFO:root:current train perplexity4.850530624389648
+INFO:root:current mean train loss 2000.2562789132767
+INFO:root:current train perplexity4.852370262145996
+INFO:root:current mean train loss 2002.7081748033515
+INFO:root:current train perplexity4.857540130615234
+INFO:root:current mean train loss 2004.6230739930527
+INFO:root:current train perplexity4.85888671875
+INFO:root:current mean train loss 2003.7924383831369
+INFO:root:current train perplexity4.855777263641357
+INFO:root:current mean train loss 2004.8609735530026
+INFO:root:current train perplexity4.8578619956970215
+INFO:root:current mean train loss 2004.5277320542218
+INFO:root:current train perplexity4.85713529586792
+INFO:root:current mean train loss 2005.2033119629405
+INFO:root:current train perplexity4.85775089263916
+
+100%|██████████| 1/1 [05:20<00:00, 320.72s/it][A100%|██████████| 1/1 [05:20<00:00, 320.72s/it]
+INFO:root:final mean train loss: 2004.3886949286218
+INFO:root:final train perplexity: 4.85875129699707
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.01s/it][A100%|██████████| 1/1 [00:26<00:00, 26.01s/it]
+INFO:root:eval mean loss: 1959.0965264502993
+INFO:root:eval perplexity: 4.876375198364258
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.51s/it][A100%|██████████| 1/1 [00:24<00:00, 24.51s/it]
+INFO:root:eval mean loss: 2399.863476043052
+INFO:root:eval perplexity: 7.118338108062744
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/40
+ 80%|████████  | 40/50 [4:14:09<1:02:23, 374.30s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1998.3161837420887
+INFO:root:current train perplexity4.8564772605896
+INFO:root:current mean train loss 2010.9104181215084
+INFO:root:current train perplexity4.8876051902771
+INFO:root:current mean train loss 2003.5151870344703
+INFO:root:current train perplexity4.8590850830078125
+INFO:root:current mean train loss 2010.6285609746042
+INFO:root:current train perplexity4.867771625518799
+INFO:root:current mean train loss 2009.057366420929
+INFO:root:current train perplexity4.865978717803955
+INFO:root:current mean train loss 2008.563678115555
+INFO:root:current train perplexity4.8643107414245605
+INFO:root:current mean train loss 2014.2085669268915
+INFO:root:current train perplexity4.877375602722168
+INFO:root:current mean train loss 2013.177733904896
+INFO:root:current train perplexity4.875308036804199
+INFO:root:current mean train loss 2011.436180140785
+INFO:root:current train perplexity4.870253086090088
+INFO:root:current mean train loss 2010.681228279215
+INFO:root:current train perplexity4.86555814743042
+INFO:root:current mean train loss 2011.6344420651355
+INFO:root:current train perplexity4.871075630187988
+INFO:root:current mean train loss 2009.7348685616453
+INFO:root:current train perplexity4.865694046020508
+INFO:root:current mean train loss 2008.5068971158194
+INFO:root:current train perplexity4.8651652336120605
+INFO:root:current mean train loss 2007.3899786204338
+INFO:root:current train perplexity4.863086223602295
+INFO:root:current mean train loss 2007.4000774845229
+INFO:root:current train perplexity4.8635663986206055
+INFO:root:current mean train loss 2005.0185585529312
+INFO:root:current train perplexity4.860477447509766
+INFO:root:current mean train loss 2006.3614649542603
+INFO:root:current train perplexity4.862400054931641
+INFO:root:current mean train loss 2006.0180840409157
+INFO:root:current train perplexity4.861356258392334
+INFO:root:current mean train loss 2004.4225993011783
+INFO:root:current train perplexity4.859057426452637
+INFO:root:current mean train loss 2005.0050517000773
+INFO:root:current train perplexity4.85919713973999
+
+100%|██████████| 1/1 [05:36<00:00, 336.28s/it][A100%|██████████| 1/1 [05:36<00:00, 336.28s/it]
+INFO:root:final mean train loss: 2004.5646456181253
+INFO:root:final train perplexity: 4.859426021575928
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.49s/it][A100%|██████████| 1/1 [00:26<00:00, 26.49s/it]
+INFO:root:eval mean loss: 1959.6550500748006
+INFO:root:eval perplexity: 4.878579139709473
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.61s/it][A100%|██████████| 1/1 [00:25<00:00, 25.61s/it]
+INFO:root:eval mean loss: 2399.2761524822695
+INFO:root:eval perplexity: 7.114919662475586
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/41
+ 82%|████████▏ | 41/50 [4:20:38<56:50, 378.90s/it]  
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2013.534755706787
+INFO:root:current train perplexity4.917640209197998
+INFO:root:current mean train loss 2009.6788523148516
+INFO:root:current train perplexity4.8895697593688965
+INFO:root:current mean train loss 2005.9950062519795
+INFO:root:current train perplexity4.882082939147949
+INFO:root:current mean train loss 2006.3875815651634
+INFO:root:current train perplexity4.867804050445557
+INFO:root:current mean train loss 2006.3590673631238
+INFO:root:current train perplexity4.868448257446289
+INFO:root:current mean train loss 2010.2652673913328
+INFO:root:current train perplexity4.873463153839111
+INFO:root:current mean train loss 2005.8409932454426
+INFO:root:current train perplexity4.867918968200684
+INFO:root:current mean train loss 2003.3437423322669
+INFO:root:current train perplexity4.855766296386719
+INFO:root:current mean train loss 2001.5725314276558
+INFO:root:current train perplexity4.850600719451904
+INFO:root:current mean train loss 2003.02173182476
+INFO:root:current train perplexity4.853512287139893
+INFO:root:current mean train loss 2002.3677021778412
+INFO:root:current train perplexity4.853096008300781
+INFO:root:current mean train loss 2004.471189671137
+INFO:root:current train perplexity4.857163906097412
+INFO:root:current mean train loss 2004.8363274468315
+INFO:root:current train perplexity4.861975193023682
+INFO:root:current mean train loss 2004.6906184767583
+INFO:root:current train perplexity4.859498977661133
+INFO:root:current mean train loss 2004.1598563780758
+INFO:root:current train perplexity4.8517632484436035
+INFO:root:current mean train loss 2003.703523411189
+INFO:root:current train perplexity4.855042934417725
+INFO:root:current mean train loss 2005.0050508031304
+INFO:root:current train perplexity4.857996940612793
+INFO:root:current mean train loss 2005.0849788130524
+INFO:root:current train perplexity4.860056400299072
+INFO:root:current mean train loss 2004.963181185823
+INFO:root:current train perplexity4.860659599304199
+
+100%|██████████| 1/1 [05:21<00:00, 321.58s/it][A100%|██████████| 1/1 [05:21<00:00, 321.58s/it]
+INFO:root:final mean train loss: 2004.4492462050475
+INFO:root:final train perplexity: 4.858983516693115
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.57s/it][A100%|██████████| 1/1 [00:26<00:00, 26.57s/it]
+INFO:root:eval mean loss: 1956.8549791701296
+INFO:root:eval perplexity: 4.867544174194336
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.67s/it][A100%|██████████| 1/1 [00:24<00:00, 24.67s/it]
+INFO:root:eval mean loss: 2396.2336161728444
+INFO:root:eval perplexity: 7.097238063812256
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/42
+ 84%|████████▍ | 42/50 [4:26:52<50:19, 377.40s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1995.6234224759614
+INFO:root:current train perplexity4.870279788970947
+INFO:root:current mean train loss 2002.0219758970547
+INFO:root:current train perplexity4.858740329742432
+INFO:root:current mean train loss 2009.2138935501027
+INFO:root:current train perplexity4.86484432220459
+INFO:root:current mean train loss 2002.9056088383586
+INFO:root:current train perplexity4.849842071533203
+INFO:root:current mean train loss 2001.1757153379426
+INFO:root:current train perplexity4.843448162078857
+INFO:root:current mean train loss 2006.1178206951297
+INFO:root:current train perplexity4.855655670166016
+INFO:root:current mean train loss 2004.927061494762
+INFO:root:current train perplexity4.85252046585083
+INFO:root:current mean train loss 2004.8957846535875
+INFO:root:current train perplexity4.853108882904053
+INFO:root:current mean train loss 2003.608557744513
+INFO:root:current train perplexity4.857180118560791
+INFO:root:current mean train loss 2002.334179847943
+INFO:root:current train perplexity4.85418701171875
+INFO:root:current mean train loss 2003.5573115899556
+INFO:root:current train perplexity4.858962059020996
+INFO:root:current mean train loss 2004.8431342742729
+INFO:root:current train perplexity4.858371257781982
+INFO:root:current mean train loss 2005.455439102915
+INFO:root:current train perplexity4.858287811279297
+INFO:root:current mean train loss 2007.5658644177217
+INFO:root:current train perplexity4.865500450134277
+INFO:root:current mean train loss 2007.9598043972267
+INFO:root:current train perplexity4.864742755889893
+INFO:root:current mean train loss 2007.0401281342945
+INFO:root:current train perplexity4.865532875061035
+INFO:root:current mean train loss 2007.3381113051187
+INFO:root:current train perplexity4.864941120147705
+INFO:root:current mean train loss 2007.27886417743
+INFO:root:current train perplexity4.866771697998047
+INFO:root:current mean train loss 2007.4044773209114
+INFO:root:current train perplexity4.866516590118408
+INFO:root:current mean train loss 2006.9207332309977
+INFO:root:current train perplexity4.86355447769165
+
+100%|██████████| 1/1 [05:28<00:00, 328.95s/it][A100%|██████████| 1/1 [05:28<00:00, 328.95s/it]
+INFO:root:final mean train loss: 2005.1000709706825
+INFO:root:final train perplexity: 4.861478328704834
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:29<00:00, 29.57s/it][A100%|██████████| 1/1 [00:29<00:00, 29.57s/it]
+INFO:root:eval mean loss: 1958.0812044617132
+INFO:root:eval perplexity: 4.872373104095459
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.10s/it][A100%|██████████| 1/1 [00:26<00:00, 26.10s/it]
+INFO:root:eval mean loss: 2398.9318475385085
+INFO:root:eval perplexity: 7.112915992736816
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/43
+ 86%|████████▌ | 43/50 [4:33:18<44:19, 379.91s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2035.6795572916667
+INFO:root:current train perplexity4.8713202476501465
+INFO:root:current mean train loss 2012.5634521484376
+INFO:root:current train perplexity4.886485576629639
+INFO:root:current mean train loss 1997.017481530231
+INFO:root:current train perplexity4.8643717765808105
+INFO:root:current mean train loss 1997.699463630445
+INFO:root:current train perplexity4.8563361167907715
+INFO:root:current mean train loss 1994.906279807867
+INFO:root:current train perplexity4.841512680053711
+INFO:root:current mean train loss 1997.1576604879128
+INFO:root:current train perplexity4.847407341003418
+INFO:root:current mean train loss 1999.7429311600943
+INFO:root:current train perplexity4.845681190490723
+INFO:root:current mean train loss 1998.548024300353
+INFO:root:current train perplexity4.841612815856934
+INFO:root:current mean train loss 2001.300225168251
+INFO:root:current train perplexity4.844314098358154
+INFO:root:current mean train loss 2000.1018054592994
+INFO:root:current train perplexity4.840488433837891
+INFO:root:current mean train loss 2001.8571802231872
+INFO:root:current train perplexity4.843507289886475
+INFO:root:current mean train loss 2002.8810729440333
+INFO:root:current train perplexity4.847142696380615
+INFO:root:current mean train loss 2004.6263915023183
+INFO:root:current train perplexity4.851128101348877
+INFO:root:current mean train loss 2004.0997923886866
+INFO:root:current train perplexity4.851473331451416
+INFO:root:current mean train loss 2003.6539228959516
+INFO:root:current train perplexity4.8523030281066895
+INFO:root:current mean train loss 2002.582896433313
+INFO:root:current train perplexity4.851173400878906
+INFO:root:current mean train loss 2002.6018512749233
+INFO:root:current train perplexity4.85292387008667
+INFO:root:current mean train loss 2003.7058778619491
+INFO:root:current train perplexity4.857656478881836
+INFO:root:current mean train loss 2005.4478570323172
+INFO:root:current train perplexity4.862398147583008
+INFO:root:current mean train loss 2005.215245696547
+INFO:root:current train perplexity4.861886978149414
+
+100%|██████████| 1/1 [05:18<00:00, 318.63s/it][A100%|██████████| 1/1 [05:18<00:00, 318.63s/it]
+INFO:root:final mean train loss: 2005.446439172665
+INFO:root:final train perplexity: 4.8628058433532715
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.90s/it][A100%|██████████| 1/1 [00:26<00:00, 26.90s/it]
+INFO:root:eval mean loss: 1959.4170696718472
+INFO:root:eval perplexity: 4.8776397705078125
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.74s/it][A100%|██████████| 1/1 [00:24<00:00, 24.74s/it]
+INFO:root:eval mean loss: 2400.0284332924703
+INFO:root:eval perplexity: 7.119299411773682
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/44
+ 88%|████████▊ | 44/50 [4:39:29<37:44, 377.38s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2001.8023681640625
+INFO:root:current train perplexity4.92317533493042
+INFO:root:current mean train loss 2027.5731525031888
+INFO:root:current train perplexity4.9478607177734375
+INFO:root:current mean train loss 2013.1748531202556
+INFO:root:current train perplexity4.89175271987915
+INFO:root:current mean train loss 2016.161485655507
+INFO:root:current train perplexity4.885713577270508
+INFO:root:current mean train loss 2010.4512822025308
+INFO:root:current train perplexity4.871616840362549
+INFO:root:current mean train loss 2009.2126643374372
+INFO:root:current train perplexity4.867248058319092
+INFO:root:current mean train loss 2005.7146248913255
+INFO:root:current train perplexity4.855258941650391
+INFO:root:current mean train loss 2003.0946335798924
+INFO:root:current train perplexity4.850042343139648
+INFO:root:current mean train loss 2000.6889112308147
+INFO:root:current train perplexity4.849400043487549
+INFO:root:current mean train loss 2002.3953745277026
+INFO:root:current train perplexity4.850306034088135
+INFO:root:current mean train loss 2002.30942364158
+INFO:root:current train perplexity4.850680828094482
+INFO:root:current mean train loss 2001.6377144691314
+INFO:root:current train perplexity4.850202560424805
+INFO:root:current mean train loss 2003.1179517365115
+INFO:root:current train perplexity4.854537487030029
+INFO:root:current mean train loss 2003.3300426004548
+INFO:root:current train perplexity4.855684757232666
+INFO:root:current mean train loss 2003.5431169722108
+INFO:root:current train perplexity4.8560566902160645
+INFO:root:current mean train loss 2004.1734559170723
+INFO:root:current train perplexity4.857631683349609
+INFO:root:current mean train loss 2005.65102165514
+INFO:root:current train perplexity4.862114906311035
+INFO:root:current mean train loss 2006.7000751287922
+INFO:root:current train perplexity4.865670680999756
+INFO:root:current mean train loss 2006.6316029001844
+INFO:root:current train perplexity4.864870548248291
+INFO:root:current mean train loss 2006.8678825546915
+INFO:root:current train perplexity4.865609645843506
+
+100%|██████████| 1/1 [05:20<00:00, 320.30s/it][A100%|██████████| 1/1 [05:20<00:00, 320.30s/it]
+INFO:root:final mean train loss: 2005.6649709481273
+INFO:root:final train perplexity: 4.863644123077393
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.48s/it][A100%|██████████| 1/1 [00:26<00:00, 26.48s/it]
+INFO:root:eval mean loss: 1957.825893104499
+INFO:root:eval perplexity: 4.871366500854492
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.34s/it][A100%|██████████| 1/1 [00:24<00:00, 24.34s/it]
+INFO:root:eval mean loss: 2398.447981597684
+INFO:root:eval perplexity: 7.11010217666626
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/45
+ 90%|█████████ | 45/50 [4:45:42<31:19, 375.87s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1973.8606224060059
+INFO:root:current train perplexity4.8223795890808105
+INFO:root:current mean train loss 2009.0662000702648
+INFO:root:current train perplexity4.878329753875732
+INFO:root:current mean train loss 2016.3629585034919
+INFO:root:current train perplexity4.895203113555908
+INFO:root:current mean train loss 2013.8340883359804
+INFO:root:current train perplexity4.887753963470459
+INFO:root:current mean train loss 2010.7257935096477
+INFO:root:current train perplexity4.882247447967529
+INFO:root:current mean train loss 2009.1424770490498
+INFO:root:current train perplexity4.882669925689697
+INFO:root:current mean train loss 2004.568337497941
+INFO:root:current train perplexity4.8733744621276855
+INFO:root:current mean train loss 2002.6869148933451
+INFO:root:current train perplexity4.869475364685059
+INFO:root:current mean train loss 1999.9396807352703
+INFO:root:current train perplexity4.860945701599121
+INFO:root:current mean train loss 2002.483805676219
+INFO:root:current train perplexity4.859642028808594
+INFO:root:current mean train loss 2002.665041242327
+INFO:root:current train perplexity4.8605828285217285
+INFO:root:current mean train loss 2002.9812428058217
+INFO:root:current train perplexity4.860452175140381
+INFO:root:current mean train loss 2001.9162734792203
+INFO:root:current train perplexity4.855540752410889
+INFO:root:current mean train loss 2002.2378690389594
+INFO:root:current train perplexity4.855990886688232
+INFO:root:current mean train loss 2003.1339464031282
+INFO:root:current train perplexity4.859218120574951
+INFO:root:current mean train loss 2002.899751394911
+INFO:root:current train perplexity4.85789155960083
+INFO:root:current mean train loss 2003.548907646766
+INFO:root:current train perplexity4.857690334320068
+INFO:root:current mean train loss 2004.614482023278
+INFO:root:current train perplexity4.859066486358643
+INFO:root:current mean train loss 2005.5568110912143
+INFO:root:current train perplexity4.8604302406311035
+INFO:root:current mean train loss 2005.8778372646107
+INFO:root:current train perplexity4.862146377563477
+
+100%|██████████| 1/1 [05:19<00:00, 319.23s/it][A100%|██████████| 1/1 [05:19<00:00, 319.23s/it]
+INFO:root:final mean train loss: 2005.5018864572498
+INFO:root:final train perplexity: 4.86301851272583
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.84s/it][A100%|██████████| 1/1 [00:26<00:00, 26.84s/it]
+INFO:root:eval mean loss: 1957.7281940000278
+INFO:root:eval perplexity: 4.870982646942139
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.75s/it][A100%|██████████| 1/1 [00:24<00:00, 24.75s/it]
+INFO:root:eval mean loss: 2398.222019493157
+INFO:root:eval perplexity: 7.108789443969727
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/46
+ 92%|█████████▏| 46/50 [4:51:54<24:58, 374.72s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1988.1090555073301
+INFO:root:current train perplexity4.828630447387695
+INFO:root:current mean train loss 2005.431041738605
+INFO:root:current train perplexity4.844333648681641
+INFO:root:current mean train loss 2003.8194050093139
+INFO:root:current train perplexity4.853954792022705
+INFO:root:current mean train loss 2008.5181551555322
+INFO:root:current train perplexity4.880311965942383
+INFO:root:current mean train loss 2008.349936756919
+INFO:root:current train perplexity4.872311592102051
+INFO:root:current mean train loss 2005.1913379662624
+INFO:root:current train perplexity4.8674235343933105
+INFO:root:current mean train loss 2001.2038938099417
+INFO:root:current train perplexity4.858980655670166
+INFO:root:current mean train loss 2002.8810700674217
+INFO:root:current train perplexity4.85378360748291
+INFO:root:current mean train loss 2000.6775663031622
+INFO:root:current train perplexity4.850220680236816
+INFO:root:current mean train loss 2001.3178006637838
+INFO:root:current train perplexity4.849612236022949
+INFO:root:current mean train loss 2004.1075684497139
+INFO:root:current train perplexity4.859450817108154
+INFO:root:current mean train loss 2003.0826778815622
+INFO:root:current train perplexity4.860043048858643
+INFO:root:current mean train loss 2002.7281859112754
+INFO:root:current train perplexity4.858700752258301
+INFO:root:current mean train loss 2004.3478191577378
+INFO:root:current train perplexity4.861324787139893
+INFO:root:current mean train loss 2004.7812002157536
+INFO:root:current train perplexity4.862431049346924
+INFO:root:current mean train loss 2006.0109585322284
+INFO:root:current train perplexity4.863347053527832
+INFO:root:current mean train loss 2006.3591492316468
+INFO:root:current train perplexity4.865484714508057
+INFO:root:current mean train loss 2006.3479314393905
+INFO:root:current train perplexity4.865090370178223
+INFO:root:current mean train loss 2006.4022159687956
+INFO:root:current train perplexity4.864813327789307
+INFO:root:current mean train loss 2006.2689059862641
+INFO:root:current train perplexity4.864003658294678
+
+100%|██████████| 1/1 [05:21<00:00, 321.07s/it][A100%|██████████| 1/1 [05:21<00:00, 321.07s/it]
+INFO:root:final mean train loss: 2005.6888978066495
+INFO:root:final train perplexity: 4.863736152648926
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:27<00:00, 27.01s/it][A100%|██████████| 1/1 [00:27<00:00, 27.01s/it]
+INFO:root:eval mean loss: 1956.1963860261526
+INFO:root:eval perplexity: 4.864952564239502
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.97s/it][A100%|██████████| 1/1 [00:24<00:00, 24.97s/it]
+INFO:root:eval mean loss: 2396.690042698637
+INFO:root:eval perplexity: 7.099888324737549
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/47
+ 94%|█████████▍| 47/50 [4:58:08<18:43, 374.56s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2003.8825434470664
+INFO:root:current train perplexity4.778012752532959
+INFO:root:current mean train loss 2000.672408903488
+INFO:root:current train perplexity4.817115783691406
+INFO:root:current mean train loss 1989.3861694335938
+INFO:root:current train perplexity4.813116550445557
+INFO:root:current mean train loss 2000.4239173774145
+INFO:root:current train perplexity4.828890323638916
+INFO:root:current mean train loss 2004.054145537227
+INFO:root:current train perplexity4.846007347106934
+INFO:root:current mean train loss 2004.1974640402905
+INFO:root:current train perplexity4.851718425750732
+INFO:root:current mean train loss 2002.68568625901
+INFO:root:current train perplexity4.851912498474121
+INFO:root:current mean train loss 2002.1608366619673
+INFO:root:current train perplexity4.850894451141357
+INFO:root:current mean train loss 2003.1469197772394
+INFO:root:current train perplexity4.854170799255371
+INFO:root:current mean train loss 2001.3808006638276
+INFO:root:current train perplexity4.852756500244141
+INFO:root:current mean train loss 2003.8646654917677
+INFO:root:current train perplexity4.85676908493042
+INFO:root:current mean train loss 2002.9942535247549
+INFO:root:current train perplexity4.852481842041016
+INFO:root:current mean train loss 2003.3256044079233
+INFO:root:current train perplexity4.852482318878174
+INFO:root:current mean train loss 2004.3023841432237
+INFO:root:current train perplexity4.854444980621338
+INFO:root:current mean train loss 2005.531610751184
+INFO:root:current train perplexity4.860036849975586
+INFO:root:current mean train loss 2006.4093727999843
+INFO:root:current train perplexity4.862014293670654
+INFO:root:current mean train loss 2006.3663199237153
+INFO:root:current train perplexity4.860990524291992
+INFO:root:current mean train loss 2005.6433041650012
+INFO:root:current train perplexity4.859145164489746
+INFO:root:current mean train loss 2005.3576041443707
+INFO:root:current train perplexity4.858791828155518
+
+100%|██████████| 1/1 [05:25<00:00, 325.25s/it][A100%|██████████| 1/1 [05:25<00:00, 325.25s/it]
+INFO:root:final mean train loss: 2004.6365036033826
+INFO:root:final train perplexity: 4.859700679779053
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.46s/it][A100%|██████████| 1/1 [00:26<00:00, 26.46s/it]
+INFO:root:eval mean loss: 1955.5650206220912
+INFO:root:eval perplexity: 4.8624677658081055
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.68s/it][A100%|██████████| 1/1 [00:25<00:00, 25.68s/it]
+INFO:root:eval mean loss: 2396.085764783494
+INFO:root:eval perplexity: 7.096380233764648
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/48
+ 96%|█████████▌| 48/50 [5:04:27<12:31, 375.78s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 1970.2920735677083
+INFO:root:current train perplexity4.788464546203613
+INFO:root:current mean train loss 2032.971779466712
+INFO:root:current train perplexity4.897703647613525
+INFO:root:current mean train loss 2020.5181277252907
+INFO:root:current train perplexity4.888584136962891
+INFO:root:current mean train loss 2007.1521569630456
+INFO:root:current train perplexity4.860350131988525
+INFO:root:current mean train loss 2003.899158450207
+INFO:root:current train perplexity4.8612542152404785
+INFO:root:current mean train loss 1999.4385023987409
+INFO:root:current train perplexity4.854116916656494
+INFO:root:current mean train loss 1995.0320880176575
+INFO:root:current train perplexity4.843943119049072
+INFO:root:current mean train loss 1999.9058856670672
+INFO:root:current train perplexity4.851404190063477
+INFO:root:current mean train loss 1998.6241694725363
+INFO:root:current train perplexity4.8447489738464355
+INFO:root:current mean train loss 2001.4211415108437
+INFO:root:current train perplexity4.849164962768555
+INFO:root:current mean train loss 2001.4561700228987
+INFO:root:current train perplexity4.848555088043213
+INFO:root:current mean train loss 2000.8206278026905
+INFO:root:current train perplexity4.848134994506836
+INFO:root:current mean train loss 2003.1870763205698
+INFO:root:current train perplexity4.8530778884887695
+INFO:root:current mean train loss 2001.8938289975938
+INFO:root:current train perplexity4.852196216583252
+INFO:root:current mean train loss 2004.3661558980234
+INFO:root:current train perplexity4.857814788818359
+INFO:root:current mean train loss 2004.2941286999794
+INFO:root:current train perplexity4.856045722961426
+INFO:root:current mean train loss 2005.9462077326818
+INFO:root:current train perplexity4.860536098480225
+INFO:root:current mean train loss 2004.6719486692557
+INFO:root:current train perplexity4.859487533569336
+INFO:root:current mean train loss 2004.1929271855631
+INFO:root:current train perplexity4.856832027435303
+INFO:root:current mean train loss 2005.0376823724093
+INFO:root:current train perplexity4.8587822914123535
+
+100%|██████████| 1/1 [05:32<00:00, 332.83s/it][A100%|██████████| 1/1 [05:32<00:00, 332.83s/it]
+INFO:root:final mean train loss: 2004.6097060610896
+INFO:root:final train perplexity: 4.8595991134643555
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:26<00:00, 26.66s/it][A100%|██████████| 1/1 [00:26<00:00, 26.66s/it]
+INFO:root:eval mean loss: 1953.9025783674092
+INFO:root:eval perplexity: 4.8559346199035645
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.08s/it][A100%|██████████| 1/1 [00:25<00:00, 25.08s/it]
+INFO:root:eval mean loss: 2394.870804157663
+INFO:root:eval perplexity: 7.089332103729248
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/49
+ 98%|█████████▊| 49/50 [5:10:52<06:18, 378.77s/it]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 2055.290599822998
+INFO:root:current train perplexity4.957627773284912
+INFO:root:current mean train loss 2013.8716513893821
+INFO:root:current train perplexity4.867919921875
+INFO:root:current mean train loss 2013.8466502222523
+INFO:root:current train perplexity4.855398178100586
+INFO:root:current mean train loss 2011.8240602792027
+INFO:root:current train perplexity4.8674163818359375
+INFO:root:current mean train loss 2003.3838772243923
+INFO:root:current train perplexity4.856632232666016
+INFO:root:current mean train loss 2005.580087303219
+INFO:root:current train perplexity4.85543966293335
+INFO:root:current mean train loss 2003.2219570497923
+INFO:root:current train perplexity4.8463263511657715
+INFO:root:current mean train loss 2006.7458756243595
+INFO:root:current train perplexity4.852973461151123
+INFO:root:current mean train loss 2009.9957849062407
+INFO:root:current train perplexity4.856283664703369
+INFO:root:current mean train loss 2009.0412888424592
+INFO:root:current train perplexity4.8586297035217285
+INFO:root:current mean train loss 2011.4842155515685
+INFO:root:current train perplexity4.865539073944092
+INFO:root:current mean train loss 2008.3817855781042
+INFO:root:current train perplexity4.864645957946777
+INFO:root:current mean train loss 2007.4876727810154
+INFO:root:current train perplexity4.862290382385254
+INFO:root:current mean train loss 2007.0857452300934
+INFO:root:current train perplexity4.861082553863525
+INFO:root:current mean train loss 2007.3213931461953
+INFO:root:current train perplexity4.861018180847168
+INFO:root:current mean train loss 2005.625097847483
+INFO:root:current train perplexity4.857571601867676
+INFO:root:current mean train loss 2004.4087240181718
+INFO:root:current train perplexity4.855113983154297
+INFO:root:current mean train loss 2003.8933210483049
+INFO:root:current train perplexity4.853427410125732
+INFO:root:current mean train loss 2004.5861198058815
+INFO:root:current train perplexity4.855813026428223
+INFO:root:current mean train loss 2004.2608065081927
+INFO:root:current train perplexity4.856436252593994
+
+100%|██████████| 1/1 [05:20<00:00, 320.55s/it][A100%|██████████| 1/1 [05:20<00:00, 320.55s/it]
+INFO:root:final mean train loss: 2003.6658380597876
+INFO:root:final train perplexity: 4.855982303619385
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:25<00:00, 25.79s/it][A100%|██████████| 1/1 [00:25<00:00, 25.79s/it]
+INFO:root:eval mean loss: 1954.6495941378546
+INFO:root:eval perplexity: 4.858869552612305
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:24<00:00, 24.57s/it][A100%|██████████| 1/1 [00:24<00:00, 24.58s/it]
+INFO:root:eval mean loss: 2394.8801728377107
+INFO:root:eval perplexity: 7.089385986328125
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: multiqal6_minilml6_not_concat/50
+100%|██████████| 50/50 [5:17:04<00:00, 376.76s/it]100%|██████████| 50/50 [5:17:05<00:00, 380.50s/it]
+INFO:root:evaluating final model
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:37<00:00, 37.96s/it]100%|██████████| 1/1 [00:37<00:00, 37.96s/it]
+INFO:root:eval mean loss: 1954.6495941378546
+INFO:root:eval perplexity: 4.858869552612305
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:32<00:00, 32.45s/it]100%|██████████| 1/1 [00:32<00:00, 32.45s/it]
+INFO:root:eval mean loss: 2394.8801728377107
+INFO:root:eval perplexity: 7.089385986328125
+INFO:root:evalaution complete
+INFO:root:save model final: multiqal6_minilml6_not_concat/final
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x1483d797ef06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x1483d79768e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x1483d789be09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x1483d797fa3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x1483d7899948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x1483d797fa3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x1483d7854b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x1483d72b946a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x1484d3ad5a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x1484d3ad5be0]
+python(+0x24a989) [0x55fdd8d07989]
+python(+0x24a9bd) [0x55fdd8d079bd]
+python(+0x24aa14) [0x55fdd8d07a14]
+python(+0x108f75) [0x55fdd8bc5f75]
+python(Py_RunMain+0x313) [0x55fdd8d0a983]
+python(Py_BytesMain+0x39) [0x55fdd8d0abc9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x1484d3ab30b3]
+python(+0x1d6e13) [0x55fdd8c93e13]
+/opt/slurm/data/slurmd/job29849620/slurm_script: line 225: 2551723 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path nreimers/MiniLM-L6-H384-uncased --data_config data_config.json --data_folder fast_processed_data_opt_multiqa_corrected --output multiqal6_minilml6_not_concat --epochs 50 --save_head  --save_epochs 1 --external_embedding --test_eval --not_concat_self
+"

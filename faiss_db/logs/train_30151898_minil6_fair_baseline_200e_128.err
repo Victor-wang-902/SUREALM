@@ -1,0 +1,27 @@
+INFO:root:Output: minil6_fair_baseline
+Traceback (most recent call last):
+  File "train_script.py", line 538, in <module>
+    raise RuntimeError("Output folder already exists.")
+RuntimeError: Output folder already exists.
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x15503c048f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x15503c0408e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x15503bf65e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x15503c049a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x15503bf63948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x15503c049a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x15503bf1eb46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x15503b98346a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x1551381dfa27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x1551381dfbe0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x1551381bd0ba]
+python(+0x1d6e13) [0x559316683e13]
+/opt/slurm/data/slurmd/job30151898/slurm_script: line 262: 3401097 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path nreimers/MiniLM-L6-H384-uncased --data_config data_config.json --data_folder fast_processed_data_opt_allmini --output minil6_fair_baseline --epochs 200 --save_head  --save_epochs 1 --external_embedding --test_eval --fair_baseline --not_retrieval --not_cross_attention --batch_size 128
+"

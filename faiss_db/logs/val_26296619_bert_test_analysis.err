@@ -1,0 +1,46 @@
+INFO:root:Output: bert_baseline_analysis
+Traceback (most recent call last):
+  File "train_script.py", line 567, in <module>
+    args.total_lines += data["lines"]
+KeyError: 'lines'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x154e262aaf06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x154e262a28e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x154e261c7e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x154e262aba3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x154e261c5948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x154e262aba3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x154e26180b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x154e25be546a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x154f22401a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x154f22401be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x154f223df0ba]
+python(+0x1d6e13) [0x55bb86b68e13]
+/bin/bash: line 3: 2880536 Aborted                 (core dumped) python train_script.py --model_path big_baseline_base_64_low/38 --data_config data_config.json --data_folder data_for_baseline --output bert_baseline_analysis --external_embedding --not_retrieval --not_cross_attention --debug --eval_only --batch_size 1
+INFO:root:Output: distilbert_bert_analysis
+Traceback (most recent call last):
+  File "train_script.py", line 567, in <module>
+    args.total_lines += data["lines"]
+KeyError: 'lines'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x14dc45c97f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x14dc45c8f8e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x14dc45bb4e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14dc45c98a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x14dc45bb2948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14dc45c98a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x14dc45b6db46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x14dc455d246a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x14dd41deea27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x14dd41deebe0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x14dd41dcc0ba]
+python(+0x1d6e13) [0x555a2c8f9e13]
+/bin/bash: line 4: 2880692 Aborted                 (core dumped) python train_script.py --model_path large_distilbert_bert_retrained/18 --data_config data_config.json --data_folder data_for_baseline --output distilbert_bert_analysis --external_embedding --debug --eval_only --batch_size 1

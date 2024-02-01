@@ -1,0 +1,82 @@
+INFO:root:in update config, concat_self: False
+INFO:root:Output: full_sent_suffix_model
+INFO:root:Steps per epochs:992
+INFO:root:Total steps:198400
+/scratch/zw2374/public/faiss_db/models.py:436: UserWarning: Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.
+  warnings.warn("Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.")
+Some weights of RetrievalGenerationModel were not initialized from the model checkpoint at sentence-transformers/multi-qa-MiniLM-L6-cos-v1 and are newly initialized: ['encoder.layer.4.crossattention.output.dense.weight', 'encoder.layer.0.crossattention.self.query.bias', 'encoder.layer.0.crossattention.output.dense.weight', 'encoder.layer.3.crossattention.self.key.weight', 'encoder.layer.2.crossattention.self.key.bias', 'encoder.layer.2.crossattention.output.dense.weight', 'encoder.layer.0.crossattention.self.key.bias', 'encoder.layer.1.crossattention.self.query.weight', 'encoder.layer.5.crossattention.self.query.bias', 'encoder.layer.3.crossattention.self.key.bias', 'encoder.layer.1.crossattention.self.query.bias', 'encoder.layer.5.crossattention.self.key.weight', 'encoder.layer.5.crossattention.self.value.bias', 'encoder.layer.3.crossattention.self.query.bias', 'encoder.layer.0.crossattention.self.value.bias', 'encoder.layer.3.crossattention.output.LayerNorm.bias', 'cls.predictions.transform.dense.bias', 'encoder.layer.3.crossattention.self.value.bias', 'encoder.layer.5.crossattention.output.dense.bias', 'encoder.layer.0.crossattention.output.LayerNorm.bias', 'encoder.layer.2.crossattention.self.value.weight', 'encoder.layer.3.crossattention.output.LayerNorm.weight', 'encoder.layer.5.crossattention.self.key.bias', 'encoder.layer.2.crossattention.output.dense.bias', 'encoder.layer.4.crossattention.self.key.bias', 'encoder.layer.3.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.self.key.bias', 'encoder.layer.1.crossattention.output.LayerNorm.bias', 'encoder.layer.2.crossattention.self.key.weight', 'cls.predictions.bias', 'encoder.layer.5.crossattention.self.query.weight', 'encoder.layer.2.crossattention.self.query.weight', 'cls.predictions.transform.dense.weight', 'encoder.layer.5.crossattention.self.value.weight', 'encoder.layer.0.crossattention.output.dense.bias', 'encoder.layer.0.crossattention.self.query.weight', 'encoder.layer.3.crossattention.self.value.weight', 'encoder.layer.0.crossattention.self.value.weight', 'encoder.layer.5.crossattention.output.LayerNorm.bias', 'encoder.layer.0.crossattention.output.LayerNorm.weight', 'encoder.layer.4.crossattention.output.LayerNorm.bias', 'encoder.layer.4.crossattention.output.dense.bias', 'encoder.layer.4.crossattention.self.key.weight', 'encoder.layer.5.crossattention.output.LayerNorm.weight', 'encoder.layer.1.crossattention.self.key.weight', 'encoder.layer.3.crossattention.output.dense.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'encoder.layer.1.crossattention.output.LayerNorm.weight', 'encoder.layer.4.crossattention.output.LayerNorm.weight', 'encoder.layer.0.crossattention.self.key.weight', 'encoder.layer.4.crossattention.self.value.weight', 'cls.predictions.transform.LayerNorm.bias', 'encoder.layer.4.crossattention.self.query.weight', 'encoder.layer.1.crossattention.output.dense.bias', 'encoder.layer.2.crossattention.output.LayerNorm.weight', 'encoder.layer.1.crossattention.self.value.bias', 'encoder.layer.4.crossattention.self.value.bias', 'encoder.layer.2.crossattention.self.value.bias', 'encoder.layer.2.crossattention.self.query.bias', 'encoder.layer.3.crossattention.self.query.weight', 'encoder.layer.4.crossattention.self.query.bias', 'encoder.layer.1.crossattention.output.dense.weight', 'encoder.layer.1.crossattention.self.value.weight', 'encoder.layer.5.crossattention.output.dense.weight', 'encoder.layer.2.crossattention.output.LayerNorm.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/scratch/zw2374/public/faiss_db/models.py:450: UserWarning: Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.
+  warnings.warn("Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.")
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:started training
+  0%|          | 0/200 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 24618.342230902777
+INFO:root:current train perplexity16533.095703125
+INFO:root:current mean train loss 20776.857053823805
+INFO:root:current train perplexity3598.970458984375
+INFO:root:current mean train loss 17920.83602241848
+INFO:root:current train perplexity1170.751953125
+INFO:root:current mean train loss 15986.053422129542
+INFO:root:current train perplexity541.375244140625
+INFO:root:current mean train loss 14584.74851362882
+INFO:root:current train perplexity311.60784912109375
+INFO:root:current mean train loss 13521.84571535241
+INFO:root:current train perplexity205.60911560058594
+INFO:root:current mean train loss 12696.129091363779
+INFO:root:current train perplexity148.47035217285156
+INFO:root:current mean train loss 12032.830336626837
+INFO:root:current train perplexity114.58487701416016
+INFO:root:current mean train loss 11490.515199722782
+INFO:root:current train perplexity92.57555389404297
+
+100%|██████████| 1/1 [03:56<00:00, 236.33s/it][A100%|██████████| 1/1 [03:56<00:00, 236.33s/it]
+INFO:root:final mean train loss: 11053.80580680601
+INFO:root:final train perplexity: 78.33901977539062
+INFO:root:epoch finished
+INFO:root:start evaluating on validation
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+100%|██████████| 1/1 [00:17<00:00, 17.25s/it][A100%|██████████| 1/1 [00:17<00:00, 17.25s/it]
+INFO:root:eval mean loss: 6379.765808538342
+INFO:root:eval perplexity: 13.194365501403809
+INFO:root:evalaution complete
+INFO:root:start evaluating on test
+
+  0%|          | 0/1 [00:00<?, ?it/s][A  0%|          | 0/1 [00:00<?, ?it/s]
+  0%|          | 0/200 [04:13<?, ?it/s]
+Traceback (most recent call last):
+  File "train_script.py", line 652, in <module>
+    handler.train()
+  File "train_script.py", line 158, in train
+    self.evaluate(test=True)
+  File "train_script.py", line 203, in evaluate
+    dataloader = load_dataset(data, self.args, val=True, test=test)
+  File "/scratch/zw2374/public/faiss_db/dataset.py", line 737, in load_dataset
+    dataset = dataset_class(data, args=args, val=val, test=test)
+  File "/scratch/zw2374/public/faiss_db/dataset.py", line 180, in __init__
+    with open(self.text_path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'fast_processed_data_default_sent_suffix_final/dstc_1gram_top3_win0_1gram_top3_win0/data_test.txt'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x154036772f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x15403676a8e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x15403668fe09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x154036773a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x15403668d948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x154036773a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x154036648b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x1540360ad46a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x1541020c9a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x1541020c9be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x1541020a70ba]
+python(+0x1d6e13) [0x5654c400ae13]
+/opt/slurm/data/slurmd/job33416202/slurm_script: line 270: 4034809 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path sentence-transformers/multi-qa-MiniLM-L6-cos-v1 --data_config data_config.json --data_folder fast_processed_data_default_sent_suffix_final  --output full_sent_suffix_model --batch_size 128 --lr 2e-5 --epochs 200 --save_head  --save_epochs 1 --external_embedding --test_eval --not_concat_self
+"

@@ -1,0 +1,25 @@
+Downloading:   0%|          | 0.00/483 [00:00<?, ?B/s]Downloading: 100%|██████████| 483/483 [00:00<00:00, 981kB/s]
+INFO:root:in update config, concat_self: False
+INFO:root:Output: distilbert_distilbert_not_concat
+INFO:root:Steps per epochs:1983
+INFO:root:Total steps:396600
+Downloading:   0%|          | 0.00/28.0 [00:00<?, ?B/s]Downloading: 100%|██████████| 28.0/28.0 [00:00<00:00, 60.1kB/s]
+Downloading:   0%|          | 0.00/232k [00:00<?, ?B/s]Downloading: 100%|██████████| 232k/232k [00:00<00:00, 8.72MB/s]
+Downloading:   0%|          | 0.00/466k [00:00<?, ?B/s]Downloading: 100%|██████████| 466k/466k [00:00<00:00, 16.8MB/s]
+Traceback (most recent call last):
+  File "train_script.py", line 627, in <module>
+    args.model = model_class.from_pretrained(args.model_path, config=args.config, args=args)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/models/auto/auto_factory.py", line 466, in from_pretrained
+    raise ValueError(
+ValueError: Unrecognized configuration class <class 'transformers.models.distilbert.configuration_distilbert.DistilBertConfig'> for this kind of AutoModel: AutoModelForCausalLM.
+Model type should be one of BartConfig, BertConfig, BertGenerationConfig, BigBirdConfig, BigBirdPegasusConfig, BlenderbotConfig, BlenderbotSmallConfig, BloomConfig, CamembertConfig, CodeGenConfig, CTRLConfig, Data2VecTextConfig, ElectraConfig, ErnieConfig, GPT2Config, GPTNeoConfig, GPTNeoXConfig, GPTNeoXJapaneseConfig, GPTJConfig, MarianConfig, MBartConfig, MegatronBertConfig, MvpConfig, OpenAIGPTConfig, OPTConfig, PegasusConfig, PLBartConfig, ProphetNetConfig, QDQBertConfig, ReformerConfig, RemBertConfig, RobertaConfig, RoFormerConfig, Speech2Text2Config, TransfoXLConfig, TrOCRConfig, XGLMConfig, XLMConfig, XLMProphetNetConfig, XLMRobertaConfig, XLMRobertaXLConfig, XLNetConfig.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "train_script.py", line 629, in <module>
+    args.model = model_class.from_pretrained(args.model_path, config=args.config)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/models/auto/auto_factory.py", line 466, in from_pretrained
+    raise ValueError(
+ValueError: Unrecognized configuration class <class 'transformers.models.distilbert.configuration_distilbert.DistilBertConfig'> for this kind of AutoModel: AutoModelForCausalLM.
+Model type should be one of BartConfig, BertConfig, BertGenerationConfig, BigBirdConfig, BigBirdPegasusConfig, BlenderbotConfig, BlenderbotSmallConfig, BloomConfig, CamembertConfig, CodeGenConfig, CTRLConfig, Data2VecTextConfig, ElectraConfig, ErnieConfig, GPT2Config, GPTNeoConfig, GPTNeoXConfig, GPTNeoXJapaneseConfig, GPTJConfig, MarianConfig, MBartConfig, MegatronBertConfig, MvpConfig, OpenAIGPTConfig, OPTConfig, PegasusConfig, PLBartConfig, ProphetNetConfig, QDQBertConfig, ReformerConfig, RemBertConfig, RobertaConfig, RoFormerConfig, Speech2Text2Config, TransfoXLConfig, TrOCRConfig, XGLMConfig, XLMConfig, XLMProphetNetConfig, XLMRobertaConfig, XLMRobertaXLConfig, XLNetConfig.

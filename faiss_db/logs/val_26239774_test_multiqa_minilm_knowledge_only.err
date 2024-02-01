@@ -1,0 +1,699 @@
+INFO:root:Output: multiqa_allmini_test_knowledge_only
+/scratch/zw2374/public/faiss_db/models.py:432: UserWarning: Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.
+  warnings.warn("Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.")
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:08<00:00,  8.14s/it]100%|██████████| 1/1 [00:08<00:00,  8.14s/it]
+INFO:root:eval mean loss: 4840.474895608836
+INFO:root:eval perplexity: 60.70323944091797
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/1 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]
+INFO:root:eval mean loss: 4682.081340921336
+INFO:root:eval perplexity: 53.07136154174805
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/2 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.78s/it]100%|██████████| 1/1 [00:03<00:00,  3.78s/it]
+INFO:root:eval mean loss: 4651.152028050916
+INFO:root:eval perplexity: 51.69707489013672
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/3 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.08s/it]100%|██████████| 1/1 [00:04<00:00,  4.08s/it]
+INFO:root:eval mean loss: 4607.594465584591
+INFO:root:eval perplexity: 49.821842193603516
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/4 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.98s/it]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+INFO:root:eval mean loss: 4580.1473178205815
+INFO:root:eval perplexity: 48.675262451171875
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/5 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.12s/it]100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+INFO:root:eval mean loss: 4571.108592066272
+INFO:root:eval perplexity: 48.30348205566406
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/6 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.89s/it]100%|██████████| 1/1 [00:03<00:00,  3.89s/it]
+INFO:root:eval mean loss: 4567.770137392241
+INFO:root:eval perplexity: 48.1668701171875
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/7 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4557.713606209591
+INFO:root:eval perplexity: 47.75772476196289
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/8 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]
+INFO:root:eval mean loss: 4553.831172548491
+INFO:root:eval perplexity: 47.60069274902344
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/9 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]
+INFO:root:eval mean loss: 4551.488171807651
+INFO:root:eval perplexity: 47.506195068359375
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/10 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]
+INFO:root:eval mean loss: 4551.511078933189
+INFO:root:eval perplexity: 47.507110595703125
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/11 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]
+INFO:root:eval mean loss: 4542.078032394936
+INFO:root:eval perplexity: 47.12849807739258
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/12 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.11s/it]100%|██████████| 1/1 [00:04<00:00,  4.11s/it]
+INFO:root:eval mean loss: 4547.243888065733
+INFO:root:eval perplexity: 47.335453033447266
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/13 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4553.674539500269
+INFO:root:eval perplexity: 47.594383239746094
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/14 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4551.695653455011
+INFO:root:eval perplexity: 47.51457595825195
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/15 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]
+INFO:root:eval mean loss: 4568.129596578664
+INFO:root:eval perplexity: 48.181549072265625
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/16 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4551.205663220636
+INFO:root:eval perplexity: 47.49482345581055
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/17 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+INFO:root:eval mean loss: 4572.415476831897
+INFO:root:eval perplexity: 48.357051849365234
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/18 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]
+INFO:root:eval mean loss: 4577.582826811692
+INFO:root:eval perplexity: 48.569480895996094
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/19 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.10s/it]100%|██████████| 1/1 [00:04<00:00,  4.10s/it]
+INFO:root:eval mean loss: 4576.056299669989
+INFO:root:eval perplexity: 48.50664138793945
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/20 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+INFO:root:eval mean loss: 4574.47832620555
+INFO:root:eval perplexity: 48.441749572753906
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/21 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4580.487367827317
+INFO:root:eval perplexity: 48.68928146362305
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/22 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+INFO:root:eval mean loss: 4572.989733465786
+INFO:root:eval perplexity: 48.380611419677734
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/23 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4579.219633957436
+INFO:root:eval perplexity: 48.63697052001953
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/24 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.89s/it]100%|██████████| 1/1 [00:03<00:00,  3.89s/it]
+INFO:root:eval mean loss: 4591.516008048222
+INFO:root:eval perplexity: 49.14691162109375
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/25 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.30s/it]100%|██████████| 1/1 [00:04<00:00,  4.30s/it]
+INFO:root:eval mean loss: 4580.858625740841
+INFO:root:eval perplexity: 48.70463180541992
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/26 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.12s/it]100%|██████████| 1/1 [00:04<00:00,  4.12s/it]
+INFO:root:eval mean loss: 4593.079299400592
+INFO:root:eval perplexity: 49.21213912963867
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/27 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]
+INFO:root:eval mean loss: 4590.454105771822
+INFO:root:eval perplexity: 49.10267639160156
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/28 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+INFO:root:eval mean loss: 4602.647654566272
+INFO:root:eval perplexity: 49.61319351196289
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/29 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+INFO:root:eval mean loss: 4600.956610317888
+INFO:root:eval perplexity: 49.54207229614258
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/30 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.00s/it]100%|██████████| 1/1 [00:04<00:00,  4.00s/it]
+INFO:root:eval mean loss: 4611.953609071928
+INFO:root:eval perplexity: 50.00639343261719
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/31 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]
+INFO:root:eval mean loss: 4620.731824151401
+INFO:root:eval perplexity: 50.38013458251953
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/32 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]
+INFO:root:eval mean loss: 4621.9367086476295
+INFO:root:eval perplexity: 50.431640625
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/33 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]
+INFO:root:eval mean loss: 4632.80164416083
+INFO:root:eval perplexity: 50.89860534667969
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/34 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.13s/it]100%|██████████| 1/1 [00:04<00:00,  4.13s/it]
+INFO:root:eval mean loss: 4613.363529599947
+INFO:root:eval perplexity: 50.06624221801758
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/35 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4636.045919484106
+INFO:root:eval perplexity: 51.03888702392578
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/36 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]
+INFO:root:eval mean loss: 4630.878039129849
+INFO:root:eval perplexity: 50.81562042236328
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/37 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+INFO:root:eval mean loss: 4645.557255185884
+INFO:root:eval perplexity: 51.45231628417969
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/38 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4642.541537580819
+INFO:root:eval perplexity: 51.320858001708984
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/39 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+INFO:root:eval mean loss: 4650.438106142241
+INFO:root:eval perplexity: 51.665775299072266
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/40 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]
+INFO:root:eval mean loss: 4660.747024009967
+INFO:root:eval perplexity: 52.11956024169922
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/41 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.98s/it]100%|██████████| 1/1 [00:03<00:00,  3.98s/it]
+INFO:root:eval mean loss: 4665.059734476024
+INFO:root:eval perplexity: 52.31059265136719
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/42 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4665.523871060075
+INFO:root:eval perplexity: 52.331199645996094
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/43 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+INFO:root:eval mean loss: 4660.206745016164
+INFO:root:eval perplexity: 52.09569549560547
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/44 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]100%|██████████| 1/1 [00:04<00:00,  4.03s/it]
+INFO:root:eval mean loss: 4673.610978751347
+INFO:root:eval perplexity: 52.69141387939453
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/45 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.14s/it]100%|██████████| 1/1 [00:04<00:00,  4.15s/it]
+INFO:root:eval mean loss: 4678.864005253233
+INFO:root:eval perplexity: 52.92673110961914
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/46 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]
+INFO:root:eval mean loss: 4680.923221982759
+INFO:root:eval perplexity: 53.01927185058594
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/47 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+INFO:root:eval mean loss: 4695.261975518589
+INFO:root:eval perplexity: 53.66806411743164
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/48 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.82s/it]100%|██████████| 1/1 [00:03<00:00,  3.82s/it]
+INFO:root:eval mean loss: 4702.275807347791
+INFO:root:eval perplexity: 53.98832702636719
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/49 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.04s/it]100%|██████████| 1/1 [00:04<00:00,  4.04s/it]
+INFO:root:eval mean loss: 4705.200426825161
+INFO:root:eval perplexity: 54.1224250793457
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/50 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.04s/it]100%|██████████| 1/1 [00:04<00:00,  4.04s/it]
+INFO:root:eval mean loss: 4704.442732186153
+INFO:root:eval perplexity: 54.0876350402832
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/51 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]
+INFO:root:eval mean loss: 4705.534276501886
+INFO:root:eval perplexity: 54.13774490356445
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/52 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]100%|██████████| 1/1 [00:03<00:00,  3.94s/it]
+INFO:root:eval mean loss: 4713.641184839709
+INFO:root:eval perplexity: 54.511329650878906
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/53 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  4.00s/it]100%|██████████| 1/1 [00:03<00:00,  4.00s/it]
+INFO:root:eval mean loss: 4710.185429014009
+INFO:root:eval perplexity: 54.35177230834961
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/54 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.07s/it]100%|██████████| 1/1 [00:04<00:00,  4.07s/it]
+INFO:root:eval mean loss: 4729.092794484106
+INFO:root:eval perplexity: 55.23054122924805
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/55 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+INFO:root:eval mean loss: 4737.82530896417
+INFO:root:eval perplexity: 55.64116287231445
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/56 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]
+INFO:root:eval mean loss: 4729.752113079203
+INFO:root:eval perplexity: 55.261417388916016
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/57 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4743.58841679014
+INFO:root:eval perplexity: 55.91383361816406
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/58 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]
+INFO:root:eval mean loss: 4736.6011752424565
+INFO:root:eval perplexity: 55.58340835571289
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/59 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.17s/it]100%|██████████| 1/1 [00:04<00:00,  4.17s/it]
+INFO:root:eval mean loss: 4749.277171167834
+INFO:root:eval perplexity: 56.18427658081055
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/60 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+INFO:root:eval mean loss: 4761.208323511584
+INFO:root:eval perplexity: 56.75582504272461
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/61 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+INFO:root:eval mean loss: 4766.157596982759
+INFO:root:eval perplexity: 56.994590759277344
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/62 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4758.190290779903
+INFO:root:eval perplexity: 56.610679626464844
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/63 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]
+INFO:root:eval mean loss: 4764.591729525862
+INFO:root:eval perplexity: 56.91892623901367
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/64 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.72s/it]100%|██████████| 1/1 [00:03<00:00,  3.72s/it]
+INFO:root:eval mean loss: 4776.697606580011
+INFO:root:eval perplexity: 57.506446838378906
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/65 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.75s/it]100%|██████████| 1/1 [00:03<00:00,  3.75s/it]
+INFO:root:eval mean loss: 4774.4802835398705
+INFO:root:eval perplexity: 57.398372650146484
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/66 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.69s/it]100%|██████████| 1/1 [00:03<00:00,  3.69s/it]
+INFO:root:eval mean loss: 4781.242709455819
+INFO:root:eval perplexity: 57.728572845458984
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/67 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+INFO:root:eval mean loss: 4788.162871262123
+INFO:root:eval perplexity: 58.068458557128906
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/68 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+INFO:root:eval mean loss: 4788.312971443966
+INFO:root:eval perplexity: 58.07585144042969
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/69 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+INFO:root:eval mean loss: 4802.610806169181
+INFO:root:eval perplexity: 58.78450393676758
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/70 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4812.890620790678
+INFO:root:eval perplexity: 59.299312591552734
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/71 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]
+INFO:root:eval mean loss: 4812.783640894397
+INFO:root:eval perplexity: 59.293968200683594
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/72 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.06s/it]100%|██████████| 1/1 [00:04<00:00,  4.06s/it]
+INFO:root:eval mean loss: 4812.416731209591
+INFO:root:eval perplexity: 59.27553939819336
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/73 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]
+INFO:root:eval mean loss: 4806.093211206897
+INFO:root:eval perplexity: 58.958412170410156
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/74 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]100%|██████████| 1/1 [00:03<00:00,  3.91s/it]
+INFO:root:eval mean loss: 4827.411604256466
+INFO:root:eval perplexity: 60.03428649902344
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/75 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.06s/it]100%|██████████| 1/1 [00:04<00:00,  4.06s/it]
+INFO:root:eval mean loss: 4828.022322029903
+INFO:root:eval perplexity: 60.06541442871094
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/76 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]
+INFO:root:eval mean loss: 4829.752281452047
+INFO:root:eval perplexity: 60.15360641479492
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/77 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+INFO:root:eval mean loss: 4842.762421706627
+INFO:root:eval perplexity: 60.821136474609375
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/78 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.74s/it]100%|██████████| 1/1 [00:03<00:00,  3.74s/it]
+INFO:root:eval mean loss: 4830.338585162985
+INFO:root:eval perplexity: 60.18353271484375
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/79 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]
+INFO:root:eval mean loss: 4843.193784516433
+INFO:root:eval perplexity: 60.84341049194336
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/80 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.98s/it]100%|██████████| 1/1 [00:03<00:00,  3.98s/it]
+INFO:root:eval mean loss: 4857.6819857893315
+INFO:root:eval perplexity: 61.595760345458984
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/81 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.85s/it]100%|██████████| 1/1 [00:03<00:00,  3.85s/it]
+INFO:root:eval mean loss: 4861.584274818158
+INFO:root:eval perplexity: 61.79999542236328
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/82 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]
+INFO:root:eval mean loss: 4863.197901232489
+INFO:root:eval perplexity: 61.88462829589844
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/83 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.87s/it]100%|██████████| 1/1 [00:03<00:00,  3.87s/it]
+INFO:root:eval mean loss: 4874.530711206897
+INFO:root:eval perplexity: 62.48245620727539
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/84 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]100%|██████████| 1/1 [00:03<00:00,  3.77s/it]
+INFO:root:eval mean loss: 4873.796512998384
+INFO:root:eval perplexity: 62.44352722167969
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/85 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]
+INFO:root:eval mean loss: 4880.738777949892
+INFO:root:eval perplexity: 62.81233596801758
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/86 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4873.332039668642
+INFO:root:eval perplexity: 62.418907165527344
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/87 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]100%|██████████| 1/1 [00:03<00:00,  3.90s/it]
+INFO:root:eval mean loss: 4883.045325969828
+INFO:root:eval perplexity: 62.93534851074219
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/88 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.74s/it]100%|██████████| 1/1 [00:03<00:00,  3.74s/it]
+INFO:root:eval mean loss: 4889.302742793642
+INFO:root:eval perplexity: 63.27030563354492
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/89 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]100%|██████████| 1/1 [00:03<00:00,  3.96s/it]
+INFO:root:eval mean loss: 4887.183656889817
+INFO:root:eval perplexity: 63.15666961669922
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/90 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]
+INFO:root:eval mean loss: 4905.375656654095
+INFO:root:eval perplexity: 64.13885498046875
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/91 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.72s/it]100%|██████████| 1/1 [00:03<00:00,  3.72s/it]
+INFO:root:eval mean loss: 4905.712987439386
+INFO:root:eval perplexity: 64.1572036743164
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/92 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.76s/it]100%|██████████| 1/1 [00:03<00:00,  3.76s/it]
+INFO:root:eval mean loss: 4906.487658270474
+INFO:root:eval perplexity: 64.19937896728516
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/93 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]100%|██████████| 1/1 [00:03<00:00,  3.92s/it]
+INFO:root:eval mean loss: 4915.996068494073
+INFO:root:eval perplexity: 64.71925354003906
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/94 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.82s/it]100%|██████████| 1/1 [00:03<00:00,  3.82s/it]
+INFO:root:eval mean loss: 4911.168995824353
+INFO:root:eval perplexity: 64.45479583740234
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/95 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4913.023610082166
+INFO:root:eval perplexity: 64.5562973022461
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/96 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.87s/it]100%|██████████| 1/1 [00:03<00:00,  3.87s/it]
+INFO:root:eval mean loss: 4921.888991783405
+INFO:root:eval perplexity: 65.04357147216797
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/97 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.71s/it]100%|██████████| 1/1 [00:03<00:00,  3.71s/it]
+INFO:root:eval mean loss: 4923.766142746498
+INFO:root:eval perplexity: 65.14724731445312
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/98 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]100%|██████████| 1/1 [00:03<00:00,  3.99s/it]
+INFO:root:eval mean loss: 4929.556173390356
+INFO:root:eval perplexity: 65.46800231933594
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/99 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.71s/it]100%|██████████| 1/1 [00:03<00:00,  3.71s/it]
+INFO:root:eval mean loss: 4934.9488525390625
+INFO:root:eval perplexity: 65.76815795898438
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/100 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]100%|██████████| 1/1 [00:03<00:00,  3.93s/it]
+INFO:root:eval mean loss: 4934.407799030172
+INFO:root:eval perplexity: 65.73799133300781
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/101 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4949.712090853987
+INFO:root:eval perplexity: 66.59696197509766
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/102 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]100%|██████████| 1/1 [00:03<00:00,  3.79s/it]
+INFO:root:eval mean loss: 4948.023353313578
+INFO:root:eval perplexity: 66.50160217285156
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/103 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]100%|██████████| 1/1 [00:03<00:00,  3.86s/it]
+INFO:root:eval mean loss: 4952.43340433055
+INFO:root:eval perplexity: 66.75086975097656
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/104 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]100%|██████████| 1/1 [00:03<00:00,  3.80s/it]
+INFO:root:eval mean loss: 4953.4788186961205
+INFO:root:eval perplexity: 66.81009674072266
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/105 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]100%|██████████| 1/1 [00:03<00:00,  3.81s/it]
+INFO:root:eval mean loss: 4966.995424467942
+INFO:root:eval perplexity: 67.58052062988281
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/106 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]100%|██████████| 1/1 [00:03<00:00,  3.83s/it]
+INFO:root:eval mean loss: 4964.760342301994
+INFO:root:eval perplexity: 67.4525146484375
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/107 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]100%|██████████| 1/1 [00:03<00:00,  3.97s/it]
+INFO:root:eval mean loss: 4967.326184502964
+INFO:root:eval perplexity: 67.59950256347656
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/108 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]100%|██████████| 1/1 [00:04<00:00,  4.01s/it]
+INFO:root:eval mean loss: 4969.9463900862065
+INFO:root:eval perplexity: 67.7498779296875
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/109 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]100%|██████████| 1/1 [00:04<00:00,  4.02s/it]
+INFO:root:eval mean loss: 4976.06798474542
+INFO:root:eval perplexity: 68.10260772705078
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/110 done
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]100%|██████████| 1/1 [00:03<00:00,  3.88s/it]
+INFO:root:eval mean loss: 4978.804973733836
+INFO:root:eval perplexity: 68.26090240478516
+INFO:root:evalaution complete
+INFO:root:evaluate on small_multiqa_minilm_corrected/111 done
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x14c12887cf06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x14c1288748e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x14c128799e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14c12887da3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x14c128797948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14c12887da3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x14c128752b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x14c1281b746a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x14c2249d3a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x14c2249d3be0]
+python(+0x24a989) [0x55ac70760989]
+python(+0x24a9bd) [0x55ac707609bd]
+python(+0x24aa14) [0x55ac70760a14]
+python(+0x108f75) [0x55ac7061ef75]
+python(Py_RunMain+0x313) [0x55ac70763983]
+python(Py_BytesMain+0x39) [0x55ac70763bc9]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x14c2249b10b3]
+python(+0x1d6e13) [0x55ac706ece13]
+/opt/slurm/data/slurmd/job26239774/slurm_script: line 181: 2601394 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python validation_script.py --model_path small_multiqa_minilm_corrected --data_config data_config.json --data_folder fast_processed_data_knowledge_test_corrected_knowledge_only --output multiqa_allmini_test_knowledge_only --external_embedding --eval_only
+"

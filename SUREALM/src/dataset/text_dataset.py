@@ -13,7 +13,7 @@ class TextDataset(Dataset):
             data_folder = args.data_folder
         if val:
             if not args.eval_only:
-                self.text_path = os.path.join(data_folder, data["name"], "data_eval.txt")
+                self.text_path = os.path.join(data_folder, data["name"], "data_val.txt")
             else:
                 self.text_path = os.path.join(data_folder, data["name"], "data_test.txt")
         else:
@@ -45,7 +45,7 @@ class TextCollator:
         for sent in batch:
             text_list.append(sent)
         if self.tokenizer.name_or_path == "gpt2":  # fixing the issue where GPT2Tokenizer does not add special tokens
-            inputs = self.tokenizer([tok.bos_token + x + tok_eos_token for x in text_list], return_tensors="pt", max_length=self.max_length, truncation=True, padding=True, add_special_tokens=False)
+            inputs = self.tokenizer([self.tokenizer.bos_token + x + self.tokenizer.eos_token for x in text_list], return_tensors="pt", max_length=self.max_length, truncation=True, padding=True, add_special_tokens=False)
         else:
             inputs = self.tokenizer(text_list, return_tensors="pt", max_length=self.max_length, truncation=True, padding=True)
         return inputs

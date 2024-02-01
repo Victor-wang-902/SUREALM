@@ -1,0 +1,3119 @@
+INFO:root:Output: std_23_quad_gpu
+INFO:root:Steps per epochs:496
+INFO:root:Total steps:49600
+/scratch/zw2374/public/faiss_db/models.py:432: UserWarning: Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.
+  warnings.warn("Retrieval mode is activated but not all embedding layers are loaded. Either pass external embeddings or define embedding layers.")
+Some weights of RetrievalGenerationModel were not initialized from the model checkpoint at sentence-transformers/all-MiniLM-L6-v2 and are newly initialized: ['encoder.layer.0.crossattention.output.dense.weight', 'encoder.layer.4.crossattention.output.LayerNorm.bias', 'encoder.layer.5.crossattention.output.LayerNorm.weight', 'encoder.layer.4.crossattention.self.query.weight', 'encoder.layer.1.crossattention.self.key.bias', 'encoder.layer.1.crossattention.self.query.weight', 'encoder.layer.4.crossattention.self.key.bias', 'encoder.layer.1.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.self.key.weight', 'encoder.layer.0.crossattention.self.key.bias', 'encoder.layer.2.crossattention.self.value.bias', 'encoder.layer.1.crossattention.self.value.weight', 'encoder.layer.3.crossattention.output.dense.weight', 'encoder.layer.5.crossattention.self.value.weight', 'encoder.layer.2.crossattention.self.key.weight', 'encoder.layer.0.crossattention.output.dense.bias', 'cls.predictions.transform.dense.bias', 'encoder.layer.5.crossattention.self.key.bias', 'encoder.layer.1.crossattention.output.dense.weight', 'encoder.layer.3.crossattention.self.value.weight', 'encoder.layer.2.crossattention.output.dense.bias', 'encoder.layer.0.crossattention.output.LayerNorm.weight', 'encoder.layer.0.crossattention.self.key.weight', 'encoder.layer.4.crossattention.self.value.weight', 'encoder.layer.2.crossattention.output.LayerNorm.bias', 'encoder.layer.2.crossattention.output.dense.weight', 'encoder.layer.0.crossattention.output.LayerNorm.bias', 'encoder.layer.4.crossattention.self.value.bias', 'encoder.layer.2.crossattention.self.query.bias', 'encoder.layer.3.crossattention.output.dense.bias', 'encoder.layer.4.crossattention.self.query.bias', 'encoder.layer.5.crossattention.output.LayerNorm.bias', 'encoder.layer.3.crossattention.output.LayerNorm.weight', 'encoder.layer.5.crossattention.output.dense.weight', 'encoder.layer.5.crossattention.self.key.weight', 'cls.predictions.decoder.weight', 'cls.predictions.bias', 'encoder.layer.0.crossattention.self.query.weight', 'encoder.layer.5.crossattention.self.query.bias', 'encoder.layer.1.crossattention.output.LayerNorm.bias', 'encoder.layer.5.crossattention.self.query.weight', 'encoder.layer.3.crossattention.self.value.bias', 'encoder.layer.3.crossattention.self.query.bias', 'encoder.layer.4.crossattention.output.LayerNorm.weight', 'encoder.layer.2.crossattention.output.LayerNorm.weight', 'encoder.layer.4.crossattention.output.dense.weight', 'encoder.layer.3.crossattention.self.query.weight', 'encoder.layer.0.crossattention.self.query.bias', 'encoder.layer.3.crossattention.output.LayerNorm.bias', 'encoder.layer.1.crossattention.self.query.bias', 'encoder.layer.0.crossattention.self.value.bias', 'encoder.layer.2.crossattention.self.query.weight', 'encoder.layer.2.crossattention.self.key.bias', 'encoder.layer.3.crossattention.self.key.bias', 'encoder.layer.3.crossattention.self.key.weight', 'encoder.layer.2.crossattention.self.value.weight', 'encoder.layer.4.crossattention.self.key.weight', 'encoder.layer.4.crossattention.output.dense.bias', 'encoder.layer.1.crossattention.self.value.bias', 'encoder.layer.1.crossattention.output.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.dense.weight', 'encoder.layer.0.crossattention.self.value.weight', 'cls.predictions.transform.LayerNorm.bias', 'encoder.layer.5.crossattention.output.dense.bias', 'encoder.layer.5.crossattention.self.value.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/scratch/zw2374/public/faiss_db/models.py:446: UserWarning: Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.
+  warnings.warn("Retrieval mode is activated but not both key embedding layers are initialized. Either pass external embeddings or redefine embedding layers.")
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:started training
+
+  0%|          | 0/100 [00:00<?, ?it/s]
+
+  0%|          | 0/1 [00:00<?, ?it/s][A/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/parallel/_functions.py:68: UserWarning: Was asked to gather along dimension 0, but all input tensors were scalars; will instead unsqueeze and return a vector.
+  warnings.warn('Was asked to gather along dimension 0, but all '
+INFO:root:current mean train loss 49137.03578756313
+INFO:root:current train perplexity16037.666015625
+INFO:root:current mean train loss 41662.4166535804
+INFO:root:current train perplexity3641.328125
+INFO:root:current mean train loss 35769.76903480351
+INFO:root:current train perplexity1145.90625
+INFO:root:current mean train loss 31678.244713345866
+INFO:root:current train perplexity513.5213012695312
+
+
+100%|██████████| 1/1 [04:03<00:00, 243.21s/it][A
+100%|██████████| 1/1 [04:03<00:00, 243.21s/it]
+INFO:root:final mean train loss: 28817.646013813635
+INFO:root:final train perplexity: 294.3288269042969
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.50s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.50s/it]
+INFO:root:eval mean loss: 16625.074410574776
+INFO:root:eval perplexity: 31.225872039794922
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/1
+
+  1%|          | 1/100 [04:40<7:42:30, 280.31s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 16237.803385416666
+INFO:root:current train perplexity24.17047882080078
+INFO:root:current mean train loss 15659.941074408374
+INFO:root:current train perplexity22.113859176635742
+INFO:root:current mean train loss 15201.449613223522
+INFO:root:current train perplexity20.13964080810547
+INFO:root:current mean train loss 14858.773672777434
+INFO:root:current train perplexity18.720989227294922
+INFO:root:current mean train loss 14550.737600321805
+INFO:root:current train perplexity17.60555648803711
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.16s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.16s/it]
+INFO:root:final mean train loss: 14288.459947155368
+INFO:root:final train perplexity: 16.753469467163086
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.19s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.19s/it]
+INFO:root:eval mean loss: 14089.292433965773
+INFO:root:eval perplexity: 18.473957061767578
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/2
+
+  2%|▏         | 2/100 [09:14<7:31:55, 276.68s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 13225.150390625
+INFO:root:current train perplexity13.558881759643555
+INFO:root:current mean train loss 12868.859274605724
+INFO:root:current train perplexity12.670964241027832
+INFO:root:current mean train loss 12744.353581672705
+INFO:root:current train perplexity12.3294038772583
+INFO:root:current mean train loss 12608.396083570848
+INFO:root:current train perplexity12.036327362060547
+INFO:root:current mean train loss 12508.271589949325
+INFO:root:current train perplexity11.768149375915527
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.33s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.33s/it]
+INFO:root:final mean train loss: 12394.91697249874
+INFO:root:final train perplexity: 11.531434059143066
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.46s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.46s/it]
+INFO:root:eval mean loss: 13285.465721493676
+INFO:root:eval perplexity: 15.6422700881958
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/3
+
+  3%|▎         | 3/100 [13:48<7:25:37, 275.64s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 12059.32626065341
+INFO:root:current train perplexity10.499517440795898
+INFO:root:current mean train loss 11812.938124648086
+INFO:root:current train perplexity10.22471809387207
+INFO:root:current mean train loss 11720.765527806576
+INFO:root:current train perplexity10.071038246154785
+INFO:root:current mean train loss 11652.595806747388
+INFO:root:current train perplexity9.940042495727539
+INFO:root:current mean train loss 11594.903767012622
+INFO:root:current train perplexity9.824728965759277
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.93s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.93s/it]
+INFO:root:final mean train loss: 11539.503668016003
+INFO:root:final train perplexity: 9.740904808044434
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.40s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.40s/it]
+INFO:root:eval mean loss: 12832.474126906622
+INFO:root:eval perplexity: 14.242228507995605
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/4
+
+  4%|▍         | 4/100 [18:21<7:19:24, 274.63s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 11363.245182291666
+INFO:root:current train perplexity9.169854164123535
+INFO:root:current mean train loss 11201.52734375
+INFO:root:current train perplexity9.105216979980469
+INFO:root:current mean train loss 11157.014771075581
+INFO:root:current train perplexity8.993988037109375
+INFO:root:current mean train loss 11109.142041790674
+INFO:root:current train perplexity8.912261009216309
+INFO:root:current mean train loss 11053.803626223644
+INFO:root:current train perplexity8.844813346862793
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.20s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.20s/it]
+INFO:root:final mean train loss: 11010.187531502017
+INFO:root:final train perplexity: 8.775106430053711
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it]
+INFO:root:eval mean loss: 12550.013904389882
+INFO:root:eval perplexity: 13.43341064453125
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/5
+
+  5%|▌         | 5/100 [22:54<7:13:25, 273.74s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 10780.820929276315
+INFO:root:current train perplexity8.301003456115723
+INFO:root:current mean train loss 10783.43602284664
+INFO:root:current train perplexity8.379340171813965
+INFO:root:current mean train loss 10734.939841074487
+INFO:root:current train perplexity8.282041549682617
+INFO:root:current mean train loss 10689.047401547805
+INFO:root:current train perplexity8.222472190856934
+INFO:root:current mean train loss 10673.100546315633
+INFO:root:current train perplexity8.18463134765625
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.56s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.56s/it]
+INFO:root:final mean train loss: 10632.615533644153
+INFO:root:final train perplexity: 8.145268440246582
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.53s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.53s/it]
+INFO:root:eval mean loss: 12330.87403796968
+INFO:root:eval perplexity: 12.837679862976074
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/6
+
+  6%|▌         | 6/100 [27:23<7:06:44, 272.39s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 10357.995414402174
+INFO:root:current train perplexity7.759228706359863
+INFO:root:current mean train loss 10422.971020706302
+INFO:root:current train perplexity7.82073974609375
+INFO:root:current mean train loss 10407.105135930493
+INFO:root:current train perplexity7.78663969039917
+INFO:root:current mean train loss 10380.872935008707
+INFO:root:current train perplexity7.7456841468811035
+INFO:root:current mean train loss 10364.678330008865
+INFO:root:current train perplexity7.718288898468018
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.49s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.49s/it]
+INFO:root:final mean train loss: 10347.248172883064
+INFO:root:final train perplexity: 7.69941520690918
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.70s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.70s/it]
+INFO:root:eval mean loss: 12176.18989780971
+INFO:root:eval perplexity: 12.433152198791504
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/7
+
+  7%|▋         | 7/100 [31:59<7:04:00, 273.55s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 10126.89308449074
+INFO:root:current train perplexity7.469043731689453
+INFO:root:current mean train loss 10206.355276513288
+INFO:root:current train perplexity7.471893310546875
+INFO:root:current mean train loss 10189.774771131608
+INFO:root:current train perplexity7.438289642333984
+INFO:root:current mean train loss 10169.799317899466
+INFO:root:current train perplexity7.410627841949463
+INFO:root:current mean train loss 10152.376985143443
+INFO:root:current train perplexity7.382390975952148
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.76s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.76s/it]
+INFO:root:final mean train loss: 10123.95124570785
+INFO:root:final train perplexity: 7.367627143859863
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.55s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.55s/it]
+INFO:root:eval mean loss: 12055.620230538505
+INFO:root:eval perplexity: 12.12669849395752
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/8
+
+  8%|▊         | 8/100 [36:30<6:58:12, 272.74s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 10017.974325856854
+INFO:root:current train perplexity7.148723602294922
+INFO:root:current mean train loss 9973.142794310592
+INFO:root:current train perplexity7.158825874328613
+INFO:root:current mean train loss 9998.954985119048
+INFO:root:current train perplexity7.1614274978637695
+INFO:root:current mean train loss 9969.803156273603
+INFO:root:current train perplexity7.137491226196289
+INFO:root:current mean train loss 9953.845603429525
+INFO:root:current train perplexity7.114121913909912
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.91s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.91s/it]
+INFO:root:final mean train loss: 9940.242136309223
+INFO:root:final train perplexity: 7.105411529541016
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.02s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.02s/it]
+INFO:root:eval mean loss: 11956.95504906064
+INFO:root:eval perplexity: 11.881549835205078
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/9
+
+  9%|▉         | 9/100 [41:02<6:53:06, 272.38s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9783.292940848214
+INFO:root:current train perplexity6.854336738586426
+INFO:root:current mean train loss 9851.526750578703
+INFO:root:current train perplexity6.951714515686035
+INFO:root:current mean train loss 9826.81818068484
+INFO:root:current train perplexity6.934352397918701
+INFO:root:current mean train loss 9824.245160914179
+INFO:root:current train perplexity6.927309036254883
+INFO:root:current mean train loss 9803.360127065374
+INFO:root:current train perplexity6.901159763336182
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.47s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.47s/it]
+INFO:root:final mean train loss: 9785.232981035786
+INFO:root:final train perplexity: 6.891429424285889
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.48s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.48s/it]
+INFO:root:eval mean loss: 11869.570408412388
+INFO:root:eval perplexity: 11.668567657470703
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/10
+
+ 10%|█         | 10/100 [45:35<6:48:40, 272.45s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9765.826121794871
+INFO:root:current train perplexity6.76546049118042
+INFO:root:current mean train loss 9697.100333014838
+INFO:root:current train perplexity6.727403163909912
+INFO:root:current mean train loss 9690.478107021443
+INFO:root:current train perplexity6.72511625289917
+INFO:root:current mean train loss 9674.898492233591
+INFO:root:current train perplexity6.720952987670898
+INFO:root:current mean train loss 9656.872666482774
+INFO:root:current train perplexity6.709280014038086
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.25s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.26s/it]
+INFO:root:final mean train loss: 9649.144192603326
+INFO:root:final train perplexity: 6.708888530731201
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.76s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.76s/it]
+INFO:root:eval mean loss: 11798.508201962426
+INFO:root:eval perplexity: 11.498190879821777
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/11
+
+ 11%|█         | 11/100 [50:05<6:43:20, 271.92s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9549.327920603198
+INFO:root:current train perplexity6.551783084869385
+INFO:root:current mean train loss 9566.082092711975
+INFO:root:current train perplexity6.562506198883057
+INFO:root:current mean train loss 9557.347945601852
+INFO:root:current train perplexity6.573284149169922
+INFO:root:current mean train loss 9546.694412809768
+INFO:root:current train perplexity6.563891887664795
+INFO:root:current mean train loss 9538.145139672686
+INFO:root:current train perplexity6.5539984703063965
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.33s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.33s/it]
+INFO:root:final mean train loss: 9529.652874362084
+INFO:root:final train perplexity: 6.552600383758545
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.06s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.06s/it]
+INFO:root:eval mean loss: 11731.238519577753
+INFO:root:eval perplexity: 11.339195251464844
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/12
+
+ 12%|█▏        | 12/100 [54:36<6:38:28, 271.68s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9472.60825299202
+INFO:root:current train perplexity6.458200454711914
+INFO:root:current mean train loss 9442.459196960033
+INFO:root:current train perplexity6.45796012878418
+INFO:root:current mean train loss 9438.834435096154
+INFO:root:current train perplexity6.4395012855529785
+INFO:root:current mean train loss 9420.333801445426
+INFO:root:current train perplexity6.427188396453857
+INFO:root:current mean train loss 9429.618100706097
+INFO:root:current train perplexity6.420812129974365
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.66s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.66s/it]
+INFO:root:final mean train loss: 9427.784737863849
+INFO:root:final train perplexity: 6.422239303588867
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.34s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.34s/it]
+INFO:root:eval mean loss: 11699.603567940849
+INFO:root:eval perplexity: 11.26518726348877
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/13
+
+ 13%|█▎        | 13/100 [59:11<6:35:17, 272.62s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9382.996840533087
+INFO:root:current train perplexity6.315942287445068
+INFO:root:current mean train loss 9373.412956591474
+INFO:root:current train perplexity6.318322658538818
+INFO:root:current mean train loss 9367.618296345867
+INFO:root:current train perplexity6.326608180999756
+INFO:root:current mean train loss 9348.85619212963
+INFO:root:current train perplexity6.315155506134033
+INFO:root:current mean train loss 9343.018762558897
+INFO:root:current train perplexity6.306654453277588
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.41s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.41s/it]
+INFO:root:final mean train loss: 9334.255833779613
+INFO:root:final train perplexity: 6.304836750030518
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.22s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.22s/it]
+INFO:root:eval mean loss: 11643.031401134673
+INFO:root:eval perplexity: 11.134038925170898
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/14
+
+ 14%|█▍        | 14/100 [1:03:48<6:32:23, 273.76s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9244.331818181818
+INFO:root:current train perplexity6.21738862991333
+INFO:root:current mean train loss 9232.373702116936
+INFO:root:current train perplexity6.209217548370361
+INFO:root:current mean train loss 9232.857035079656
+INFO:root:current train perplexity6.2045464515686035
+INFO:root:current mean train loss 9248.804236355634
+INFO:root:current train perplexity6.2046613693237305
+INFO:root:current mean train loss 9258.366101476648
+INFO:root:current train perplexity6.203394412994385
+
+
+100%|██████████| 1/1 [04:09<00:00, 249.34s/it][A
+100%|██████████| 1/1 [04:09<00:00, 249.34s/it]
+INFO:root:final mean train loss: 9248.262436405304
+INFO:root:final train perplexity: 6.198785781860352
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.80s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.80s/it]
+INFO:root:eval mean loss: 11612.278523763021
+INFO:root:eval perplexity: 11.063392639160156
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/15
+
+ 15%|█▌        | 15/100 [1:08:34<6:33:27, 277.74s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9177.677552304025
+INFO:root:current train perplexity6.0920538902282715
+INFO:root:current mean train loss 9167.481961232312
+INFO:root:current train perplexity6.103386402130127
+INFO:root:current mean train loss 9173.905737210425
+INFO:root:current train perplexity6.107467174530029
+INFO:root:current mean train loss 9175.781919176532
+INFO:root:current train perplexity6.107597351074219
+INFO:root:current mean train loss 9172.792436853213
+INFO:root:current train perplexity6.1028594970703125
+
+
+100%|██████████| 1/1 [04:01<00:00, 241.05s/it][A
+100%|██████████| 1/1 [04:01<00:00, 241.05s/it]
+INFO:root:final mean train loss: 9172.710178498299
+INFO:root:final train perplexity: 6.107085704803467
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.28s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.28s/it]
+INFO:root:eval mean loss: 11564.557094029018
+INFO:root:eval perplexity: 10.954647064208984
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/16
+
+ 16%|█▌        | 16/100 [1:13:14<6:29:24, 278.14s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9077.269608754961
+INFO:root:current train perplexity6.048360824584961
+INFO:root:current mean train loss 9094.581426140721
+INFO:root:current train perplexity6.028096675872803
+INFO:root:current mean train loss 9102.813625089117
+INFO:root:current train perplexity6.020722389221191
+INFO:root:current mean train loss 9101.222892992424
+INFO:root:current train perplexity6.022809028625488
+INFO:root:current mean train loss 9104.186546638768
+INFO:root:current train perplexity6.022127151489258
+
+
+100%|██████████| 1/1 [04:04<00:00, 244.26s/it][A
+100%|██████████| 1/1 [04:04<00:00, 244.26s/it]
+INFO:root:final mean train loss: 9105.273049631427
+INFO:root:final train perplexity: 6.0263824462890625
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.87s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.87s/it]
+INFO:root:eval mean loss: 11550.269827706474
+INFO:root:eval perplexity: 10.922295570373535
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/17
+
+ 17%|█▋        | 17/100 [1:17:55<6:26:19, 279.28s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9033.571944962687
+INFO:root:current train perplexity5.935564994812012
+INFO:root:current mean train loss 9034.186657934131
+INFO:root:current train perplexity5.942305564880371
+INFO:root:current mean train loss 9056.5213965941
+INFO:root:current train perplexity5.9518723487854
+INFO:root:current mean train loss 9042.86385601158
+INFO:root:current train perplexity5.937735557556152
+INFO:root:current mean train loss 9042.957160900696
+INFO:root:current train perplexity5.94896936416626
+
+
+100%|██████████| 1/1 [03:56<00:00, 236.73s/it][A
+100%|██████████| 1/1 [03:56<00:00, 236.73s/it]
+INFO:root:final mean train loss: 9039.184692382812
+INFO:root:final train perplexity: 5.948328018188477
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.54s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.54s/it]
+INFO:root:eval mean loss: 11534.099086216518
+INFO:root:eval perplexity: 10.885801315307617
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/18
+
+ 18%|█▊        | 18/100 [1:22:29<6:19:30, 277.69s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 9015.356816681338
+INFO:root:current train perplexity5.90930700302124
+INFO:root:current mean train loss 9006.774482593202
+INFO:root:current train perplexity5.904121398925781
+INFO:root:current mean train loss 9008.997077519603
+INFO:root:current train perplexity5.896599292755127
+INFO:root:current mean train loss 8991.760752716476
+INFO:root:current train perplexity5.882570743560791
+INFO:root:current mean train loss 8980.873507165605
+INFO:root:current train perplexity5.875855922698975
+
+
+100%|██████████| 1/1 [03:59<00:00, 239.35s/it][A
+100%|██████████| 1/1 [03:59<00:00, 239.35s/it]
+INFO:root:final mean train loss: 8979.704756213772
+INFO:root:final train perplexity: 5.878940582275391
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.65s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.65s/it]
+INFO:root:eval mean loss: 11495.97824532645
+INFO:root:eval perplexity: 10.80024242401123
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/19
+
+ 19%|█▉        | 19/100 [1:27:07<6:14:54, 277.71s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8861.535319010416
+INFO:root:current train perplexity5.73818826675415
+INFO:root:current mean train loss 8911.047569754464
+INFO:root:current train perplexity5.786019325256348
+INFO:root:current mean train loss 8917.714756747158
+INFO:root:current train perplexity5.796361446380615
+INFO:root:current mean train loss 8932.18515234375
+INFO:root:current train perplexity5.807837009429932
+INFO:root:current mean train loss 8934.920926192433
+INFO:root:current train perplexity5.813563346862793
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.45s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.45s/it]
+INFO:root:final mean train loss: 8920.805695564517
+INFO:root:final train perplexity: 5.811030387878418
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.82s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.82s/it]
+INFO:root:eval mean loss: 11464.636207217261
+INFO:root:eval perplexity: 10.730401039123535
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/20
+
+ 20%|██        | 20/100 [1:31:42<6:09:11, 276.90s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8928.302783821202
+INFO:root:current train perplexity5.763188362121582
+INFO:root:current mean train loss 8904.31596434183
+INFO:root:current train perplexity5.770297050476074
+INFO:root:current mean train loss 8881.817367061492
+INFO:root:current train perplexity5.753988265991211
+INFO:root:current mean train loss 8892.771142964628
+INFO:root:current train perplexity5.764766693115234
+INFO:root:current mean train loss 8880.796036053302
+INFO:root:current train perplexity5.756171703338623
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.36s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.36s/it]
+INFO:root:final mean train loss: 8870.635105256111
+INFO:root:final train perplexity: 5.753803730010986
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.43s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.43s/it]
+INFO:root:eval mean loss: 11457.44870140439
+INFO:root:eval perplexity: 10.714447021484375
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/21
+
+ 21%|██        | 21/100 [1:36:17<6:03:38, 276.18s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8812.419892460466
+INFO:root:current train perplexity5.718595504760742
+INFO:root:current mean train loss 8812.016550866632
+INFO:root:current train perplexity5.690902233123779
+INFO:root:current mean train loss 8818.866066005963
+INFO:root:current train perplexity5.688683032989502
+INFO:root:current mean train loss 8823.869115127285
+INFO:root:current train perplexity5.688764572143555
+INFO:root:current mean train loss 8822.146025410844
+INFO:root:current train perplexity5.691542148590088
+
+
+100%|██████████| 1/1 [04:09<00:00, 249.33s/it][A
+100%|██████████| 1/1 [04:09<00:00, 249.33s/it]
+INFO:root:final mean train loss: 8818.825474892894
+INFO:root:final train perplexity: 5.695298671722412
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.38s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.38s/it]
+INFO:root:eval mean loss: 11420.242649623326
+INFO:root:eval perplexity: 10.63224983215332
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/22
+
+ 22%|██▏       | 22/100 [1:41:03<6:03:04, 279.29s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8789.363017465876
+INFO:root:current train perplexity5.656741142272949
+INFO:root:current mean train loss 8768.671655665106
+INFO:root:current train perplexity5.636369705200195
+INFO:root:current mean train loss 8782.768578506097
+INFO:root:current train perplexity5.647357940673828
+INFO:root:current mean train loss 8784.461338723353
+INFO:root:current train perplexity5.649796962738037
+INFO:root:current mean train loss 8784.95606571644
+INFO:root:current train perplexity5.646884918212891
+
+
+100%|██████████| 1/1 [04:00<00:00, 240.81s/it][A
+100%|██████████| 1/1 [04:00<00:00, 240.81s/it]
+INFO:root:final mean train loss: 8773.921797229397
+INFO:root:final train perplexity: 5.645071506500244
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.26s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.26s/it]
+INFO:root:eval mean loss: 11414.406000046503
+INFO:root:eval perplexity: 10.619413375854492
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/23
+
+ 23%|██▎       | 23/100 [1:45:41<5:57:49, 278.83s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8747.40451150412
+INFO:root:current train perplexity5.587887763977051
+INFO:root:current mean train loss 8753.002870889235
+INFO:root:current train perplexity5.593462944030762
+INFO:root:current mean train loss 8737.869142302943
+INFO:root:current train perplexity5.588694095611572
+INFO:root:current mean train loss 8739.929922274616
+INFO:root:current train perplexity5.594247817993164
+INFO:root:current mean train loss 8737.110685702011
+INFO:root:current train perplexity5.596740245819092
+
+
+100%|██████████| 1/1 [04:04<00:00, 244.93s/it][A
+100%|██████████| 1/1 [04:04<00:00, 244.93s/it]
+INFO:root:final mean train loss: 8730.185580345893
+INFO:root:final train perplexity: 5.596578121185303
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.64s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.64s/it]
+INFO:root:eval mean loss: 11384.04643031529
+INFO:root:eval perplexity: 10.552887916564941
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/24
+
+ 24%|██▍       | 24/100 [1:50:23<5:54:28, 279.85s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8665.804949629934
+INFO:root:current train perplexity5.53944206237793
+INFO:root:current mean train loss 8680.364831229968
+INFO:root:current train perplexity5.54794454574585
+INFO:root:current mean train loss 8690.993951933262
+INFO:root:current train perplexity5.553594589233398
+INFO:root:current mean train loss 8704.980697438687
+INFO:root:current train perplexity5.557979583740234
+INFO:root:current mean train loss 8698.604867029671
+INFO:root:current train perplexity5.554254531860352
+
+
+100%|██████████| 1/1 [04:04<00:00, 244.37s/it][A
+100%|██████████| 1/1 [04:04<00:00, 244.37s/it]
+INFO:root:final mean train loss: 8691.175991919732
+INFO:root:final train perplexity: 5.553677082061768
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.46s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.46s/it]
+INFO:root:eval mean loss: 11387.459955124628
+INFO:root:eval perplexity: 10.560345649719238
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/25
+
+ 25%|██▌       | 25/100 [1:55:06<5:50:49, 280.66s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8632.770438762625
+INFO:root:current train perplexity5.502389907836914
+INFO:root:current mean train loss 8665.904142293499
+INFO:root:current train perplexity5.517962455749512
+INFO:root:current mean train loss 8660.002439773203
+INFO:root:current train perplexity5.506504535675049
+INFO:root:current mean train loss 8664.917530643013
+INFO:root:current train perplexity5.50847864151001
+
+
+100%|██████████| 1/1 [03:59<00:00, 239.47s/it][A
+100%|██████████| 1/1 [03:59<00:00, 239.47s/it]
+INFO:root:final mean train loss: 8650.698494203629
+INFO:root:final train perplexity: 5.509509086608887
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it]
+INFO:root:eval mean loss: 11378.117524646577
+INFO:root:eval perplexity: 10.539945602416992
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/26
+
+ 26%|██▌       | 26/100 [1:59:42<5:44:38, 279.44s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8619.642903645834
+INFO:root:current train perplexity5.485681056976318
+INFO:root:current mean train loss 8622.391876516991
+INFO:root:current train perplexity5.485865116119385
+INFO:root:current mean train loss 8641.063659367303
+INFO:root:current train perplexity5.497084140777588
+INFO:root:current mean train loss 8626.875518899546
+INFO:root:current train perplexity5.4757795333862305
+INFO:root:current mean train loss 8623.560652285592
+INFO:root:current train perplexity5.473906993865967
+
+
+100%|██████████| 1/1 [04:02<00:00, 242.80s/it][A
+100%|██████████| 1/1 [04:02<00:00, 242.81s/it]
+INFO:root:final mean train loss: 8613.56167602539
+INFO:root:final train perplexity: 5.469294548034668
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.46s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.46s/it]
+INFO:root:eval mean loss: 11375.324268159413
+INFO:root:eval perplexity: 10.533851623535156
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/27
+
+ 27%|██▋       | 27/100 [2:04:21<5:39:48, 279.30s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8635.1533203125
+INFO:root:current train perplexity5.389170169830322
+INFO:root:current mean train loss 8538.966723860982
+INFO:root:current train perplexity5.411004543304443
+INFO:root:current mean train loss 8588.042966391153
+INFO:root:current train perplexity5.441328525543213
+INFO:root:current mean train loss 8582.605295386298
+INFO:root:current train perplexity5.429561614990234
+INFO:root:current mean train loss 8589.987524234106
+INFO:root:current train perplexity5.431516170501709
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.13s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.13s/it]
+INFO:root:final mean train loss: 8578.803589851626
+INFO:root:final train perplexity: 5.43192195892334
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.65s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.65s/it]
+INFO:root:eval mean loss: 11347.07091703869
+INFO:root:eval perplexity: 10.472429275512695
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/28
+
+ 28%|██▊       | 28/100 [2:08:56<5:33:25, 277.85s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8644.420188210228
+INFO:root:current train perplexity5.439986705780029
+INFO:root:current mean train loss 8574.981863210867
+INFO:root:current train perplexity5.412609577178955
+INFO:root:current mean train loss 8576.96764153214
+INFO:root:current train perplexity5.409980773925781
+INFO:root:current mean train loss 8561.885133013464
+INFO:root:current train perplexity5.401793956756592
+INFO:root:current mean train loss 8561.07310437576
+INFO:root:current train perplexity5.401407718658447
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.22s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.22s/it]
+INFO:root:final mean train loss: 8546.013693532635
+INFO:root:final train perplexity: 5.396900177001953
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.25s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.25s/it]
+INFO:root:eval mean loss: 11341.585042317709
+INFO:root:eval perplexity: 10.460543632507324
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/29
+
+ 29%|██▉       | 29/100 [2:13:26<5:26:03, 275.54s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8553.0572265625
+INFO:root:current train perplexity5.35208797454834
+INFO:root:current mean train loss 8569.003099524456
+INFO:root:current train perplexity5.376594066619873
+INFO:root:current mean train loss 8565.399693404797
+INFO:root:current train perplexity5.370735168457031
+INFO:root:current mean train loss 8541.824460565476
+INFO:root:current train perplexity5.363452434539795
+INFO:root:current mean train loss 8534.553656814758
+INFO:root:current train perplexity5.3625688552856445
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.41s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.41s/it]
+INFO:root:final mean train loss: 8514.501638104839
+INFO:root:final train perplexity: 5.363456726074219
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:34<00:00, 34.92s/it][A
+100%|██████████| 1/1 [00:34<00:00, 34.92s/it]
+INFO:root:eval mean loss: 11324.820376441592
+INFO:root:eval perplexity: 10.424304962158203
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/30
+
+ 30%|███       | 30/100 [2:17:57<5:19:52, 274.18s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8503.814119037828
+INFO:root:current train perplexity5.378815650939941
+INFO:root:current mean train loss 8497.87914423582
+INFO:root:current train perplexity5.3364105224609375
+INFO:root:current mean train loss 8498.649659317922
+INFO:root:current train perplexity5.3303656578063965
+INFO:root:current mean train loss 8492.224312426528
+INFO:root:current train perplexity5.3329691886901855
+INFO:root:current mean train loss 8496.56444147151
+INFO:root:current train perplexity5.336857318878174
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.38s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.38s/it]
+INFO:root:final mean train loss: 8485.848905501827
+INFO:root:final train perplexity: 5.333226680755615
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.85s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.86s/it]
+INFO:root:eval mean loss: 11311.917154947916
+INFO:root:eval perplexity: 10.396500587463379
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/31
+
+ 31%|███       | 31/100 [2:22:28<5:14:12, 273.22s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8429.717497452446
+INFO:root:current train perplexity5.271172523498535
+INFO:root:current mean train loss 8427.560106230945
+INFO:root:current train perplexity5.26141881942749
+INFO:root:current mean train loss 8457.846835149243
+INFO:root:current train perplexity5.284334659576416
+INFO:root:current mean train loss 8466.632127696885
+INFO:root:current train perplexity5.300500392913818
+INFO:root:current mean train loss 8460.00959247562
+INFO:root:current train perplexity5.302486419677734
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.14s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.15s/it]
+INFO:root:final mean train loss: 8454.696399319557
+INFO:root:final train perplexity: 5.300552845001221
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:34<00:00, 34.81s/it][A
+100%|██████████| 1/1 [00:34<00:00, 34.81s/it]
+INFO:root:eval mean loss: 11310.32997639974
+INFO:root:eval perplexity: 10.393088340759277
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/32
+
+ 32%|███▏      | 32/100 [2:26:59<5:08:47, 272.46s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8431.608308015046
+INFO:root:current train perplexity5.204289436340332
+INFO:root:current mean train loss 8416.973840428149
+INFO:root:current train perplexity5.247076034545898
+INFO:root:current mean train loss 8423.028068643309
+INFO:root:current train perplexity5.267600059509277
+INFO:root:current mean train loss 8433.75457371703
+INFO:root:current train perplexity5.269707202911377
+INFO:root:current mean train loss 8436.205639591262
+INFO:root:current train perplexity5.26852560043335
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.01s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.01s/it]
+INFO:root:final mean train loss: 8426.415494857296
+INFO:root:final train perplexity: 5.271064281463623
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.69s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.69s/it]
+INFO:root:eval mean loss: 11314.431902204242
+INFO:root:eval perplexity: 10.4019136428833
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/33
+
+ 33%|███▎      | 33/100 [2:31:30<5:03:52, 272.13s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8311.577998991936
+INFO:root:current train perplexity5.1956682205200195
+INFO:root:current mean train loss 8359.589198920563
+INFO:root:current train perplexity5.237371444702148
+INFO:root:current mean train loss 8401.02777918696
+INFO:root:current train perplexity5.242126941680908
+INFO:root:current mean train loss 8396.217512332421
+INFO:root:current train perplexity5.239326000213623
+INFO:root:current mean train loss 8394.421136347159
+INFO:root:current train perplexity5.234961986541748
+
+
+100%|██████████| 1/1 [04:02<00:00, 242.03s/it][A
+100%|██████████| 1/1 [04:02<00:00, 242.03s/it]
+INFO:root:final mean train loss: 8400.64846703314
+INFO:root:final train perplexity: 5.244340419769287
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.53s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.53s/it]
+INFO:root:eval mean loss: 11286.21906970796
+INFO:root:eval perplexity: 10.341344833374023
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/34
+
+ 34%|███▍      | 34/100 [2:36:08<5:01:21, 273.96s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8460.727804129465
+INFO:root:current train perplexity5.2350544929504395
+INFO:root:current mean train loss 8368.807161458333
+INFO:root:current train perplexity5.209900379180908
+INFO:root:current mean train loss 8367.099547041224
+INFO:root:current train perplexity5.199118614196777
+INFO:root:current mean train loss 8378.452047866138
+INFO:root:current train perplexity5.211937427520752
+INFO:root:current mean train loss 8380.484473778735
+INFO:root:current train perplexity5.212810516357422
+
+
+100%|██████████| 1/1 [04:04<00:00, 244.63s/it][A
+100%|██████████| 1/1 [04:04<00:00, 244.63s/it]
+INFO:root:final mean train loss: 8370.825611729775
+INFO:root:final train perplexity: 5.213578224182129
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.54s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.54s/it]
+INFO:root:eval mean loss: 11282.208757672992
+INFO:root:eval perplexity: 10.332768440246582
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/35
+
+ 35%|███▌      | 35/100 [2:40:50<4:59:21, 276.32s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8430.792104867789
+INFO:root:current train perplexity5.238370895385742
+INFO:root:current mean train loss 8378.505469452562
+INFO:root:current train perplexity5.2016496658325195
+INFO:root:current mean train loss 8363.32426573941
+INFO:root:current train perplexity5.195615768432617
+INFO:root:current mean train loss 8367.113013343473
+INFO:root:current train perplexity5.1942620277404785
+INFO:root:current mean train loss 8354.498608565276
+INFO:root:current train perplexity5.187905311584473
+
+
+100%|██████████| 1/1 [04:03<00:00, 243.66s/it][A
+100%|██████████| 1/1 [04:03<00:00, 243.66s/it]
+INFO:root:final mean train loss: 8346.587095199093
+INFO:root:final train perplexity: 5.188709259033203
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.05s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.05s/it]
+INFO:root:eval mean loss: 11283.232166108632
+INFO:root:eval perplexity: 10.334953308105469
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/36
+
+ 36%|███▌      | 36/100 [2:45:31<4:56:02, 277.54s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8265.89214662064
+INFO:root:current train perplexity5.144996643066406
+INFO:root:current mean train loss 8304.601361041303
+INFO:root:current train perplexity5.145170211791992
+INFO:root:current mean train loss 8306.267945842977
+INFO:root:current train perplexity5.157421588897705
+INFO:root:current mean train loss 8316.730962725493
+INFO:root:current train perplexity5.160799503326416
+INFO:root:current mean train loss 8326.029975839447
+INFO:root:current train perplexity5.161258220672607
+
+
+100%|██████████| 1/1 [04:00<00:00, 240.80s/it][A
+100%|██████████| 1/1 [04:00<00:00, 240.80s/it]
+INFO:root:final mean train loss: 8322.999613115864
+INFO:root:final train perplexity: 5.164623260498047
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.09s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.09s/it]
+INFO:root:eval mean loss: 11275.314900716146
+INFO:root:eval perplexity: 10.318032264709473
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/37
+
+ 37%|███▋      | 37/100 [2:50:08<4:51:26, 277.56s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8255.208163646941
+INFO:root:current train perplexity5.094582557678223
+INFO:root:current mean train loss 8273.724635948129
+INFO:root:current train perplexity5.118358612060547
+INFO:root:current mean train loss 8270.898522504429
+INFO:root:current train perplexity5.125765800476074
+INFO:root:current mean train loss 8284.726849558718
+INFO:root:current train perplexity5.131664752960205
+INFO:root:current mean train loss 8309.07958328964
+INFO:root:current train perplexity5.143584251403809
+
+
+100%|██████████| 1/1 [03:59<00:00, 239.97s/it][A
+100%|██████████| 1/1 [03:59<00:00, 239.97s/it]
+INFO:root:final mean train loss: 8300.585281864289
+INFO:root:final train perplexity: 5.141838073730469
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.12s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.12s/it]
+INFO:root:eval mean loss: 11278.005266462054
+INFO:root:eval perplexity: 10.323780059814453
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/38
+
+ 38%|███▊      | 38/100 [2:54:45<4:46:33, 277.32s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8293.728151807598
+INFO:root:current train perplexity5.111100196838379
+INFO:root:current mean train loss 8277.710277835266
+INFO:root:current train perplexity5.101747512817383
+INFO:root:current mean train loss 8270.076981137949
+INFO:root:current train perplexity5.0959343910217285
+INFO:root:current mean train loss 8275.821108217593
+INFO:root:current train perplexity5.109164714813232
+INFO:root:current mean train loss 8284.211548122228
+INFO:root:current train perplexity5.1136064529418945
+
+
+100%|██████████| 1/1 [03:56<00:00, 236.08s/it][A
+100%|██████████| 1/1 [03:56<00:00, 236.08s/it]
+INFO:root:final mean train loss: 8276.472022271926
+INFO:root:final train perplexity: 5.117437362670898
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.62s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.62s/it]
+INFO:root:eval mean loss: 11266.514195033482
+INFO:root:eval perplexity: 10.2992525100708
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/39
+
+ 39%|███▉      | 39/100 [2:59:18<4:40:43, 276.13s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8218.049334161931
+INFO:root:current train perplexity5.060962677001953
+INFO:root:current mean train loss 8241.625551285282
+INFO:root:current train perplexity5.084686756134033
+INFO:root:current mean train loss 8259.87530445772
+INFO:root:current train perplexity5.097683906555176
+INFO:root:current mean train loss 8258.573547535212
+INFO:root:current train perplexity5.096851348876953
+INFO:root:current mean train loss 8262.724233774039
+INFO:root:current train perplexity5.0974812507629395
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.05s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.05s/it]
+INFO:root:final mean train loss: 8256.97265132781
+INFO:root:final train perplexity: 5.097790241241455
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it]
+INFO:root:eval mean loss: 11266.768200102306
+INFO:root:eval perplexity: 10.299792289733887
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/40
+
+ 40%|████      | 40/100 [3:03:51<4:35:10, 275.18s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8246.511478747352
+INFO:root:current train perplexity5.090628147125244
+INFO:root:current mean train loss 8253.4361579943
+INFO:root:current train perplexity5.083176136016846
+INFO:root:current mean train loss 8256.84876289515
+INFO:root:current train perplexity5.084281921386719
+INFO:root:current mean train loss 8260.786899917304
+INFO:root:current train perplexity5.088037490844727
+INFO:root:current mean train loss 8243.486171747345
+INFO:root:current train perplexity5.078776836395264
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.64s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.64s/it]
+INFO:root:final mean train loss: 8235.663651004914
+INFO:root:final train perplexity: 5.0764079093933105
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.63s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.64s/it]
+INFO:root:eval mean loss: 11256.98378499349
+INFO:root:eval perplexity: 10.278955459594727
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/41
+
+ 41%|████      | 41/100 [3:08:22<4:29:20, 273.90s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8174.264020647322
+INFO:root:current train perplexity5.01876974105835
+INFO:root:current mean train loss 8196.250260616373
+INFO:root:current train perplexity5.033801078796387
+INFO:root:current mean train loss 8198.866353894367
+INFO:root:current train perplexity5.036647796630859
+INFO:root:current mean train loss 8214.345333214962
+INFO:root:current train perplexity5.044792652130127
+INFO:root:current mean train loss 8221.484999325054
+INFO:root:current train perplexity5.052410125732422
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.85s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.85s/it]
+INFO:root:final mean train loss: 8212.87525595388
+INFO:root:final train perplexity: 5.053638458251953
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.32s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.32s/it]
+INFO:root:eval mean loss: 11253.052708217076
+INFO:root:eval perplexity: 10.270591735839844
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/42
+
+ 42%|████▏     | 42/100 [3:12:53<4:23:52, 272.97s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8139.574051131063
+INFO:root:current train perplexity5.024209976196289
+INFO:root:current mean train loss 8190.3025618684505
+INFO:root:current train perplexity5.032148361206055
+INFO:root:current mean train loss 8203.616247512875
+INFO:root:current train perplexity5.036600589752197
+INFO:root:current mean train loss 8208.342468760644
+INFO:root:current train perplexity5.038974285125732
+INFO:root:current mean train loss 8199.321487720825
+INFO:root:current train perplexity5.033997535705566
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.49s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.49s/it]
+INFO:root:final mean train loss: 8196.73985930412
+INFO:root:final train perplexity: 5.037578582763672
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:34<00:00, 34.84s/it][A
+100%|██████████| 1/1 [00:34<00:00, 34.85s/it]
+INFO:root:eval mean loss: 11253.268301827567
+INFO:root:eval perplexity: 10.271052360534668
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/43
+
+ 43%|████▎     | 43/100 [3:17:24<4:18:45, 272.38s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8229.731851067341
+INFO:root:current train perplexity5.0415849685668945
+INFO:root:current mean train loss 8198.29586988304
+INFO:root:current train perplexity5.0165228843688965
+INFO:root:current mean train loss 8196.545282230167
+INFO:root:current train perplexity5.016478538513184
+INFO:root:current mean train loss 8182.789604742251
+INFO:root:current train perplexity5.012457370758057
+INFO:root:current mean train loss 8182.061701748275
+INFO:root:current train perplexity5.016580581665039
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.56s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.56s/it]
+INFO:root:final mean train loss: 8174.706610894972
+INFO:root:final train perplexity: 5.015731334686279
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.41s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.41s/it]
+INFO:root:eval mean loss: 11242.902820405507
+INFO:root:eval perplexity: 10.249039649963379
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/44
+
+ 44%|████▍     | 44/100 [3:21:55<4:13:44, 271.87s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8155.898138020833
+INFO:root:current train perplexity4.981777191162109
+INFO:root:current mean train loss 8152.275150669643
+INFO:root:current train perplexity4.988873481750488
+INFO:root:current mean train loss 8169.948219105114
+INFO:root:current train perplexity4.99707555770874
+INFO:root:current mean train loss 8163.384061197917
+INFO:root:current train perplexity4.996463298797607
+INFO:root:current mean train loss 8164.25185546875
+INFO:root:current train perplexity4.998671054840088
+
+
+100%|██████████| 1/1 [04:03<00:00, 243.71s/it][A
+100%|██████████| 1/1 [04:03<00:00, 243.71s/it]
+INFO:root:final mean train loss: 8160.185291905557
+INFO:root:final train perplexity: 5.001382350921631
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:38<00:00, 38.72s/it][A
+100%|██████████| 1/1 [00:38<00:00, 38.72s/it]
+INFO:root:eval mean loss: 11245.834493001303
+INFO:root:eval perplexity: 10.25526237487793
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/45
+
+ 45%|████▌     | 45/100 [3:26:38<4:12:18, 275.25s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8164.400817098497
+INFO:root:current train perplexity4.995413780212402
+INFO:root:current mean train loss 8149.599513901013
+INFO:root:current train perplexity4.989997863769531
+INFO:root:current mean train loss 8148.769946026546
+INFO:root:current train perplexity4.988268852233887
+INFO:root:current mean train loss 8162.720944044772
+INFO:root:current train perplexity4.986852169036865
+INFO:root:current mean train loss 8151.6058398029745
+INFO:root:current train perplexity4.985549449920654
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.94s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.94s/it]
+INFO:root:final mean train loss: 8143.535100137034
+INFO:root:final train perplexity: 4.984982490539551
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.21s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.21s/it]
+INFO:root:eval mean loss: 11244.530616396949
+INFO:root:eval perplexity: 10.252492904663086
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/46
+
+ 46%|████▌     | 46/100 [3:31:40<4:14:59, 283.33s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8152.547351515437
+INFO:root:current train perplexity4.954896450042725
+INFO:root:current mean train loss 8142.64396025444
+INFO:root:current train perplexity4.965087413787842
+INFO:root:current mean train loss 8145.981324536219
+INFO:root:current train perplexity4.965771675109863
+INFO:root:current mean train loss 8138.9428264727485
+INFO:root:current train perplexity4.969308376312256
+INFO:root:current mean train loss 8132.422938502847
+INFO:root:current train perplexity4.966736793518066
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.60s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.61s/it]
+INFO:root:final mean train loss: 8124.385489186933
+INFO:root:final train perplexity: 4.966187953948975
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.19s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.19s/it]
+INFO:root:eval mean loss: 11244.720575241816
+INFO:root:eval perplexity: 10.252896308898926
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/47
+
+ 47%|████▋     | 47/100 [3:36:14<4:07:54, 280.66s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8107.7225552262935
+INFO:root:current train perplexity4.945198059082031
+INFO:root:current mean train loss 8114.030059324867
+INFO:root:current train perplexity4.946950435638428
+INFO:root:current mean train loss 8114.534344716354
+INFO:root:current train perplexity4.948319911956787
+INFO:root:current mean train loss 8110.525822129361
+INFO:root:current train perplexity4.951839447021484
+INFO:root:current mean train loss 8113.447107209317
+INFO:root:current train perplexity4.950826644897461
+
+
+100%|██████████| 1/1 [03:49<00:00, 229.20s/it][A
+100%|██████████| 1/1 [03:49<00:00, 229.20s/it]
+INFO:root:final mean train loss: 8107.961924891318
+INFO:root:final train perplexity: 4.950125217437744
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.28s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.28s/it]
+INFO:root:eval mean loss: 11248.329825265067
+INFO:root:eval perplexity: 10.260560035705566
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/48
+
+ 48%|████▊     | 48/100 [3:40:39<3:59:11, 275.99s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8131.692447201236
+INFO:root:current train perplexity4.927276134490967
+INFO:root:current mean train loss 8086.794684125491
+INFO:root:current train perplexity4.922609329223633
+INFO:root:current mean train loss 8093.93358703823
+INFO:root:current train perplexity4.919302463531494
+INFO:root:current mean train loss 8091.080784946452
+INFO:root:current train perplexity4.925782680511475
+INFO:root:current mean train loss 8097.055839087959
+INFO:root:current train perplexity4.934605598449707
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.47s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.47s/it]
+INFO:root:final mean train loss: 8092.702266570061
+INFO:root:final train perplexity: 4.935245990753174
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.10s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.10s/it]
+INFO:root:eval mean loss: 11246.243350074405
+INFO:root:eval perplexity: 10.25613021850586
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/49
+
+ 49%|████▉     | 49/100 [3:45:10<3:53:07, 274.26s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8095.471695106908
+INFO:root:current train perplexity4.906211853027344
+INFO:root:current mean train loss 8078.597160456731
+INFO:root:current train perplexity4.9147419929504395
+INFO:root:current mean train loss 8081.082158699683
+INFO:root:current train perplexity4.916684627532959
+INFO:root:current mean train loss 8079.270947883702
+INFO:root:current train perplexity4.914455413818359
+INFO:root:current mean train loss 8084.534041587753
+INFO:root:current train perplexity4.921452045440674
+
+
+100%|██████████| 1/1 [03:49<00:00, 229.69s/it][A
+100%|██████████| 1/1 [03:49<00:00, 229.69s/it]
+INFO:root:final mean train loss: 8079.03760750063
+INFO:root:final train perplexity: 4.921960830688477
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.86s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.86s/it]
+INFO:root:eval mean loss: 11237.761875697544
+INFO:root:eval perplexity: 10.238139152526855
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/50
+
+ 50%|█████     | 50/100 [3:49:36<3:46:33, 271.87s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8058.700565222538
+INFO:root:current train perplexity4.880259990692139
+INFO:root:current mean train loss 8068.036002767745
+INFO:root:current train perplexity4.892367362976074
+INFO:root:current mean train loss 8069.803356566158
+INFO:root:current train perplexity4.907369136810303
+INFO:root:current mean train loss 8056.390494057409
+INFO:root:current train perplexity4.9029154777526855
+
+
+100%|██████████| 1/1 [03:55<00:00, 235.01s/it][A
+100%|██████████| 1/1 [03:55<00:00, 235.01s/it]
+INFO:root:final mean train loss: 8060.024982083229
+INFO:root:final train perplexity: 4.903535842895508
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.90s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.90s/it]
+INFO:root:eval mean loss: 11234.509567987352
+INFO:root:eval perplexity: 10.23124885559082
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/51
+
+ 51%|█████     | 51/100 [3:54:08<3:41:57, 271.79s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7925.674479166667
+INFO:root:current train perplexity4.832517623901367
+INFO:root:current mean train loss 8054.333695198726
+INFO:root:current train perplexity4.888674736022949
+INFO:root:current mean train loss 8077.281129733682
+INFO:root:current train perplexity4.897545337677002
+INFO:root:current mean train loss 8057.523714676155
+INFO:root:current train perplexity4.890305519104004
+INFO:root:current mean train loss 8053.713778739531
+INFO:root:current train perplexity4.892887115478516
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.99s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.99s/it]
+INFO:root:final mean train loss: 8049.395499936996
+INFO:root:final train perplexity: 4.893264293670654
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:38<00:00, 38.07s/it][A
+100%|██████████| 1/1 [00:38<00:00, 38.07s/it]
+INFO:root:eval mean loss: 11233.949268159413
+INFO:root:eval perplexity: 10.230063438415527
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/52
+
+ 52%|█████▏    | 52/100 [3:58:40<3:37:40, 272.09s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8080.593052455357
+INFO:root:current train perplexity4.98227596282959
+INFO:root:current mean train loss 8010.1120582651865
+INFO:root:current train perplexity4.861484050750732
+INFO:root:current mean train loss 8017.557381302838
+INFO:root:current train perplexity4.861761569976807
+INFO:root:current mean train loss 8017.027921098839
+INFO:root:current train perplexity4.870612621307373
+INFO:root:current mean train loss 8036.741790396575
+INFO:root:current train perplexity4.875270843505859
+
+
+100%|██████████| 1/1 [03:59<00:00, 239.92s/it][A
+100%|██████████| 1/1 [03:59<00:00, 239.92s/it]
+INFO:root:final mean train loss: 8032.208587646484
+INFO:root:final train perplexity: 4.876702785491943
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.13s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.13s/it]
+INFO:root:eval mean loss: 11229.167236328125
+INFO:root:eval perplexity: 10.219941139221191
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/53
+
+ 53%|█████▎    | 53/100 [4:03:17<3:34:13, 273.48s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8041.623046875
+INFO:root:current train perplexity4.955349445343018
+INFO:root:current mean train loss 8016.312121692004
+INFO:root:current train perplexity4.870982646942139
+INFO:root:current mean train loss 8019.904116372926
+INFO:root:current train perplexity4.868668556213379
+INFO:root:current mean train loss 8037.816327748192
+INFO:root:current train perplexity4.875382423400879
+INFO:root:current mean train loss 8029.602812309915
+INFO:root:current train perplexity4.868621349334717
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.64s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.64s/it]
+INFO:root:final mean train loss: 8019.309863675026
+INFO:root:final train perplexity: 4.864309787750244
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.11s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.11s/it]
+INFO:root:eval mean loss: 11231.44303094773
+INFO:root:eval perplexity: 10.224757194519043
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/54
+
+ 54%|█████▍    | 54/100 [4:07:52<3:29:53, 273.78s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7997.252180989583
+INFO:root:current train perplexity4.882643222808838
+INFO:root:current mean train loss 8023.619926120924
+INFO:root:current train perplexity4.862029075622559
+INFO:root:current mean train loss 8008.923580577762
+INFO:root:current train perplexity4.857758045196533
+INFO:root:current mean train loss 8006.002579365079
+INFO:root:current train perplexity4.861146926879883
+INFO:root:current mean train loss 8008.386263413027
+INFO:root:current train perplexity4.856398582458496
+
+
+100%|██████████| 1/1 [04:00<00:00, 240.46s/it][A
+100%|██████████| 1/1 [04:00<00:00, 240.46s/it]
+INFO:root:final mean train loss: 8007.998616864605
+INFO:root:final train perplexity: 4.853468418121338
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.11s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.11s/it]
+INFO:root:eval mean loss: 11225.682884579614
+INFO:root:eval perplexity: 10.212573051452637
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/55
+
+ 55%|█████▌    | 55/100 [4:12:29<3:26:06, 274.82s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7891.832391036184
+INFO:root:current train perplexity4.783642292022705
+INFO:root:current mean train loss 8011.565011160715
+INFO:root:current train perplexity4.8370890617370605
+INFO:root:current mean train loss 7992.217670876142
+INFO:root:current train perplexity4.827874183654785
+INFO:root:current mean train loss 7983.617977321708
+INFO:root:current train perplexity4.832240104675293
+INFO:root:current mean train loss 7992.867673450552
+INFO:root:current train perplexity4.838759899139404
+
+
+100%|██████████| 1/1 [04:05<00:00, 245.48s/it][A
+100%|██████████| 1/1 [04:05<00:00, 245.48s/it]
+INFO:root:final mean train loss: 7993.339773854902
+INFO:root:final train perplexity: 4.839454174041748
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.36s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.36s/it]
+INFO:root:eval mean loss: 11235.080601283482
+INFO:root:eval perplexity: 10.232460975646973
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/56
+
+ 56%|█████▌    | 56/100 [4:17:11<3:23:13, 277.13s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 8033.275772758152
+INFO:root:current train perplexity4.866209030151367
+INFO:root:current mean train loss 7983.806327013465
+INFO:root:current train perplexity4.820179462432861
+INFO:root:current mean train loss 7977.282655724495
+INFO:root:current train perplexity4.82275390625
+INFO:root:current mean train loss 7993.507121650058
+INFO:root:current train perplexity4.829412460327148
+INFO:root:current mean train loss 7995.866530686687
+INFO:root:current train perplexity4.8325042724609375
+
+
+100%|██████████| 1/1 [03:59<00:00, 239.68s/it][A
+100%|██████████| 1/1 [03:59<00:00, 239.68s/it]
+INFO:root:final mean train loss: 7981.813784691595
+INFO:root:final train perplexity: 4.828463077545166
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.21s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.21s/it]
+INFO:root:eval mean loss: 11233.187709263393
+INFO:root:eval perplexity: 10.228448867797852
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/57
+
+ 57%|█████▋    | 57/100 [4:21:51<3:19:04, 277.77s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7921.18531177662
+INFO:root:current train perplexity4.7623138427734375
+INFO:root:current mean train loss 7952.594088336614
+INFO:root:current train perplexity4.792629718780518
+INFO:root:current mean train loss 7968.510357155149
+INFO:root:current train perplexity4.803499221801758
+INFO:root:current mean train loss 7968.167413274083
+INFO:root:current train perplexity4.812111854553223
+INFO:root:current mean train loss 7968.360070257611
+INFO:root:current train perplexity4.81364107131958
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.79s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.79s/it]
+INFO:root:final mean train loss: 7968.306099184098
+INFO:root:final train perplexity: 4.815613746643066
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.17s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.17s/it]
+INFO:root:eval mean loss: 11224.436206635975
+INFO:root:eval perplexity: 10.209936141967773
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/58
+
+ 58%|█████▊    | 58/100 [4:26:45<3:17:51, 282.67s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7960.292244203629
+INFO:root:current train perplexity4.808797836303711
+INFO:root:current mean train loss 7937.465991770038
+INFO:root:current train perplexity4.772494316101074
+INFO:root:current mean train loss 7929.040168002571
+INFO:root:current train perplexity4.778769016265869
+INFO:root:current mean train loss 7940.932713073546
+INFO:root:current train perplexity4.786438941955566
+INFO:root:current mean train loss 7948.748109184672
+INFO:root:current train perplexity4.798338413238525
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.11s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.11s/it]
+INFO:root:final mean train loss: 7956.921974428238
+INFO:root:final train perplexity: 4.804811954498291
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.21s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.21s/it]
+INFO:root:eval mean loss: 11230.748128255209
+INFO:root:eval perplexity: 10.223284721374512
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/59
+
+ 59%|█████▉    | 59/100 [4:31:16<3:10:45, 279.15s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7945.100474330357
+INFO:root:current train perplexity4.774139404296875
+INFO:root:current mean train loss 7945.508622685185
+INFO:root:current train perplexity4.774580001831055
+INFO:root:current mean train loss 7948.471933178192
+INFO:root:current train perplexity4.793606281280518
+INFO:root:current mean train loss 7946.790289762127
+INFO:root:current train perplexity4.793633460998535
+INFO:root:current mean train loss 7948.931403780532
+INFO:root:current train perplexity4.791563987731934
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.12s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.12s/it]
+INFO:root:final mean train loss: 7944.218071722215
+INFO:root:final train perplexity: 4.792785167694092
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.32s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.32s/it]
+INFO:root:eval mean loss: 11222.82711937314
+INFO:root:eval perplexity: 10.206539154052734
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/60
+
+ 60%|██████    | 60/100 [4:35:45<3:04:06, 276.15s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7937.973157051282
+INFO:root:current train perplexity4.7927751541137695
+INFO:root:current mean train loss 7946.829372049236
+INFO:root:current train perplexity4.794826507568359
+INFO:root:current mean train loss 7924.257851317338
+INFO:root:current train perplexity4.7792277336120605
+INFO:root:current mean train loss 7926.565844510509
+INFO:root:current train perplexity4.7784528732299805
+INFO:root:current mean train loss 7934.548239740532
+INFO:root:current train perplexity4.7806267738342285
+
+
+100%|██████████| 1/1 [03:51<00:00, 231.54s/it][A
+100%|██████████| 1/1 [03:51<00:00, 231.54s/it]
+INFO:root:final mean train loss: 7935.410091277092
+INFO:root:final train perplexity: 4.784465789794922
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:34<00:00, 34.97s/it][A
+100%|██████████| 1/1 [00:34<00:00, 34.97s/it]
+INFO:root:eval mean loss: 11225.55360049293
+INFO:root:eval perplexity: 10.212300300598145
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/61
+
+ 61%|██████    | 61/100 [4:40:12<2:57:44, 273.44s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7927.28542877907
+INFO:root:current train perplexity4.751918792724609
+INFO:root:current mean train loss 7946.184174224213
+INFO:root:current train perplexity4.783561706542969
+INFO:root:current mean train loss 7944.148312917952
+INFO:root:current train perplexity4.783252716064453
+INFO:root:current mean train loss 7942.189605445973
+INFO:root:current train perplexity4.78018856048584
+INFO:root:current mean train loss 7931.42090284636
+INFO:root:current train perplexity4.776777744293213
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.20s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.20s/it]
+INFO:root:final mean train loss: 7927.508599065965
+INFO:root:final train perplexity: 4.777014255523682
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.08s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.08s/it]
+INFO:root:eval mean loss: 11225.887916201636
+INFO:root:eval perplexity: 10.213006019592285
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/62
+
+ 62%|██████▏   | 62/100 [4:44:40<2:52:07, 271.78s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7867.893793633643
+INFO:root:current train perplexity4.730377674102783
+INFO:root:current mean train loss 7910.154851589073
+INFO:root:current train perplexity4.758352756500244
+INFO:root:current mean train loss 7920.34521484375
+INFO:root:current train perplexity4.757617950439453
+INFO:root:current mean train loss 7920.099026814662
+INFO:root:current train perplexity4.762420654296875
+INFO:root:current mean train loss 7922.013218549007
+INFO:root:current train perplexity4.766381740570068
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.10s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.10s/it]
+INFO:root:final mean train loss: 7913.515276508947
+INFO:root:final train perplexity: 4.763845920562744
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.00s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.00s/it]
+INFO:root:eval mean loss: 11229.596749441964
+INFO:root:eval perplexity: 10.220849990844727
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/63
+
+ 63%|██████▎   | 63/100 [4:49:09<2:47:12, 271.16s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7937.157341452206
+INFO:root:current train perplexity4.7703537940979
+INFO:root:current mean train loss 7905.43686297082
+INFO:root:current train perplexity4.761236190795898
+INFO:root:current mean train loss 7925.029096504607
+INFO:root:current train perplexity4.75809907913208
+INFO:root:current mean train loss 7915.052407463052
+INFO:root:current train perplexity4.751762866973877
+INFO:root:current mean train loss 7913.227112493071
+INFO:root:current train perplexity4.752445220947266
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.02s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.02s/it]
+INFO:root:final mean train loss: 7904.989488170993
+INFO:root:final train perplexity: 4.755841255187988
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.05s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.06s/it]
+INFO:root:eval mean loss: 11223.059930710566
+INFO:root:eval perplexity: 10.207027435302734
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/64
+
+ 64%|██████▍   | 64/100 [4:53:38<2:42:14, 270.41s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7949.092462713068
+INFO:root:current train perplexity4.765732288360596
+INFO:root:current mean train loss 7862.390659652217
+INFO:root:current train perplexity4.732231616973877
+INFO:root:current mean train loss 7886.544062117035
+INFO:root:current train perplexity4.736161708831787
+INFO:root:current mean train loss 7899.748682328345
+INFO:root:current train perplexity4.747090816497803
+INFO:root:current mean train loss 7899.107635430975
+INFO:root:current train perplexity4.745057106018066
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.68s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.68s/it]
+INFO:root:final mean train loss: 7895.456161006804
+INFO:root:final train perplexity: 4.74690580368042
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:34<00:00, 34.96s/it][A
+100%|██████████| 1/1 [00:34<00:00, 34.96s/it]
+INFO:root:eval mean loss: 11226.392043340773
+INFO:root:eval perplexity: 10.214073181152344
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/65
+
+ 65%|██████▌   | 65/100 [4:58:07<2:37:32, 270.07s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7902.519001588983
+INFO:root:current train perplexity4.743484973907471
+INFO:root:current mean train loss 7895.748206564465
+INFO:root:current train perplexity4.7330780029296875
+INFO:root:current mean train loss 7890.2002480996625
+INFO:root:current train perplexity4.729138374328613
+INFO:root:current mean train loss 7890.495817646674
+INFO:root:current train perplexity4.735124588012695
+INFO:root:current mean train loss 7885.628241379017
+INFO:root:current train perplexity4.733763694763184
+
+
+100%|██████████| 1/1 [03:51<00:00, 231.50s/it][A
+100%|██████████| 1/1 [03:51<00:00, 231.50s/it]
+INFO:root:final mean train loss: 7884.573982484879
+INFO:root:final train perplexity: 4.736726760864258
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.11s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.11s/it]
+INFO:root:eval mean loss: 11224.990466889882
+INFO:root:eval perplexity: 10.21111011505127
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/66
+
+ 66%|██████▌   | 66/100 [5:02:35<2:32:34, 269.24s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7852.829396081349
+INFO:root:current train perplexity4.699277877807617
+INFO:root:current mean train loss 7898.825485884778
+INFO:root:current train perplexity4.739446640014648
+INFO:root:current mean train loss 7883.17708828422
+INFO:root:current train perplexity4.724231719970703
+INFO:root:current mean train loss 7875.308623342803
+INFO:root:current train perplexity4.725832462310791
+INFO:root:current mean train loss 7881.625288961258
+INFO:root:current train perplexity4.7288384437561035
+
+
+100%|██████████| 1/1 [04:02<00:00, 242.88s/it][A
+100%|██████████| 1/1 [04:02<00:00, 242.88s/it]
+INFO:root:final mean train loss: 7876.582335441343
+INFO:root:final train perplexity: 4.729265213012695
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.13s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.13s/it]
+INFO:root:eval mean loss: 11215.672380719867
+INFO:root:eval perplexity: 10.191433906555176
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/67
+############################best###############
+ 67%|██████▋   | 67/100 [5:07:14<2:29:48, 272.37s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7822.348326725746
+INFO:root:current train perplexity4.691018581390381
+INFO:root:current mean train loss 7866.926254912051
+INFO:root:current train perplexity4.713779449462891
+INFO:root:current mean train loss 7872.631874341643
+INFO:root:current train perplexity4.714300632476807
+INFO:root:current mean train loss 7872.574422311393
+INFO:root:current train perplexity4.714576721191406
+INFO:root:current mean train loss 7876.716251087393
+INFO:root:current train perplexity4.718801975250244
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.32s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.32s/it]
+INFO:root:final mean train loss: 7866.173577093309
+INFO:root:final train perplexity: 4.719564914703369
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.40s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.40s/it]
+INFO:root:eval mean loss: 11221.70781889416
+INFO:root:eval perplexity: 10.204171180725098
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/68
+
+ 68%|██████▊   | 68/100 [5:11:45<2:24:56, 271.76s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7894.793622084067
+INFO:root:current train perplexity4.727272033691406
+INFO:root:current mean train loss 7878.488129911367
+INFO:root:current train perplexity4.714936256408691
+INFO:root:current mean train loss 7867.435197330489
+INFO:root:current train perplexity4.710022926330566
+INFO:root:current mean train loss 7873.35490018531
+INFO:root:current train perplexity4.714058876037598
+INFO:root:current mean train loss 7866.677501119626
+INFO:root:current train perplexity4.711915969848633
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.02s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.02s/it]
+INFO:root:final mean train loss: 7858.507629394531
+INFO:root:final train perplexity: 4.712432384490967
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.07s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.07s/it]
+INFO:root:eval mean loss: 11224.070178803944
+INFO:root:eval perplexity: 10.2091646194458
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/69
+
+ 69%|██████▉   | 69/100 [5:16:18<2:20:43, 272.36s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7830.90451171875
+INFO:root:current train perplexity4.701889991760254
+INFO:root:current mean train loss 7851.257692522321
+INFO:root:current train perplexity4.706831932067871
+INFO:root:current mean train loss 7830.499609375
+INFO:root:current train perplexity4.69968318939209
+INFO:root:current mean train loss 7843.662516927084
+INFO:root:current train perplexity4.703769683837891
+INFO:root:current mean train loss 7855.866944901316
+INFO:root:current train perplexity4.704499244689941
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.90s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.91s/it]
+INFO:root:final mean train loss: 7850.944764168032
+INFO:root:final train perplexity: 4.705408096313477
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.37s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.37s/it]
+INFO:root:eval mean loss: 11225.68432907831
+INFO:root:eval perplexity: 10.21257495880127
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/70
+
+ 70%|███████   | 70/100 [5:20:48<2:15:49, 271.63s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7794.115895717959
+INFO:root:current train perplexity4.6852850914001465
+INFO:root:current mean train loss 7820.218722721718
+INFO:root:current train perplexity4.689001083374023
+INFO:root:current mean train loss 7827.701122871864
+INFO:root:current train perplexity4.6865997314453125
+INFO:root:current mean train loss 7831.896131369558
+INFO:root:current train perplexity4.6913347244262695
+INFO:root:current mean train loss 7847.35005891995
+INFO:root:current train perplexity4.696131229400635
+
+
+100%|██████████| 1/1 [04:08<00:00, 248.90s/it][A
+100%|██████████| 1/1 [04:08<00:00, 248.90s/it]
+INFO:root:final mean train loss: 7843.777726696384
+INFO:root:final train perplexity: 4.69875955581665
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.23s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.23s/it]
+INFO:root:eval mean loss: 11221.280741373697
+INFO:root:eval perplexity: 10.20327091217041
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/71
+
+ 71%|███████   | 71/100 [5:25:34<2:13:20, 275.87s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7803.931093514684
+INFO:root:current train perplexity4.65446138381958
+INFO:root:current mean train loss 7829.452732774078
+INFO:root:current train perplexity4.6800055503845215
+INFO:root:current mean train loss 7818.723310167293
+INFO:root:current train perplexity4.678809642791748
+INFO:root:current mean train loss 7834.24688035452
+INFO:root:current train perplexity4.6862640380859375
+INFO:root:current mean train loss 7842.880262923783
+INFO:root:current train perplexity4.692945957183838
+
+
+100%|██████████| 1/1 [04:01<00:00, 241.71s/it][A
+100%|██████████| 1/1 [04:01<00:00, 241.71s/it]
+INFO:root:final mean train loss: 7836.609696911228
+INFO:root:final train perplexity: 4.692120552062988
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.94s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.94s/it]
+INFO:root:eval mean loss: 11225.430818103609
+INFO:root:eval perplexity: 10.212037086486816
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/72
+
+ 72%|███████▏  | 72/100 [5:30:12<2:09:04, 276.59s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7836.130618040589
+INFO:root:current train perplexity4.670692443847656
+INFO:root:current mean train loss 7828.451887324532
+INFO:root:current train perplexity4.6803059577941895
+INFO:root:current mean train loss 7833.351758152766
+INFO:root:current train perplexity4.68160343170166
+INFO:root:current mean train loss 7834.987105337533
+INFO:root:current train perplexity4.685678005218506
+INFO:root:current mean train loss 7835.0387236107545
+INFO:root:current train perplexity4.684798240661621
+
+
+100%|██████████| 1/1 [04:03<00:00, 243.74s/it][A
+100%|██████████| 1/1 [04:03<00:00, 243.75s/it]
+INFO:root:final mean train loss: 7828.166318831905
+INFO:root:final train perplexity: 4.684311866760254
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.31s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.31s/it]
+INFO:root:eval mean loss: 11219.921677362352
+INFO:root:eval perplexity: 10.200401306152344
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/73
+
+ 73%|███████▎  | 73/100 [5:34:53<2:05:01, 277.82s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7805.673586667239
+INFO:root:current train perplexity4.668883323669434
+INFO:root:current mean train loss 7818.7183639766035
+INFO:root:current train perplexity4.6714186668396
+INFO:root:current mean train loss 7816.5922885121345
+INFO:root:current train perplexity4.677002906799316
+INFO:root:current mean train loss 7820.19885035366
+INFO:root:current train perplexity4.674228668212891
+INFO:root:current mean train loss 7822.565210905677
+INFO:root:current train perplexity4.6748456954956055
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.37s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.37s/it]
+INFO:root:final mean train loss: 7818.279224026588
+INFO:root:final train perplexity: 4.675184726715088
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:37<00:00, 37.05s/it][A
+100%|██████████| 1/1 [00:37<00:00, 37.05s/it]
+INFO:root:eval mean loss: 11225.240388416109
+INFO:root:eval perplexity: 10.211638450622559
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/74
+
+ 74%|███████▍  | 74/100 [5:39:25<1:59:38, 276.08s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7814.984339021382
+INFO:root:current train perplexity4.66191291809082
+INFO:root:current mean train loss 7813.367084835737
+INFO:root:current train perplexity4.664756774902344
+INFO:root:current mean train loss 7811.952573821504
+INFO:root:current train perplexity4.659200191497803
+INFO:root:current mean train loss 7813.553174446202
+INFO:root:current train perplexity4.6673078536987305
+INFO:root:current mean train loss 7821.505303030303
+INFO:root:current train perplexity4.672378063201904
+
+
+100%|██████████| 1/1 [03:56<00:00, 236.57s/it][A
+100%|██████████| 1/1 [03:56<00:00, 236.57s/it]
+INFO:root:final mean train loss: 7815.280063752205
+INFO:root:final train perplexity: 4.672420024871826
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it]
+INFO:root:eval mean loss: 11223.635817754835
+INFO:root:eval perplexity: 10.208247184753418
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/75
+
+ 75%|███████▌  | 75/100 [5:43:58<1:54:35, 275.01s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7815.388326625632
+INFO:root:current train perplexity4.656867980957031
+INFO:root:current mean train loss 7810.210530190013
+INFO:root:current train perplexity4.662836074829102
+INFO:root:current mean train loss 7812.925871067621
+INFO:root:current train perplexity4.6574482917785645
+INFO:root:current mean train loss 7813.253595414317
+INFO:root:current train perplexity4.664356708526611
+
+
+100%|██████████| 1/1 [03:54<00:00, 234.04s/it][A
+100%|██████████| 1/1 [03:54<00:00, 234.05s/it]
+INFO:root:final mean train loss: 7809.188339725618
+INFO:root:final train perplexity: 4.666808605194092
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.68s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.68s/it]
+INFO:root:eval mean loss: 11228.162772042411
+INFO:root:eval perplexity: 10.217814445495605
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/76
+
+ 76%|███████▌  | 76/100 [5:48:28<1:49:26, 273.60s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7860.58447265625
+INFO:root:current train perplexity4.666855812072754
+INFO:root:current mean train loss 7802.557024613167
+INFO:root:current train perplexity4.661843299865723
+INFO:root:current mean train loss 7805.818073141164
+INFO:root:current train perplexity4.655880928039551
+INFO:root:current mean train loss 7812.352458488036
+INFO:root:current train perplexity4.660340309143066
+INFO:root:current mean train loss 7807.555512610499
+INFO:root:current train perplexity4.6579694747924805
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.04s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.04s/it]
+INFO:root:final mean train loss: 7800.920514506678
+INFO:root:final train perplexity: 4.659202575683594
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.76s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.76s/it]
+INFO:root:eval mean loss: 11225.828508649554
+INFO:root:eval perplexity: 10.212882041931152
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/77
+
+ 77%|███████▋  | 77/100 [5:52:57<1:44:23, 272.34s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7682.717703683035
+INFO:root:current train perplexity4.5624165534973145
+INFO:root:current mean train loss 7804.920337142231
+INFO:root:current train perplexity4.641539573669434
+INFO:root:current mean train loss 7804.073320029438
+INFO:root:current train perplexity4.652064323425293
+INFO:root:current mean train loss 7791.313156873473
+INFO:root:current train perplexity4.6449384689331055
+INFO:root:current mean train loss 7798.209575831158
+INFO:root:current train perplexity4.651889324188232
+
+
+100%|██████████| 1/1 [03:50<00:00, 230.81s/it][A
+100%|██████████| 1/1 [03:50<00:00, 230.81s/it]
+INFO:root:final mean train loss: 7796.804567398563
+INFO:root:final train perplexity: 4.655421257019043
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it]
+INFO:root:eval mean loss: 11224.513625372023
+INFO:root:eval perplexity: 10.210102081298828
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/78
+
+ 78%|███████▊  | 78/100 [5:57:24<1:39:14, 270.67s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7777.142267400568
+INFO:root:current train perplexity4.653501510620117
+INFO:root:current mean train loss 7779.635944538289
+INFO:root:current train perplexity4.654010772705078
+INFO:root:current mean train loss 7784.853554965195
+INFO:root:current train perplexity4.6469950675964355
+INFO:root:current mean train loss 7786.969195890273
+INFO:root:current train perplexity4.645966529846191
+INFO:root:current mean train loss 7788.297707810599
+INFO:root:current train perplexity4.641526699066162
+
+
+100%|██████████| 1/1 [03:49<00:00, 229.85s/it][A
+100%|██████████| 1/1 [03:49<00:00, 229.85s/it]
+INFO:root:final mean train loss: 7786.6602783203125
+INFO:root:final train perplexity: 4.646115303039551
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.18s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.18s/it]
+INFO:root:eval mean loss: 11224.308181036085
+INFO:root:eval perplexity: 10.20966625213623
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/79
+
+ 79%|███████▉  | 79/100 [6:01:51<1:34:18, 269.46s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7768.45439453125
+INFO:root:current train perplexity4.6223859786987305
+INFO:root:current mean train loss 7800.620881453804
+INFO:root:current train perplexity4.641817092895508
+INFO:root:current mean train loss 7799.21599518532
+INFO:root:current train perplexity4.644545555114746
+INFO:root:current mean train loss 7794.866414000496
+INFO:root:current train perplexity4.646132469177246
+INFO:root:current mean train loss 7798.657638365964
+INFO:root:current train perplexity4.649566173553467
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.62s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.62s/it]
+INFO:root:final mean train loss: 7783.932847545993
+INFO:root:final train perplexity: 4.643615245819092
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.07s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.07s/it]
+INFO:root:eval mean loss: 11231.752185639882
+INFO:root:eval perplexity: 10.225410461425781
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/80
+
+ 80%|████████  | 80/100 [6:06:21<1:29:54, 269.71s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7717.012746710527
+INFO:root:current train perplexity4.662245273590088
+INFO:root:current mean train loss 7755.156935235032
+INFO:root:current train perplexity4.619206428527832
+INFO:root:current mean train loss 7763.289539633276
+INFO:root:current train perplexity4.625891208648682
+INFO:root:current mean train loss 7777.257777294769
+INFO:root:current train perplexity4.633713245391846
+INFO:root:current mean train loss 7780.828725154758
+INFO:root:current train perplexity4.63831090927124
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.51s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.51s/it]
+INFO:root:final mean train loss: 7778.162591749622
+INFO:root:final train perplexity: 4.638333797454834
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.33s/it]
+INFO:root:eval mean loss: 11228.072169712612
+INFO:root:eval perplexity: 10.217623710632324
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/81
+
+ 81%|████████  | 81/100 [6:10:50<1:25:18, 269.38s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7816.928286345109
+INFO:root:current train perplexity4.707704544067383
+INFO:root:current mean train loss 7784.942227991616
+INFO:root:current train perplexity4.6394267082214355
+INFO:root:current mean train loss 7789.68557971903
+INFO:root:current train perplexity4.6327009201049805
+INFO:root:current mean train loss 7777.771088307856
+INFO:root:current train perplexity4.631747245788574
+INFO:root:current mean train loss 7787.253923564938
+INFO:root:current train perplexity4.6337690353393555
+
+
+100%|██████████| 1/1 [04:04<00:00, 244.19s/it][A
+100%|██████████| 1/1 [04:04<00:00, 244.19s/it]
+INFO:root:final mean train loss: 7772.855110414566
+INFO:root:final train perplexity: 4.633479595184326
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.84s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.84s/it]
+INFO:root:eval mean loss: 11229.16662016369
+INFO:root:eval perplexity: 10.219941139221191
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/82
+
+ 82%|████████▏ | 82/100 [6:15:30<1:21:49, 272.78s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7793.298936631944
+INFO:root:current train perplexity4.637474060058594
+INFO:root:current mean train loss 7764.163001353347
+INFO:root:current train perplexity4.627014636993408
+INFO:root:current mean train loss 7764.85194968337
+INFO:root:current train perplexity4.637696743011475
+INFO:root:current mean train loss 7768.99400175602
+INFO:root:current train perplexity4.6339030265808105
+INFO:root:current mean train loss 7773.971024452942
+INFO:root:current train perplexity4.630543231964111
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.87s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.87s/it]
+INFO:root:final mean train loss: 7766.786095403856
+INFO:root:final train perplexity: 4.627935886383057
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.70s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.70s/it]
+INFO:root:eval mean loss: 11223.317045665923
+INFO:root:eval perplexity: 10.207575798034668
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/83
+
+ 83%|████████▎ | 83/100 [6:20:18<1:18:32, 277.20s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7775.685483870968
+INFO:root:current train perplexity4.603634834289551
+INFO:root:current mean train loss 7763.354987923425
+INFO:root:current train perplexity4.6310224533081055
+INFO:root:current mean train loss 7763.402309929654
+INFO:root:current train perplexity4.627575874328613
+INFO:root:current mean train loss 7772.568288566843
+INFO:root:current train perplexity4.631348609924316
+INFO:root:current mean train loss 7773.313030198666
+INFO:root:current train perplexity4.629162788391113
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.51s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.51s/it]
+INFO:root:final mean train loss: 7765.684713056011
+INFO:root:final train perplexity: 4.6269307136535645
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.82s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.82s/it]
+INFO:root:eval mean loss: 11225.27093796503
+INFO:root:eval perplexity: 10.211703300476074
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/84
+
+ 84%|████████▍ | 84/100 [6:25:21<1:15:57, 284.87s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7724.536300223214
+INFO:root:current train perplexity4.611991882324219
+INFO:root:current mean train loss 7735.131633391204
+INFO:root:current train perplexity4.606117248535156
+INFO:root:current mean train loss 7745.977011303192
+INFO:root:current train perplexity4.6126708984375
+INFO:root:current mean train loss 7762.022271455224
+INFO:root:current train perplexity4.618125915527344
+INFO:root:current mean train loss 7767.12719221444
+INFO:root:current train perplexity4.619421005249023
+
+
+100%|██████████| 1/1 [03:51<00:00, 231.22s/it][A
+100%|██████████| 1/1 [03:51<00:00, 231.22s/it]
+INFO:root:final mean train loss: 7757.174397130167
+INFO:root:final train perplexity: 4.619169235229492
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.78s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.78s/it]
+INFO:root:eval mean loss: 11229.448152087984
+INFO:root:eval perplexity: 10.220535278320312
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/85
+
+ 85%|████████▌ | 85/100 [6:30:16<1:11:59, 287.99s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7670.442482972757
+INFO:root:current train perplexity4.617168426513672
+INFO:root:current mean train loss 7765.567614658274
+INFO:root:current train perplexity4.626560211181641
+INFO:root:current mean train loss 7766.28583861794
+INFO:root:current train perplexity4.618391990661621
+INFO:root:current mean train loss 7755.585249009034
+INFO:root:current train perplexity4.618191242218018
+INFO:root:current mean train loss 7761.6710953071615
+INFO:root:current train perplexity4.617001056671143
+
+
+100%|██████████| 1/1 [03:57<00:00, 237.66s/it][A
+100%|██████████| 1/1 [03:57<00:00, 237.66s/it]
+INFO:root:final mean train loss: 7754.089854578818
+INFO:root:final train perplexity: 4.616358757019043
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.35s/it]
+INFO:root:eval mean loss: 11226.108811151415
+INFO:root:eval perplexity: 10.21347427368164
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/86
+
+ 86%|████████▌ | 86/100 [6:35:18<1:08:11, 292.28s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7709.924963662791
+INFO:root:current train perplexity4.604921340942383
+INFO:root:current mean train loss 7726.2705863472465
+INFO:root:current train perplexity4.615512371063232
+INFO:root:current mean train loss 7739.221054767875
+INFO:root:current train perplexity4.610279560089111
+INFO:root:current mean train loss 7749.458039130831
+INFO:root:current train perplexity4.611367225646973
+INFO:root:current mean train loss 7753.912695753386
+INFO:root:current train perplexity4.612887382507324
+
+
+100%|██████████| 1/1 [03:56<00:00, 236.96s/it][A
+100%|██████████| 1/1 [03:56<00:00, 236.96s/it]
+INFO:root:final mean train loss: 7750.369133733934
+INFO:root:final train perplexity: 4.612972259521484
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.30s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.30s/it]
+INFO:root:eval mean loss: 11230.94298153832
+INFO:root:eval perplexity: 10.2236967086792
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/87
+
+ 87%|████████▋ | 87/100 [6:40:18<1:03:49, 294.54s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7761.326410821143
+INFO:root:current train perplexity4.601703643798828
+INFO:root:current mean train loss 7785.270454666242
+INFO:root:current train perplexity4.625962257385254
+INFO:root:current mean train loss 7754.243037544281
+INFO:root:current train perplexity4.610244274139404
+INFO:root:current mean train loss 7748.280148201099
+INFO:root:current train perplexity4.602802753448486
+INFO:root:current mean train loss 7753.8923432693655
+INFO:root:current train perplexity4.610496520996094
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.91s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.91s/it]
+INFO:root:final mean train loss: 7746.717037077873
+INFO:root:final train perplexity: 4.609649658203125
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.93s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.93s/it]
+INFO:root:eval mean loss: 11227.54677327474
+INFO:root:eval perplexity: 10.216513633728027
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/88
+
+ 88%|████████▊ | 88/100 [6:45:15<59:03, 295.30s/it]  
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7800.42808861826
+INFO:root:current train perplexity4.628701210021973
+INFO:root:current mean train loss 7748.037888684809
+INFO:root:current train perplexity4.598762035369873
+INFO:root:current mean train loss 7758.144299754109
+INFO:root:current train perplexity4.614035606384277
+INFO:root:current mean train loss 7742.009017205306
+INFO:root:current train perplexity4.602457046508789
+INFO:root:current mean train loss 7746.196111505682
+INFO:root:current train perplexity4.606005668640137
+
+
+100%|██████████| 1/1 [03:53<00:00, 233.41s/it][A
+100%|██████████| 1/1 [03:53<00:00, 233.41s/it]
+INFO:root:final mean train loss: 7744.127099806263
+INFO:root:final train perplexity: 4.607295989990234
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it]
+INFO:root:eval mean loss: 11227.115121023995
+INFO:root:eval perplexity: 10.21560001373291
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/89
+
+ 89%|████████▉ | 89/100 [6:50:13<54:17, 296.11s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7731.939497514205
+INFO:root:current train perplexity4.59747838973999
+INFO:root:current mean train loss 7723.067978200605
+INFO:root:current train perplexity4.596907615661621
+INFO:root:current mean train loss 7721.499226409313
+INFO:root:current train perplexity4.586991786956787
+INFO:root:current mean train loss 7734.89150115537
+INFO:root:current train perplexity4.593301296234131
+INFO:root:current mean train loss 7739.489478880494
+INFO:root:current train perplexity4.599208831787109
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.09s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.09s/it]
+INFO:root:final mean train loss: 7739.30611788842
+INFO:root:final train perplexity: 4.6029157638549805
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.15s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.15s/it]
+INFO:root:eval mean loss: 11228.20149158296
+INFO:root:eval perplexity: 10.217899322509766
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/90
+
+ 90%|█████████ | 90/100 [6:55:11<49:26, 296.66s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7741.598434189618
+INFO:root:current train perplexity4.583084583282471
+INFO:root:current mean train loss 7769.597051272603
+INFO:root:current train perplexity4.606734275817871
+INFO:root:current mean train loss 7760.129671663852
+INFO:root:current train perplexity4.600611209869385
+INFO:root:current mean train loss 7740.760472884749
+INFO:root:current train perplexity4.601229667663574
+INFO:root:current mean train loss 7746.270738655705
+INFO:root:current train perplexity4.6025495529174805
+
+
+100%|██████████| 1/1 [03:56<00:00, 236.14s/it][A
+100%|██████████| 1/1 [03:56<00:00, 236.14s/it]
+INFO:root:final mean train loss: 7736.758217104019
+INFO:root:final train perplexity: 4.600602626800537
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.40s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.40s/it]
+INFO:root:eval mean loss: 11227.91761125837
+INFO:root:eval perplexity: 10.217297554016113
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/91
+
+ 91%|█████████ | 91/100 [7:00:13<44:44, 298.25s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7741.774018787202
+INFO:root:current train perplexity4.605669021606445
+INFO:root:current mean train loss 7742.706611867331
+INFO:root:current train perplexity4.607767581939697
+INFO:root:current mean train loss 7734.407423360266
+INFO:root:current train perplexity4.602244853973389
+INFO:root:current mean train loss 7741.377179106405
+INFO:root:current train perplexity4.600656509399414
+INFO:root:current mean train loss 7738.648499721585
+INFO:root:current train perplexity4.598572254180908
+
+
+100%|██████████| 1/1 [03:51<00:00, 231.19s/it][A
+100%|██████████| 1/1 [03:51<00:00, 231.19s/it]
+INFO:root:final mean train loss: 7733.553875338646
+INFO:root:final train perplexity: 4.5976972579956055
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.80s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.80s/it]
+INFO:root:eval mean loss: 11230.230529785156
+INFO:root:eval perplexity: 10.222189903259277
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/92
+
+ 92%|█████████▏| 92/100 [7:05:10<39:42, 297.75s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7732.011908232276
+INFO:root:current train perplexity4.593545913696289
+INFO:root:current mean train loss 7753.491494549962
+INFO:root:current train perplexity4.60728645324707
+INFO:root:current mean train loss 7761.910953593165
+INFO:root:current train perplexity4.613344669342041
+INFO:root:current mean train loss 7738.898108874744
+INFO:root:current train perplexity4.597851276397705
+INFO:root:current mean train loss 7734.079862737553
+INFO:root:current train perplexity4.593193054199219
+
+
+100%|██████████| 1/1 [03:58<00:00, 238.45s/it][A
+100%|██████████| 1/1 [03:58<00:00, 238.45s/it]
+INFO:root:final mean train loss: 7733.3383286999115
+INFO:root:final train perplexity: 4.597500801086426
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.80s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.80s/it]
+INFO:root:eval mean loss: 11226.992879231771
+INFO:root:eval perplexity: 10.215344429016113
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/93
+
+ 93%|█████████▎| 93/100 [7:10:16<35:02, 300.31s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7737.164468254841
+INFO:root:current train perplexity4.573553085327148
+INFO:root:current mean train loss 7730.537163628473
+INFO:root:current train perplexity4.592841625213623
+INFO:root:current mean train loss 7729.105948022371
+INFO:root:current train perplexity4.59283971786499
+INFO:root:current mean train loss 7741.164864018278
+INFO:root:current train perplexity4.598026752471924
+INFO:root:current mean train loss 7736.113670008957
+INFO:root:current train perplexity4.594732284545898
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.14s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.14s/it]
+INFO:root:final mean train loss: 7731.054578227381
+INFO:root:final train perplexity: 4.595430374145508
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.45s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.45s/it]
+INFO:root:eval mean loss: 11229.363816034227
+INFO:root:eval perplexity: 10.220357894897461
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/94
+
+ 94%|█████████▍| 94/100 [7:15:13<29:56, 299.37s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7756.91017578125
+INFO:root:current train perplexity4.60690450668335
+INFO:root:current mean train loss 7750.909561941964
+INFO:root:current train perplexity4.59340763092041
+INFO:root:current mean train loss 7746.8413831676135
+INFO:root:current train perplexity4.599992752075195
+INFO:root:current mean train loss 7740.75953125
+INFO:root:current train perplexity4.597078800201416
+INFO:root:current mean train loss 7738.345828536184
+INFO:root:current train perplexity4.598293304443359
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.17s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.17s/it]
+INFO:root:final mean train loss: 7729.401410502772
+INFO:root:final train perplexity: 4.593931198120117
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.15s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.15s/it]
+INFO:root:eval mean loss: 11228.771019345239
+INFO:root:eval perplexity: 10.21910572052002
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/95
+
+ 95%|█████████▌| 95/100 [7:20:04<24:43, 296.73s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7715.833619709257
+INFO:root:current train perplexity4.56436014175415
+INFO:root:current mean train loss 7737.094080067213
+INFO:root:current train perplexity4.5859150886535645
+INFO:root:current mean train loss 7738.964476226479
+INFO:root:current train perplexity4.586145401000977
+INFO:root:current mean train loss 7739.591803316705
+INFO:root:current train perplexity4.591372013092041
+INFO:root:current mean train loss 7740.842326950678
+INFO:root:current train perplexity4.594298839569092
+
+
+100%|██████████| 1/1 [03:52<00:00, 232.95s/it][A
+100%|██████████| 1/1 [03:52<00:00, 232.95s/it]
+INFO:root:final mean train loss: 7729.566619873047
+INFO:root:final train perplexity: 4.594081401824951
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.28s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.28s/it]
+INFO:root:eval mean loss: 11227.622651599702
+INFO:root:eval perplexity: 10.216673851013184
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/96
+
+ 96%|█████████▌| 96/100 [7:25:01<19:48, 297.05s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7761.560499811747
+INFO:root:current train perplexity4.620426177978516
+INFO:root:current mean train loss 7751.428105255293
+INFO:root:current train perplexity4.5997843742370605
+INFO:root:current mean train loss 7733.913546612743
+INFO:root:current train perplexity4.5923638343811035
+INFO:root:current mean train loss 7726.208006537614
+INFO:root:current train perplexity4.590512752532959
+INFO:root:current mean train loss 7732.568292653338
+INFO:root:current train perplexity4.592158794403076
+
+
+100%|██████████| 1/1 [03:49<00:00, 229.29s/it][A
+100%|██████████| 1/1 [03:49<00:00, 229.29s/it]
+INFO:root:final mean train loss: 7725.889890609249
+INFO:root:final train perplexity: 4.590750217437744
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.45s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.45s/it]
+INFO:root:eval mean loss: 11229.56653703962
+INFO:root:eval perplexity: 10.220787048339844
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/97
+
+ 97%|█████████▋| 97/100 [7:30:01<14:53, 297.71s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7736.721185793822
+INFO:root:current train perplexity4.6095099449157715
+INFO:root:current mean train loss 7760.499031270889
+INFO:root:current train perplexity4.598933696746826
+INFO:root:current mean train loss 7738.60981054007
+INFO:root:current train perplexity4.599290370941162
+INFO:root:current mean train loss 7738.6688481609335
+INFO:root:current train perplexity4.59489631652832
+INFO:root:current mean train loss 7729.72555184805
+INFO:root:current train perplexity4.590633392333984
+
+
+100%|██████████| 1/1 [03:51<00:00, 231.45s/it][A
+100%|██████████| 1/1 [03:51<00:00, 231.45s/it]
+INFO:root:final mean train loss: 7725.358157250189
+INFO:root:final train perplexity: 4.590269088745117
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.24s/it]
+INFO:root:eval mean loss: 11228.45768810454
+INFO:root:eval perplexity: 10.218440055847168
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/98
+
+ 98%|█████████▊| 98/100 [7:34:59<09:55, 297.95s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7717.798414963942
+INFO:root:current train perplexity4.594968795776367
+INFO:root:current mean train loss 7749.827240469568
+INFO:root:current train perplexity4.591969966888428
+INFO:root:current mean train loss 7743.051467528458
+INFO:root:current train perplexity4.593648433685303
+INFO:root:current mean train loss 7735.585521649216
+INFO:root:current train perplexity4.59207010269165
+INFO:root:current mean train loss 7731.738121141484
+INFO:root:current train perplexity4.589861869812012
+
+
+100%|██████████| 1/1 [03:50<00:00, 230.04s/it][A
+100%|██████████| 1/1 [03:50<00:00, 230.04s/it]
+INFO:root:final mean train loss: 7725.846596994707
+INFO:root:final train perplexity: 4.590712070465088
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:35<00:00, 35.27s/it][A
+100%|██████████| 1/1 [00:35<00:00, 35.27s/it]
+INFO:root:eval mean loss: 11228.71983700707
+INFO:root:eval perplexity: 10.218996047973633
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/99
+
+ 99%|█████████▉| 99/100 [7:39:55<04:57, 297.15s/it]
+
+  0%|          | 0/1 [00:00<?, ?it/s][AINFO:root:current mean train loss 7704.255746299342
+INFO:root:current train perplexity4.553664684295654
+INFO:root:current mean train loss 7727.22649238782
+INFO:root:current train perplexity4.579922676086426
+INFO:root:current mean train loss 7722.468571239407
+INFO:root:current train perplexity4.577674388885498
+INFO:root:current mean train loss 7722.548786095728
+INFO:root:current train perplexity4.5795440673828125
+INFO:root:current mean train loss 7725.122563525884
+INFO:root:current train perplexity4.584662437438965
+
+
+100%|██████████| 1/1 [03:49<00:00, 229.17s/it][A
+100%|██████████| 1/1 [03:49<00:00, 229.17s/it]
+INFO:root:final mean train loss: 7719.224918488533
+INFO:root:final train perplexity: 4.584718704223633
+INFO:root:epoch finished
+INFO:root:start evaluating
+
+
+  0%|          | 0/1 [00:00<?, ?it/s][A
+
+100%|██████████| 1/1 [00:36<00:00, 36.90s/it][A
+100%|██████████| 1/1 [00:36<00:00, 36.90s/it]
+INFO:root:eval mean loss: 11228.736711774554
+INFO:root:eval perplexity: 10.219032287597656
+INFO:root:evalaution complete
+INFO:root:checkpoint. save model: std_23_quad_gpu/100
+
+100%|██████████| 100/100 [7:44:49<00:00, 296.48s/it]
+100%|██████████| 100/100 [7:44:49<00:00, 278.90s/it]
+INFO:root:evaluating final model
+INFO:root:start evaluating
+
+  0%|          | 0/1 [00:00<?, ?it/s]
+100%|██████████| 1/1 [00:34<00:00, 34.40s/it]
+100%|██████████| 1/1 [00:34<00:00, 34.40s/it]
+INFO:root:eval mean loss: 11228.736711774554
+INFO:root:eval perplexity: 10.219032287597656
+INFO:root:evalaution complete
+INFO:root:save model final: std_23_quad_gpu/final

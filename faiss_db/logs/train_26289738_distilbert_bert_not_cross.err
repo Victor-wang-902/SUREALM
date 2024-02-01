@@ -1,0 +1,29 @@
+INFO:root:Output: large_distilbert_bert_not_cross
+Traceback (most recent call last):
+  File "train_script.py", line 544, in <module>
+    copyfile(args.data_config, data_config_path)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/shutil.py", line 259, in copyfile
+    with open(src, 'rb') as fsrc, open(dst, 'wb') as fdst:
+FileNotFoundError: [Errno 2] No such file or directory: 'fast_processed_data_multi_distilbert_bert/data_config.json'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x14e2954e0f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x14e2954d88e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x14e2953fde09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14e2954e1a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x14e2953fb948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x14e2954e1a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x14e2953b6b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x14e294e1b46a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x14e391637a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x14e391637be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x14e3916150ba]
+python(+0x1d6e13) [0x55ba7f2a1e13]
+/opt/slurm/data/slurmd/job26289738/slurm_script: line 203: 555070 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path  bert-base-uncased --data_config data_config.json --data_folder fast_processed_data_multi_distilbert_bert --output large_distilbert_bert_not_cross --batch_size 64 --lr 1e-5  --epochs 200  --save_head  --save_epochs 1 --external_embedding --test_eval --not_cross_attention
+"

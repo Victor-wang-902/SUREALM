@@ -1,0 +1,56 @@
+INFO:root:Output: large_distilbert_gpt2_not_cross
+INFO:root:Steps per epochs:1983
+INFO:root:Total steps:396600
+Using pad_token, but it is not set yet.
+Some weights of RetrievalGenerationModelGPT2 were not initialized from the model checkpoint at gpt2 and are newly initialized: ['h.0.attn.c_attn_v.bias', 'h.11.attn.c_attn_v.bias', 'h.9.attn.c_attn_k.bias', 'h.5.attn.c_attn_v.weight', 'h.2.attn.q_attn.weight', 'h.8.attn.c_attn_v.weight', 'h.2.attn.c_attn_k.weight', 'h.7.attn.c_attn_v.bias', 'h.7.attn.q_attn.weight', 'h.8.attn.c_attn_k.bias', 'h.10.attn.c_attn_v.bias', 'h.4.attn.c_attn_k.bias', 'h.4.attn.c_attn_k.weight', 'h.10.attn.c_attn_k.weight', 'h.3.attn.c_attn_k.bias', 'h.0.attn.q_attn.weight', 'h.6.attn.c_attn_v.bias', 'h.0.attn.c_attn_k.bias', 'h.8.attn.c_attn_k.weight', 'h.4.attn.c_attn_v.bias', 'h.0.attn.c_attn_k.weight', 'h.11.attn.c_attn_v.weight', 'h.1.attn.q_attn.weight', 'h.5.attn.q_attn.weight', 'h.6.attn.c_attn_k.bias', 'h.0.attn.c_attn_v.weight', 'h.2.attn.c_attn_v.weight', 'h.6.attn.q_attn.weight', 'h.7.attn.c_attn_v.weight', 'h.5.attn.c_attn_k.weight', 'h.5.attn.c_attn_k.bias', 'h.10.attn.q_attn.weight', 'h.3.attn.c_attn_v.weight', 'h.1.attn.c_attn_k.bias', 'h.7.attn.c_attn_k.weight', 'h.10.attn.c_attn_v.weight', 'h.3.attn.c_attn_v.bias', 'h.6.attn.c_attn_k.weight', 'h.11.attn.c_attn_k.weight', 'h.9.attn.q_attn.weight', 'h.11.attn.q_attn.weight', 'h.10.attn.c_attn_k.bias', 'h.4.attn.q_attn.weight', 'h.7.attn.c_attn_k.bias', 'h.1.attn.c_attn_v.weight', 'h.8.attn.c_attn_v.bias', 'h.1.attn.c_attn_k.weight', 'h.3.attn.c_attn_k.weight', 'h.2.attn.c_attn_v.bias', 'h.9.attn.c_attn_v.weight', 'h.5.attn.c_attn_v.bias', 'h.1.attn.c_attn_v.bias', 'h.9.attn.c_attn_v.bias', 'h.6.attn.c_attn_v.weight', 'h.4.attn.c_attn_v.weight', 'h.9.attn.c_attn_k.weight', 'h.2.attn.c_attn_k.bias', 'h.11.attn.c_attn_k.bias', 'h.8.attn.q_attn.weight', 'h.3.attn.q_attn.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:started training
+  0%|          | 0/200 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A  0%|          | 0/1 [02:29<?, ?it/s]
+  0%|          | 0/200 [02:29<?, ?it/s]
+Traceback (most recent call last):
+  File "train_script.py", line 621, in <module>
+    handler.train()
+  File "train_script.py", line 99, in train
+    outputs = self.args.model(**batch.to(self.args.device))
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/wrappers_gpt2.py", line 183, in forward
+    transformer_outputs = self.transformer(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/models_gpt2.py", line 416, in forward
+    outputs = block(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/models_gpt2.py", line 170, in forward
+    attn_outputs = self.attn(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/models_gpt2.py", line 130, in forward
+    print("mask", attention_mask.shape)
+AttributeError: 'NoneType' object has no attribute 'shape'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x153472ec9f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x153472ec18e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x153472de6e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x153472ecaa3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x153472de4948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x153472ecaa3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x153472d9fb46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x15347280446a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x15356f020a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x15356f020be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x15356effe0ba]
+python(+0x1d6e13) [0x558ba9f0fe13]
+/opt/slurm/data/slurmd/job26292684/slurm_script: line 208: 1266209 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path gpt2 --data_config data_config.json --data_folder fast_processed_data_multi_distilbert_gpt2 --output large_distilbert_gpt2_not_cross --batch_size 64 --epochs 200 --lr 1e-5 --save_head  --save_epochs 1 --external_embedding --test_eval --not_cross_attention
+"

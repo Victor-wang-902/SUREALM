@@ -1,0 +1,50 @@
+INFO:root:in update config, concat_self: False
+INFO:root:Output: roberta_gpt2_not_concat_rerun
+INFO:root:Steps per epochs:1983
+INFO:root:Total steps:396600
+Using pad_token, but it is not set yet.
+INFO:root:pad token is not set, adding [PAD] to tokenizer and embedding
+Some weights of RetrievalGenerationModelGPT2 were not initialized from the model checkpoint at gpt2 and are newly initialized: ['h.0.crossattention.bias', 'h.10.crossattention.c_proj.bias', 'h.5.crossattention.c_proj.bias', 'h.2.crossattention.c_attn_v.bias', 'h.3.crossattention.c_attn_v.bias', 'h.6.crossattention.bias', 'h.11.crossattention.c_attn_v.bias', 'h.3.crossattention.c_proj.bias', 'h.2.crossattention.c_proj.bias', 'h.6.ln_cross_attn.weight', 'h.10.crossattention.q_attn.weight', 'h.8.crossattention.c_attn.weight', 'h.3.crossattention.c_attn.weight', 'h.11.crossattention.c_proj.bias', 'h.7.crossattention.c_attn_v.weight', 'h.8.crossattention.bias', 'h.5.crossattention.c_proj.weight', 'h.2.crossattention.c_proj.weight', 'h.4.crossattention.c_attn.weight', 'h.6.crossattention.c_attn_v.bias', 'h.1.ln_cross_attn.weight', 'h.2.ln_cross_attn.weight', 'h.9.crossattention.c_attn.weight', 'h.1.crossattention.c_attn_v.bias', 'h.1.crossattention.c_proj.bias', 'h.7.crossattention.bias', 'h.0.crossattention.c_attn.weight', 'h.5.crossattention.masked_bias', 'h.6.crossattention.q_attn.weight', 'h.1.crossattention.masked_bias', 'h.5.ln_cross_attn.weight', 'h.7.crossattention.masked_bias', 'h.10.crossattention.masked_bias', 'h.3.crossattention.q_attn.weight', 'h.11.crossattention.masked_bias', 'h.4.crossattention.bias', 'h.8.crossattention.c_proj.weight', 'h.4.crossattention.q_attn.weight', 'h.5.crossattention.q_attn.weight', 'h.11.crossattention.c_attn_v.weight', 'h.2.crossattention.c_attn_v.weight', 'h.11.crossattention.c_proj.weight', 'h.9.crossattention.c_proj.bias', 'h.9.crossattention.bias', 'h.7.crossattention.c_proj.bias', 'h.0.crossattention.masked_bias', 'h.3.ln_cross_attn.weight', 'h.9.crossattention.c_attn_v.weight', 'h.7.crossattention.c_proj.weight', 'h.11.crossattention.bias', 'h.6.crossattention.masked_bias', 'h.1.crossattention.q_attn.weight', 'h.0.crossattention.q_attn.weight', 'h.9.crossattention.q_attn.weight', 'h.1.crossattention.c_attn_v.weight', 'h.5.crossattention.c_attn.weight', 'h.4.crossattention.c_proj.bias', 'h.7.crossattention.q_attn.weight', 'h.8.crossattention.c_attn_v.bias', 'h.4.crossattention.c_attn_v.bias', 'h.1.crossattention.c_attn.weight', 'h.10.crossattention.c_attn_v.weight', 'h.2.crossattention.c_attn.weight', 'h.1.crossattention.bias', 'h.8.crossattention.masked_bias', 'h.1.crossattention.c_proj.weight', 'h.4.crossattention.masked_bias', 'h.3.crossattention.bias', 'h.9.ln_cross_attn.weight', 'h.3.crossattention.c_proj.weight', 'h.4.crossattention.c_proj.weight', 'h.9.crossattention.c_proj.weight', 'h.9.crossattention.masked_bias', 'h.4.ln_cross_attn.weight', 'h.11.ln_cross_attn.weight', 'h.7.ln_cross_attn.weight', 'h.3.crossattention.masked_bias', 'h.10.crossattention.c_attn_v.bias', 'h.2.crossattention.q_attn.weight', 'h.6.crossattention.c_attn.weight', 'h.10.crossattention.c_proj.weight', 'h.0.crossattention.c_attn_v.weight', 'h.7.crossattention.c_attn.weight', 'h.8.crossattention.q_attn.weight', 'h.0.crossattention.c_attn_v.bias', 'h.11.crossattention.q_attn.weight', 'h.10.crossattention.c_attn.weight', 'h.8.ln_cross_attn.weight', 'h.0.ln_cross_attn.weight', 'h.6.crossattention.c_proj.bias', 'h.5.crossattention.bias', 'h.4.crossattention.c_attn_v.weight', 'h.8.crossattention.c_proj.bias', 'h.9.crossattention.c_attn_v.bias', 'h.2.crossattention.masked_bias', 'h.6.crossattention.c_proj.weight', 'h.6.crossattention.c_attn_v.weight', 'h.5.crossattention.c_attn_v.bias', 'h.10.ln_cross_attn.weight', 'h.2.crossattention.bias', 'h.10.crossattention.bias', 'h.0.crossattention.c_proj.weight', 'h.0.crossattention.c_proj.bias', 'h.5.crossattention.c_attn_v.weight', 'h.3.crossattention.c_attn_v.weight', 'h.8.crossattention.c_attn_v.weight', 'h.11.crossattention.c_attn.weight', 'h.7.crossattention.c_attn_v.bias']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:started training
+  0%|          | 0/200 [00:00<?, ?it/s]
+  0%|          | 0/1 [00:00<?, ?it/s][A  0%|          | 0/1 [02:17<?, ?it/s]
+  0%|          | 0/200 [02:17<?, ?it/s]
+Traceback (most recent call last):
+  File "train_script.py", line 650, in <module>
+    handler.train()
+  File "train_script.py", line 102, in train
+    outputs = self.args.model(**batch.to(self.args.device))
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/wrappers_gpt2.py", line 214, in forward
+    transformer_outputs = self.transformer(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/nn/modules/module.py", line 1110, in _call_impl
+    return forward_call(*input, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/models_gpt2.py", line 364, in forward
+    logging.info("everything is correctly set up")
+AttributeError: module 'transformers.utils.logging' has no attribute 'info'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x1481b29ebf06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x1481b29e38e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x1481b2908e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x1481b29eca3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x1481b2906948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x1481b29eca3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x1481b28c1b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x1481b232646a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x1482aeb82a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x1482aeb82be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x1482aeb600ba]
+python(+0x1d6e13) [0x56085b9d0e13]
+/opt/slurm/data/slurmd/job30536242/slurm_script: line 262: 2634901 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path gpt2 --data_config data_config.json --data_folder fast_processed_data_all_roberta_gpt2 --output roberta_gpt2_not_concat_rerun --epochs 200 --save_head  --save_epochs 1 --external_embedding --test_eval --not_concat_self --lr 1e-5
+"

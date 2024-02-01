@@ -1,0 +1,27 @@
+INFO:root:Output: allminil6_baseline
+Traceback (most recent call last):
+  File "train_script.py", line 568, in <module>
+    args.total_lines += data["lines"]
+KeyError: 'lines'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x15089c7f3f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x15089c7eb8e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x15089c710e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x15089c7f4a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x15089c70e948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x15089c7f4a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x15089c6c9b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x15089c12e46a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x15099894aa27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x15099894abe0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x1509989280ba]
+python(+0x1d6e13) [0x55e2e7ce7e13]
+/opt/slurm/data/slurmd/job29400656/slurm_script: line 214: 1534525 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path sentence-transformers/all-MiniLM-L6-v2 --data_folder data_for_baseline --output allminil6_baseline --epochs 200 --save_head --save_epochs 1 --external_embedding --not_retrieval --not_cross_attention
+"

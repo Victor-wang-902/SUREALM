@@ -1,4 +1,17 @@
-#python inference.py --model_path v10/35 --knowledge_path fast_processed_data/dstc_2gram_top3 --interactive --max_length 20
-#python inference.py --model_path v10/35 --knowledge_path fast_processed_data/dstc_2gram_top3 --prompt_file dummy_inference_text.txt --max_length 20
-#python inference.py --model_path large_distilbert_bert_retrained/18 --knowledge_path fast_processed_data_multi_distilbert/dstc_1gram_top8 --max_length 64 --max_context_length_per_k 64 --topk 8 --stride 1 --interactive --sbert_path "sentence-transformers/multi-qa-distilbert-cos-v1"
-#python inference.py --model_path large_roberta_gpt2/22 --knowledge_path fast_processed_data_all_roberta_gpt2/dstc_1gram_top8 --max_length 64 --max_context_length_per_k 64 --topk 8 --stride 1 --interactive --sbert_path "sentence-transformers/all-distilroberta-v1
+#!/bin/bash
+
+model_checkpoint="model/final"
+model_type="bert"
+knowledge="fast_processed_data/dstc_1gram_top8_win10"
+sbert="sentence-transformers/multi-qa-distilbert-cos-v1"
+
+python inference.py \
+    --model_path $model_checkpoint \
+    --model_type $model_type \
+    --knowledge_path $knowledge \
+    --max_length 20 \
+    --max_context_length_per_k 64 \
+    --topk 8 \
+    --stride 1 \
+    --interactive \
+    --sbert_path $sbert

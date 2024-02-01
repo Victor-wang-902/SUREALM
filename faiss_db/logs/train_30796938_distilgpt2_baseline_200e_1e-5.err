@@ -1,0 +1,13 @@
+INFO:root:Output: distilgpt2_baseline
+INFO:root:Steps per epochs:1983
+INFO:root:Total steps:396600
+Using pad_token, but it is not set yet.
+INFO:root:pad token is not set, adding [PAD] to tokenizer and embedding
+Traceback (most recent call last):
+  File "train_script.py", line 629, in <module>
+    args.model.post_post_init(args)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/torch/autograd/grad_mode.py", line 27, in decorate_context
+    return func(*args, **kwargs)
+  File "/scratch/zw2374/public/faiss_db/wrappers_gpt2.py", line 167, in post_post_init
+    assert layer.crossattention.alt_c == 2
+UnboundLocalError: local variable 'layer' referenced before assignment

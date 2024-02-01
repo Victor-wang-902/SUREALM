@@ -1,0 +1,37 @@
+INFO:root:Output: big_baseline_mixed_test
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/optimization.py:306: FutureWarning: This implementation of AdamW is deprecated and will be removed in a future version. Use the PyTorch implementation torch.optim.AdamW instead, or set `no_deprecation_warning=True` to disable this warning
+  warnings.warn(
+INFO:root:start evaluating on validation
+  0%|          | 0/1 [00:00<?, ?it/s]  0%|          | 0/1 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "validation_script.py", line 615, in <module>
+    handler.evaluate()
+  File "validation_script.py", line 196, in evaluate
+    dataloader = load_dataset(data, self.args, val=True, test=test)
+  File "/scratch/zw2374/public/faiss_db/dataset.py", line 726, in load_dataset
+    dataset = dataset_class(data, args=args, val=val, test=test)
+  File "/scratch/zw2374/public/faiss_db/dataset.py", line 679, in __init__
+    with open(self.text_path, "r") as f:
+FileNotFoundError: [Errno 2] No such file or directory: 'data_for_baseline/dstc_eval/data_test.txt'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x145d306a4f06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x145d3069c8e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x145d305c1e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x145d306a5a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x145d305bf948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x145d306a5a3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x145d3057ab46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x145d2ffdf46a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x145e2c7fba27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x145e2c7fbbe0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x145e2c7d90ba]
+python(+0x1d6e13) [0x55f260b25e13]
+/opt/slurm/data/slurmd/job26320092/slurm_script: line 212: 1546788 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python validation_script.py --model_path big_baseline_base_64_low --data_config data_config_ood.json --data_folder data_for_baseline --output big_baseline_mixed_test --external_embedding --eval_only --not_retrieval --not_cross_attention
+"

@@ -1,0 +1,47 @@
+Traceback (most recent call last):
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/configuration_utils.py", line 613, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/utils/hub.py", line 409, in cached_file
+    resolved_file = hf_hub_download(
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/huggingface_hub/file_download.py", line 1022, in hf_hub_download
+    cache_dir, repo_folder_name(repo_id=repo_id, repo_type=repo_type)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 92, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/huggingface_hub/utils/_validators.py", line 136, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': 'large_distilbert_bert_retrained/18/1'. Use `repo_type` argument if needed.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "validation_script.py", line 515, in <module>
+    args.config = AutoConfig.from_pretrained(os.path.join(args.model_path, "1"))
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/models/auto/configuration_auto.py", line 773, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/configuration_utils.py", line 558, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/transformers/configuration_utils.py", line 634, in _get_config_dict
+    raise EnvironmentError(
+OSError: Can't load the configuration of 'large_distilbert_bert_retrained/18/1'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'large_distilbert_bert_retrained/18/1' is the correct path to a directory containing a config.json file
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x151d924bbf06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x151d924b38e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x151d923d8e09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x151d924bca3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x151d923d6948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x151d924bca3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x151d92391b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x151d91df646a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x151e8e615a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x151e8e615be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x151e8e5f30ba]
+python(+0x1d6e13) [0x5560c071de13]
+/opt/slurm/data/slurmd/job26319161/slurm_script: line 211: 1508991 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python validation_script.py --model_path large_distilbert_bert_retrained/18 --data_config data_config.json --data_folder fast_processed_data_knowledge_test_corrected_mixed --output large_distilbert_bert_mixed_test  --external_embedding --eval_only
+"

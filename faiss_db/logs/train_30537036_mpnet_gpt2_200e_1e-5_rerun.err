@@ -1,0 +1,30 @@
+Traceback (most recent call last):
+  File "train_script.py", line 31, in <module>
+    from wrappers_gpt2 import RetrievalGenerationModelGPT2
+  File "/scratch/zw2374/public/faiss_db/wrappers_gpt2.py", line 108, in <module>
+    from models_gpt2 import RetrievalGPT2Model
+  File "/scratch/zw2374/public/faiss_db/models_gpt2.py", line 33, in <module>
+    logging.basicConfig(level=logging.INFO)
+AttributeError: module 'transformers.utils.logging' has no attribute 'basicConfig'
+Fatal error condition occurred in /opt/vcpkg/buildtrees/aws-c-io/src/9e6648842a-364b708815.clean/source/event_loop.c:72: aws_thread_launch(&cleanup_thread, s_event_loop_destroy_async_thread_fn, el_group, &thread_options) == AWS_OP_SUCCESS
+Exiting Application
+################################################################################
+Stack trace:
+################################################################################
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200af06) [0x153127bcdf06]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x20028e5) [0x153127bc58e5]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f27e09) [0x153127aeae09]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x153127bcea3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1f25948) [0x153127ae8948]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x200ba3d) [0x153127bcea3d]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x1ee0b46) [0x153127aa3b46]
+/ext3/miniconda3/envs/rblm/lib/python3.8/site-packages/pyarrow/libarrow.so.900(+0x194546a) [0x15312750846a]
+/lib/x86_64-linux-gnu/libc.so.6(+0x49a27) [0x153223d64a27]
+/lib/x86_64-linux-gnu/libc.so.6(on_exit+0) [0x153223d64be0]
+/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xfa) [0x153223d420ba]
+python(+0x1d6e13) [0x55d329ed5e13]
+/opt/slurm/data/slurmd/job30537036/slurm_script: line 262: 1143089 Aborted                 singularity exec --nv --overlay /scratch/zw2374/overlay-50G-10M.ext3:ro /scratch/work/public/singularity/cuda11.3.0-cudnn8-devel-ubuntu20.04.sif /bin/bash -c "
+source /ext3/env.sh
+conda activate rblm
+python train_script.py --model_path gpt2 --data_config data_config.json --data_folder fast_processed_data_multi_mpnet_gpt2 --output mpnet_gpt2_not_concat_rerun --epochs 200 --save_head  --save_epochs 1 --external_embedding --test_eval --not_concat_self --lr 1e-5
+"
